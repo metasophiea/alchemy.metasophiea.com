@@ -1,0 +1,20 @@
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: white;
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar--item {
+    margin: 0 1em;
+    color: black;
+    text-decoration: none;
+}
+#navbar--left--icon {
+    height: 2em;
+}

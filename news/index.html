@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>News</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap" rel="stylesheet">
+        <link href="/navbar.css" rel="stylesheet">
+        <style>
+            html, body{
+                margin: 1%;
+                font-family: Trebuchet MS, Arial, sans-serif;
+            }
+            h1{
+                font-size: xxx-large;
+            }
+        </style>
+
+        <style>
+            #mainHeading {
+                font-style: italic;
+                margin-top: 1em;
+            }
+        </style>
+
+        <style>
+            #cards{
+                max-width: 800px;
+                margin: auto;
+                font-family: Roboto;
+            }
+            .card{
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                background-color: #f5f5f5;
+                display: inline-block;
+                padding: 10px;
+            }
+            .card-image {
+                width: 100%;
+            }
+            .centred-image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .caption {
+                text-align: center;
+                font-size: small;
+                font-style: italic;
+                color: #aaaaaa;
+            }
+            .broken-link {
+                pointer-events: none;
+                color: #aaaaaa;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section id="navbar">
+            <div id="navbar--left">
+                <a href="/">
+                    <img id="navbar--left--icon" class="navbar--item" src="/image/icon.png"/>
+                </a>
+            </div>
+            <div id="navbar--right">
+                <a id="navbar--right--news-item" class="navbar--item" href="/news">News</a>
+            </div>
+        </section>
+
+        <h1 id="mainHeading">News</h1>
+        <div id="cards"></div>
+    </body>
+
+    <script>
+        fetch('posts.json').then((response) => response.json()).then(populate);
+
+        const main_section = document.getElementById('cards');
+
+        function populate(posts) {
+            posts.forEach(post => {
+                //create card section
+                    const card = document.createElement('section');
+                    card.classList.add('card');
+                    main_section.append(card);
+                
+                //add title and date
+                    const title = document.createElement('h2');
+                    title.innerText = post.title;
+                    card.append(title);
+                    if(post.date) {
+                        const date = document.createElement('p');
+                        date.innerText = `${post.date.year}-${post.date.month}-${post.date.day}`;
+                        card.append(date);
+                    }
+
+                //body
+                    post.body.forEach(item => {
+                        if(item.type === "h2") {
+                            const element = document.createElement('h2');
+                            element.innerText = item.text;
+                            card.append(element);
+                        } else if(item.type === "h3") {
+                            const element = document.createElement('h3');
+                            element.innerText = item.text;
+                            card.append(element);
+                        } else if(item.type === "h4") {
+                            const element = document.createElement('h4');
+                            element.innerText = item.text;
+                            card.append(element);
+                        } else if(item.type === "p") {
+                            const element = document.createElement('p');
+                            element.innerText = item.text;
+                            element.classList.add(item.class);
+                            card.append(element);
+                        } else if(item.type === "a") {
+                            const a = document.createElement('a');
+                            a.href = item.href;
+                            a.innerText = item.text;
+                            a.style = item.style;
+                            const p = document.createElement('p');
+                            p.append(a);
+                            card.append(p);
+                        } else if (item.type === "img") {
+                            const element = document.createElement('img');
+                            element.src = item.src;
+                            element.style = item.style;
+                            element.classList.add("card-image");
+                            if(item.class) {
+                                element.classList.add(item.class);
+                            }
+                            card.append(element);
+                        } else if (item.type === "ul") {
+                            const ul = document.createElement('ul');
+                            ul.style = item.style;
+                            card.append(ul);
+
+                            item.items.forEach(listItem => {
+                                const li = document.createElement('li');
+                                li.innerText = listItem;
+                                ul.append(li);
+                            });
+                        } else {
+                            console.error("unhandled type:", item.type);
+                        }
+                    });
+            });
+        }
+    </script>
+
+</html>

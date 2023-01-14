@@ -1,0 +1,554 @@
+[
+    {
+        "date": {"year":2023, "month":1, "day":14},
+        "title": "Alpha",
+        "body": [
+            {
+                "type": "p",
+                "text": "So after a little time, I'm pleased to announce that much progress have been made on this project. The graphics engine has had a number of improvements, as had the Orchestrator which now has the (unfinished) audio engine integrated into it. Also the entire Interface layer has been added, which contains a large array of pre-made interface objects (buttons, slides, dials, graphs, etc), connection nodes and the concept of \"Units\". Atop all of this, the very top layer has begun too, resulting in the very first \"published\" version of the app; 0.0.1 Alpha."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/app-screenshot.jpg",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "\"No Reptiles\" is a song by Everything Everything, which strikes a certain chord for me, emotionally."
+            },
+            {
+                "type": "p",
+                "text": "There's not a lot to do on it - due to the lack of units - but the ones that are there work great! I've put in the Amplifier and Audio File Player, so one can play music files and change the playback rate (which honestly I really enjoy. Its like breathing new life into your music collection)"
+            },
+            {
+                "type": "h3",
+                "text": "Windows"
+            },
+            {
+                "type": "p",
+                "text": "I've also done a lot of work on the Windows version of the program - thanks to my friend who lent me an old laptop which I can develop on - getting it running nicely. I've also created an installer for it, so no longer do you have to download and extract zip files, running the executables in the right directory with the resource files placed correctly next to it. Now, all you have to do is follow the little installer's instructions and everything is done for you."
+            },
+            {
+                "type": "p",
+                "text": "I'm using the wonderful NSIS for the windows installer. Its a neat little program, the products of which I instantly recognised as being the same installers I've used in the past for other programs."
+            },
+            {
+                "type": "h3",
+                "text": "Website"
+            },
+            {
+                "type": "p",
+                "text": "I've also also put together a proper website for the program; alchemy.metasophiea.com. Here, one can easily access the latest installers for both Windows and Mac, along with a link to the older browser version."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/website-screenshot-1.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/website-screenshot-2.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "text": "My thinking is that I'll keep the browser version around as a kind of demo, much like Minecraft Classic, which too can be used it the browser. I'd like to sell the program in future, so I think this browser-based version would be a nice, easily accessible introductory demo for anyone who wanted to find out what Alchemy was about."
+            },
+            {
+                "type": "h3",
+                "text": "Icon"
+            },
+            {
+                "type": "p",
+                "text": "You might have noticed a certain four colours on that website. I've been playing around with icons and logos for the program - as a result of making bundled versions for windows and mac. Finding the right look isn't easy and frankly, I still don't think I've gotten it right yet. Let me show you some of the ideas I came up with:"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/icon-idea-1.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "I started out with two ideas, this one I thought was pretty neat as it conveyed that mystical feeling I wanted, and had the overall triangle shape. It seems somewhat aggressive to me however."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/icon-idea-2.png",
+                "style": "width:50%;"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/icon-idea-3.png",
+                "style": "width:50%;"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "The second of the ideas, this seemed much softer and friendly. I ran with this idea, and developed a full MacOs app icon."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/icon-idea-4.png",
+                "style": "width:50%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "MacOS icons don't really translate to Windows however, so I began to experiment with other forms with the same core symbol."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/icon-idea-5.png",
+                "style": "width:50%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "Quite a departure from what came before, I had discovered that although the looping triangle looked good up close, it was not striking enough when placed next to other icons. It also didn't hold up well to being reduced in size, so I decided to start again."
+            },
+            {
+                "type": "p",
+                "text": "While on a bus home one day, the idea for a four-colour triangle popped into my head, and I immediately had the feeling that this would be the right icon."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/icon.png",
+                "style": "width:50%;"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/macos-icon.png",
+                "style": "width:50%;"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "Striking, yet not aggressive. Four friendly colours in that iconic triangle shape."
+            },
+            {
+                "type": "p",
+                "text": "The Windows icon is simply the triangle, while the MacOS icon is the same triangle atop a plane white rounded-square with some simple shadowing. What's more, those four colours are also the colours of the four connection types. I didn't even do that on purpose, I just noticed it a few days after making the first versions. This icon also seems to work well at small scale. Further to this, you can play with it in some pretty cool ways, extending the colours out of the triangle."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/alchemy-artsy-banner-1.jpg"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/alchemy-artsy-banner-2.jpg"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/alchemy-artsy-banner-3.jpg"
+            },
+            {
+                "type": "img",
+                "src": "images/2023-1-14/alchemy-artsy-banner-4.jpg"
+            },
+            {
+                "type": "h3",
+                "text": "From Here"
+            },
+            {
+                "type": "p",
+                "text": "As I wrote earlier, I'm calling this the first published version. Future posts here will mainly be about new versions and what changes have been made. This has seemed a little fuzzy for me up to now, and its felt like a number of different projects clumped together, and I didn't really know how to reduce that to version numbers... frankly, a lot of the sections of the codebase are set to version number \"0.0.0\" and I don't think I'll actually ever be changing them."
+            },
+            {
+                "type": "p",
+                "text": "So I'm going to lay it out now; we're in the Alpha phase, so version numbers will always be \"0.0.something\". I'll increment that last number whenever I publish a new version of the program, meaning that those new versions may contain any number of changes and improvements."
+            },
+            {
+                "type": "p",
+                "text": "We'll enter Beta when the desktop version has all the features that the website one has, at which point we will have version \"0.1.0\". I'll have to figure out a convention for incrementing those numbers when I get there."
+            },
+            {
+                "type": "h3",
+                "text": "Until Next Time"
+            },
+            {
+                "type": "p",
+                "text": "I think its going pretty well actually. I was pretty proud to have gotten the windows version working and the installer was the icing for me. I have a gentle projection that I'll reach the Beta version by summer time, though I still have to finish off the audio engine (which involves some heavy math) I've no idea of how to monetize this, though I'd really like to quit my job and work on it full time. Maybe I'll look for some investor funding.. maybe when I reach Beta.."
+            }
+        ]
+    },
+    {
+        "date": {"year":2022, "month":8, "day":15},
+        "title": "Orchestrator",
+        "body": [
+            {
+                "type": "p",
+                "text": "Today, I've come to talk about something called Orchestrator. Orchestrator is a layer of this project that formally brings together all the others, and is the platform upon which applications can be made. It simply is a window manager with a \"game loop\" style refresh function. It also holds a number of \"resources\" such as the rendering engine, the audio engine (when that is ready) and in future whatever else is useful. You might find it easier to understand be reviewing this layout of the full system."
+            },
+            {
+                "type": "img",
+                "src": "images/overall_layout_1.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "text": "Orchestrator uses the winit library for its window generation and interaction needs, along with rfd for file dialogues"
+            },
+            {
+                "type": "p",
+                "text": "This is really not a very complex layer, and I think I've actually written all I need to on the subject. Orchestrator just brings together the resources, gives you access to them then gets out of your way. What more could you want?"
+            }
+        ]
+    },
+    {
+        "date": {"year":2022, "month":1, "day":3},
+        "title": "Completion Of Rendering Engine",
+        "body": [
+            {
+                "type": "p",
+                "text": "It's been a while. How are you? I've been a little busy. The rendering engine has developed to draft 29, which I'm now calling v1. I've also taken to naming the rendering engine \"Vivid\" which I think is a pretty cool name."
+            },
+            {
+                "type": "img",
+                "src":"images/vivid_logo_1.png",
+                "style":"width:40%; display:block; margin:auto;"
+            },
+            {
+                "type": "p",
+                "text": "Initially, I was mostly done at draft 23, but after a little testing with profilers I noticed that a feature of the core architecture of the engine was taking up a lot of processing time, so I re-wrote it - which resulted in re-writing much of the program overall. This new version is noticeably faster and simpler. It also has a better thought-out layout and plenty of testing code."
+            },
+            {
+                "type": "img",
+                "src": "images/vivid_layout_1.png",
+                "style": "width:70%; display:block; margin:auto;"
+            },
+            {
+                "type": "p",
+                "text": "The \"shell\" is simply a way of covering over all the sections of the renderer, presenting a nice package api."
+            },
+            {
+                "type": "p",
+                "text": "Additionally, the program comes with a new feature; extremity replacement elements. This allows one to tell a group element not to calculate any of its internal geometry, but instead use a provided replacement element. This allows one to put together complex structures and tell the engine \"hay, don't worry about any of this. It won't be used for collision and there won't be any mouse or keyboard interaction. I know that it also means that no visibility calculations will take place, but I'll handle it. Just trust me.\" Visibility calculations and determinations can be quite costly, so having the option of telling the system not to worry about them can save a lot of time."
+            },
+            {
+                "type": "p",
+                "text": "One might also notice that the colours are deeper than before. This is due to Brandon figuring out what texture formats were and which ones to use, thus the presented colours now match the ones that were actually wanted."
+            },
+            {
+                "type": "img",
+                "src": "images/render_rectangle_count_test_2.png"
+            },
+            {
+                "type": "p",
+                "text": "I've included a number of demo programs for you to play with;"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:none",
+                "items": [
+                    "console_example_1 : all shapes",
+                    "console_example_2 : lots of random boxes",
+                    "console_example_3 : wavey boxes",
+                    "console_example_4 : four corners test",
+                    "console_example_5 : angle and scale adjustment on groups with children",
+                    "console_example_6 : viewport adjustment",
+                    "console_example_7 : mouse action test",
+                    "console_example_8 : character default fonts",
+                    "console_example_11 : all the fonts",
+                    "console_example_12 : character detail levels",
+                    "console_example_21 : much usage of the canvas and imagebitmap transfers (the one that caused crashes on chrome)",
+                    "console_example_22 : rotating area of rectangles",
+                    "console_example_23 : mouse simulator"
+                ]
+            },
+            {
+                "type": "p",
+                "text": "Some of these are programs you've seen before - but with the new engine running them - others are brand new. Importantly, console_example_2 comes with a command line argument, with which you can define the number of rectangles the program will put on screen, for example;"
+            },
+            {
+                "type": "img",
+                "src": "images/render_rectangle_count_test_3.png"
+            },
+            {
+                "type": "p",
+                "text": "Next stop; the upper levels. I've already made a start on a generalised platform - the Orchestrator - which draws together the rendering engine and other such resources. A bit like a browser engine, one would be able to write whatever they liked atop it, using the resources of the platform. Other resources can be added at a later date, such as the \"Glide\" audio engine which I have in development. Beyond that lies the interface section, which (should) act like a framework. Useful, but not necessary to using the platform. This section would contain the same sort of items as the previous interface section of the website  - ie. buttons, sliders, dials, lights, meters, readouts, cable connections, etc."
+            },
+            {
+                "type": "img",
+                "src": "images/overall_layout_1.png",
+                "style": "width:70%; display:block; margin:auto;"
+            },
+            {
+                "type": "p",
+                "text": "I've been thinking of renaming Curve to Alchemy... we'll see if that sticks in my mind"
+            },
+            {
+                "type": "h3",
+                "text": "Downloads"
+            },
+            {
+                "type": "p",
+                "text": "Here are the usual downloads, first the \"bundles\" which contain all the programs listed above. Secondly, I've included a variation of console_example_2, which is a single-threaded version with timing code. This is useful for seeing how much time a system spends on any part of the rendering procedure."
+            },
+            {
+                "type": "h4",
+                "text": "Bundles"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/renderer_1_bundle/macos/11.6.zip",
+                "text": "MacOS 11.6"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/renderer_1_bundle/win10.zip",
+                "text": "Windows 10"
+            },
+            {
+                "type": "h4",
+                "text": "Speed Test"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/renderer_1_speed_test/macos11.6.zip",
+                "text": "MacOS 11.6"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/renderer_1_speed_test/win10.zip",
+                "text": "Windows 10"
+            }
+        ]
+    },
+    {
+        "date": {"year":2021, "month":8, "day":10},
+        "title": "Character Test Using Default Fonts",
+        "body": [
+            {
+                "type": "p",
+                "text": "Made with draft 19 of the project, this test shows the all the characters of the two default fonts; \"Default Thick\" and \"Default Thin\". Additionally I've added some simple mouse interaction, so that the characters will change colour when you mouse over them."
+            },
+            {
+                "type": "p",
+                "text": "These two fonts are baked-in to the program. I plan to add more, fancier fonts; but those will be loaded from external font files - requiring an amount of processing. The default fonts require no processing so can be used in the place of fonts that haven't yet loaded."
+            },
+            {
+                "type": "img",
+                "src": "images/default_fonts_characters.png"
+            },
+            {
+                "type": "p",
+                "text": "Fun fact: I designed these two default fonts by hand for the website, using some graph paper and a graphing program. I started with just \"Default Thick\" (at the time, only known as \"Default\") but after finishing I realised that it was pretty ugly, so I created \"Default Thin\" which was slightly better. Not long after I added external fonts, much to the relief to those blessed with the gift of sight."
+            },
+            {
+                "type": "img",
+                "src": "images/early characters.jpg",
+                "class": "centred-image",
+                "style": "width: 60%;"
+            },
+            {
+                "type": "p",
+                "class": "caption",
+                "text": "I only drew characters that I was having trouble with. I think they look better on paper"
+            },
+            {
+                "type": "h3",
+                "text": "Downloads"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/default_fonts/macos/11.5/default_fonts.zip",
+                "text": "MacOS 11.5"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/default_fonts/macos/10.11/default_fonts.zip",
+                "text": "MacOS 10.11"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/default_fonts/windows10/default_fonts.zip",
+                "class": "broken-link",
+                "text": "Windows 10"
+            }
+        ]
+    },
+    {
+        "date": {"year":2021, "month":6, "day":9},
+        "title": "Element Test - Plus Automatic Image Update",
+        "body": [
+            {
+                "type": "p",
+                "text": "Made with draft 16 of the project, as a way of testing all the elements that the engine can render. This collection will of course change in future - as the character and string elements are added - but with the addition of the image element and its auto-update feature, I wanted to share how it is right now."
+            },
+            {
+                "type": "p",
+                "text": "In this demo you can see that we've expanded from just being able to render a rectangle (and the group). Now available are:"
+            },
+            {
+                "type": "ul",
+                "items": [
+                    "Rectangle With Outline",
+                    "Circle",
+                    "Circle With Outline",
+                    "Polygon",
+                    "Polygon With Outline",
+                    "Path",
+                    "Image"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/element_test_1.png"
+            },
+            {
+                "type": "p",
+                "text": "You'll notice that this demo also comes with an \"images\" folder, which contains the file used in the Image element: \"colour_squares.jpg\". You can modify this file how you like and the system will render it. Whats more; you don't have to restart the program for those updates to take effect. The engine is constantly checking that file every second for changes, so once you press save in your editor - the engine will reload and re-render the image automatically."
+            },
+            {
+                "type": "h3",
+                "text": "Downloads"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/element_test_1/macos/10.11/element_test_1.zip",
+                "text": "MacOS 10.11"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/element_test_1/windows10/element_test_1.zip",
+                "text": "Windows 10"
+            }
+        ]
+    },
+    {
+        "date": {"year":2021, "month":6, "day":9},
+        "title": "Chrome Update",
+        "body": [
+            {
+                "type": "p",
+                "text": "Recently I've noticed that it appears some changes have been made to Chrome that stop the crash from occurring. Unfortunately, these changes haven't entirely solved the issue as now instead of crashing Chrome instead seems to enter enormous difficulty with a heavily reduced frame-rate - which isn't super promising."
+            },
+            {
+                "type": "p",
+                "text": "There's also been no comment on the bug report page <a href=\"https://bugs.chromium.org/p/chromium/issues/detail?id=1149413\">https://bugs.chromium.org/p/chromium/issues/detail?id=1149413</a>"
+            }
+        ]
+    },
+    {
+        "date": {"year":2021, "month":3, "day":15},
+        "title": "Callback Interaction",
+        "body": [
+            {
+                "type": "p",
+                "text": "Made with draft 15 of the project, as a way of testing the callback section of the rendering engine. "
+            },
+            {
+                "type": "p",
+                "text": "This section handles mouse and keyboard interaction, mapping those actions against the elements arranged on screen, allowing the actions to relate to those elements. In turn, elements can activate certain callbacks (\"onmousedown\" or \"onkeydown\" for example). When an action occurs that coincides with an element who has activated a callback that matches this action; an event is made which the outer system can collect and work with."
+            },
+            {
+                "type": "p",
+                "text": "Mousing over the rectangles on screen will cause them to glow. The square at the top right of the screen will react to mouse wheel motion, both in the x and y directions. Double-clicking this square will change the \"activation mode\", which determines how the system deals with elements that are layered on top of one another"
+            },
+            {
+                "type": "img",
+                "src": "images/callback_interaction.jpg"
+            },
+            {
+                "type": "h3",
+                "text": "Downloads"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/callback_interaction/macos/10.11/callback_interaction.zip",
+                "text": "MacOS 10.11"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/callback_interaction/windows10/callback_interaction.zip",
+                "text": "Windows 10"
+            }
+        ]
+    },
+    {
+        "date": {"year":2021, "month":2, "day":19},
+        "title": "Wavey Boxes",
+        "body": [
+            {
+                "type": "p",
+                "text": "The world famous, original recipe, EU approved, religiously important, oscar nominated, executive deluxe luxury edition visualisation program that has taken the world by storm and that all the kids are talking about, is here. That's right, Wavey Boxes has made it to desktop."
+            },
+            {
+                "type": "p",
+                "text": " Made with draft 12 of the project, as a way of testing the inter-process rendering communication, along with the system's ability to perform long-term state-based game-like actions (instead of just rendering a single frame). The wave patterns are calculated on the spot, as are the randomly selected colours."
+            },
+            {
+                "type": "img",
+                "src": "images/wavey_boxes.png"
+            },
+            {
+                "type": "h3",
+                "text": "Downloads"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/wavey_boxes/macos/10.11/wavey_boxes.zip",
+                "text": "MacOS 10.11"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/wavey_boxes/windows10/wavey_boxes.zip",
+                "text": "Windows 10"
+            }
+        ]
+    },
+    {
+        "title": "Rectangle Count Test",
+        "body": [
+            {
+                "type": "p",
+                "text": "Based on draft 8 of the project, these are applications used to test just how many rectangles the engine can produce and render. I recommend building up from the smallest value, and probably not running the 10m one at all."
+            },
+            {
+                "type": "img",
+                "src": "images/render_rectangle_count_test.jpg"
+            },
+            {
+                "type": "h3",
+                "text": "Downloads"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/render_rectangle_count_test/macos/11.2.zip",
+                "text": "MacOS 11.2"
+            },
+            {
+                "type": "a",
+                "href": "/downloads/developmentPrograms/render_rectangle_count_test/windows10/tests.zip",
+                "text": "Windows 10"
+            }
+        ]
+    },
+    {
+        "title": "Going Native",
+        "body": [
+            {
+                "type": "p",
+                "text": "So far its been a little of an uphill battle, and I don't expect it to have similar functionality to the website version for some time - I have yet to even look at how I'm going to do audio. I hope however that by the end of this year (2021) I will have a large chunk of the program together. Alongside, I will also be working on the website. Partly so that if the bug is ever fixed, I don't feel like I've left it to languish for all this time. Partly so I don't feel like I'm eternally in this loop of restarting."
+            },
+            {
+                "type": "p",
+                "text": "I am using WGPU for the graphical back-end. Luckily I had most of a rendering engine already written in Rust as I had been rewriting most of the website version's rendering engine to use webASM, so I was able to copy over a lot of that code into this project and currently have a version of the engine working nicely. At the moment it can only render rectangles, but I have tested it on my desktop as being able to render around 2,000,000 rectangles in a second. Much faster than the top-speed I could get from the website version, which was about 720,000. Also thanks to the fact I could copy a lot of it over, the engine already has a moveable viewport, element render judgements, frame skipping, stencilling, a tree-based element data structure, extremity calculation, and more. Plus all the mouse/keyboard interaction code that I had been working on most recently. And one or two small editions along the way that I forgot to add in the website version, for example, multi-level stencilling. Much has had to change thanks to the switch from webGL to WGPU which has added a whole new host of issues, but I'm confident that it's shaping up to be a faster and more stable version of the engine. I hope in future to re-write certain parts to expand functionality, though currently I am trying only to match what the original can do."
+            },
+            {
+                "type": "p",
+                "text": "I'm going to keep the code secret for now, but above you can find completed applications that I've put together as I develop the larger project."
+            }
+        ]
+    }
+]
+

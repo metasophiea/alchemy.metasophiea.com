@@ -9,7 +9,7 @@
         <!-- gether product information -->
         <script>
             let productInformation = {};
-            fetch('content/productInformation.json')
+            fetch('/downloads/productInformation.json')
                 .then((response) => response.json())
                 .then((data) => {
                     productInformation = data;
@@ -24,6 +24,9 @@
                 font-family: Trebuchet MS, Arial, sans-serif;
             }
         </style>
+
+        <!-- navbar -->
+        <link href="navbar.css" rel="stylesheet">
 
         <!-- welcome -->
         <style>
@@ -200,6 +203,17 @@
     </head>
 
     <body>
+        <section id="navbar">
+            <div id="navbar--left">
+                <a href="/">
+                    <img id="navbar--left--icon" class="navbar--item" src="/image/icon.png"/>
+                </a>
+            </div>
+            <div id="navbar--right">
+                <a id="navbar--right--news-item" class="navbar--item" href="/news">News</a>
+            </div>
+        </section>
+
         <section id="welcome">
             <h1 id="welcome--heading">Alchemy</h1>
             <div id="welcome--downloads">
