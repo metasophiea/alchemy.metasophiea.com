@@ -549,6 +549,23 @@
                 "text": "I'm going to keep the code secret for now, but above you can find completed applications that I've put together as I develop the larger project."
             }
         ]
+    },
+    {
+        "title": "The Start",
+        "body": [
+            {   
+                "type": "p",
+                "text": "After discovering the bug that made the site essentially unusable for any real purpose, I found myself in a depressing place. I wanted to continue working on this project that has brought me so much joy and passion, so I have decided to use the Rust programming language that I learned to make the core-engine webASM rewrite, and use it to produce a stand-alone desktop app for Mac, Linux and Windows."
+            },
+            {   
+                "type": "p",
+                "text": "Here, you can find a mini-blog on the development of that project."
+            },
+            {   
+                "type": "p",
+                "text": "I don't know how to do signing yet, so, your anti-virus is not going to be super happy about any of this."
+            }
+        ]
     }
 ]
 
