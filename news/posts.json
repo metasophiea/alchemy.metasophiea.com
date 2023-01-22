@@ -1,5 +1,29 @@
 [
     {
+        "date": {"year":2023, "month":1, "day":22},
+        "title": "Alpha 0.0.2",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version comes with a number of small changes and additions"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Fix to the audio_file_player, which wasn't resetting the playhead start position correctly when then area was removed",
+                    "Rearranged the accepted file types for the audio_file_player's open file dialogue. Also added an \"all supported types\" to that list",
+                    "Added info boxes for when project file saving/loading goes wrong",
+                    "Revealed the console output window on windows (for testing reasons, need a better logging system still)",
+                    "One can now undo/redo file loading with the audio_file_player",
+                    "Amplifier and audio_file_player's selection space is now more accurate to what their bases look like",
+                    "Added the Audio Combiner to the Alpha collection",
+                    "When saving a file, cancelling the save was reported as a failure to save. Now the system understands that this isn't an error"
+                ]
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":1, "day":14},
         "title": "Alpha",
         "body": [
