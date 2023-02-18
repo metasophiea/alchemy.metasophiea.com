@@ -1,5 +1,33 @@
 [
     {
+        "date": {"year":2023, "month":2, "day":18},
+        "title": "Alpha 0.0.3",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds a number of units to the Alpha collection, along with another small fix"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Added the Audio Duplicator to the Alpha collection",
+                    "Added missing undo/redo events when double-clicking dials",
+                    "Added the Audio In to the Alpha collection",
+                    "Added the Audio Recorder to the Alpha collection",
+                    "Added the Audio Scope to the Alpha collection",
+                    "Added the Musical Keyboard to the Alpha collection"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-2-16/alchemy_0.0.3_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":1, "day":22},
         "title": "Alpha 0.0.2",
         "body": [
