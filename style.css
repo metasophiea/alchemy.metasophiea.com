@@ -1,0 +1,155 @@
+
+/* welcome */
+    #welcome {
+        height: 40em;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #welcome:before {
+        height: 40em;
+        width: 100%;
+        
+        background-position: center;
+        background-image: url("/image/four_colour_stripes_banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        content: '';
+        position:absolute;
+        opacity: 0.5;
+    }
+
+    #welcome--heading {
+        z-index: 1;
+
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 10em;
+    }
+
+    #welcome--downloads {
+        z-index: 1;
+
+        width: 50%;
+        text-align: center;
+    }
+    #welcome--downloads--description {
+        margin: 0;
+    }
+    #welcome--downloads--version-string {
+        margin: 0;
+        font-size: small;
+        font-weight: 100;
+        font-style: italic;
+    }
+    #welcome--downloads--download-options {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .welcome--downloads--download-options--button {
+        cursor: pointer;
+        height: 10em;
+        width: 15em;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin: 10px;
+
+        transition: height 0.25s, width 0.25s;
+    }
+    .welcome--downloads--download-options--button:hover {
+        height: 10em;
+        width: 20em;
+    }
+    #welcome--downloads--download-options--windows {
+        background-image: url("/image/alchemy_windows_banner.jpg");
+    }
+    #welcome--downloads--download-options--mac {
+        background-image: url("/image/alchemy_mac_banner.jpg");
+    }
+
+/* autovideo */
+    #autovideo {
+        text-align: center;
+    }
+    #autovideo--youtube-video {
+        width: 100%;
+        aspect-ratio: 1;
+        max-width: 1000px;
+    }
+
+/* what-is-alchemy */
+    #what-is-alchemy {
+        padding: 40px 40px;
+    }
+    #what-is-alchemy-heading {
+        margin: 0;
+    }
+
+/* try-classic */
+    #try-classic {
+        width: 100%;
+        padding: 0 0 40px 0;
+    }
+    #try-classic-heading {
+        margin: 0;
+        text-align: center;
+    }
+    #try-classic-description {
+        text-align: center;
+    }
+    #try-classic-card {
+        cursor: pointer;
+        margin: auto;
+        height: 15em;
+        max-width: 60em;
+        width: 75%;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        background-position: center;
+        background-image: url("https://raw.githubusercontent.com/metasophiea/Curve/master/docs/images/logo/curve.png");
+        background-repeat: no-repeat;
+        background-size: 75%;
+
+        outline-color: rgba(0, 0, 0, 0.2);
+    }
+    #try-classic-card:hover{
+        outline-style: solid;
+        outline-width: 6px;
+        transition: outline-width 0.25s;
+    }
+    
+/* site-map-and-links */
+    #site-map-and-links {
+        height: 10em;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #site-map-and-links:before {
+        height: 10em;
+        width: 100%;
+        
+        background-position: center;
+        background-image: url("/image/four_colour_stripes_banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        content: '';
+        position: absolute;
+        opacity: 0.5;
+    }
+    #site-map-and-links--copyright--string {
+        margin: 0;
+    }

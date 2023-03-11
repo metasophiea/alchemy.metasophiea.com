@@ -29,180 +29,7 @@
             }
         </style>
 
-        <!-- welcome -->
-        <style>
-            #welcome {
-                height: 40em;
-                width: 100%;
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-            #welcome:before {
-                height: 40em;
-                width: 100%;
-                
-                background-position: center;
-                background-image: url("/image/four_colour_stripes_banner.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                content: '';
-                position:absolute;
-                opacity: 0.5;
-            }
-
-            #welcome--heading {
-                z-index: 1;
-
-                margin: 0;
-                padding: 0;
-                text-align: center;
-                font-size: 10em;
-            }
-
-            #welcome--downloads {
-                z-index: 1;
-
-                width: 50%;
-                text-align: center;
-            }
-            #welcome--downloads--description {
-                margin: 0;
-            }
-            #welcome--downloads--version-string {
-                margin: 0;
-                font-size: small;
-                font-weight: 100;
-                font-style: italic;
-            }
-            #welcome--downloads--download-options {
-                display: flex;
-                justify-content: space-evenly;
-            }
-            .welcome--downloads--download-options--button {
-                cursor: pointer;
-                height: 10em;
-                width: 15em;
-
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                margin: 10px;
-
-                transition: height 0.25s, width 0.25s;
-            }
-            .welcome--downloads--download-options--button:hover {
-                height: 10em;
-                width: 20em;
-            }
-            #welcome--downloads--download-options--windows {
-                background-image: url("/image/alchemy_windows_banner.jpg");
-            }
-            #welcome--downloads--download-options--mac {
-                background-image: url("/image/alchemy_mac_banner.jpg");
-            }
-        </style>
-    
-        <!-- try-classic -->
-        <style>
-            #try-classic {
-                width: 100%;
-                padding: 40px 0;
-            }
-            #try-classic-heading {
-                margin: 0;
-                text-align: center;
-            }
-            #try-classic-description {
-                text-align: center;
-            }
-            #try-classic-card {
-                cursor: pointer;
-                margin: auto;
-                height: 15em;
-                max-width: 60em;
-                width: 75%;
-
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-                background-position: center;
-                background-image: url("https://raw.githubusercontent.com/metasophiea/Curve/master/docs/images/logo/curve.png");
-                background-repeat: no-repeat;
-                background-size: 75%;
-
-                outline-color: rgba(0, 0, 0, 0.2);
-            }
-            #try-classic-card:hover{
-                outline-style: solid;
-                outline-width: 6px;
-                transition: outline-width 0.25s;
-            }
-        </style>
-        
-        <!-- highlighted-demo-video -->
-        <style>
-            #highlighted-demo-video {
-                width: 100%;
-
-                display: flex;
-                align-items: flex-start;
-            }
-            #highlighted-demo-video--section {
-                flex: 1;
-                margin: 2em;
-                font-style: italic;
-            }
-            #highlighted-demo-video--youtube-video {
-                flex: 2;
-                margin: 2em;
-                min-width: 30em;
-                min-height: 30em;
-            }
-        </style>
-        
-        <!-- the-news -->
-        <!-- <style>
-            #the-news {
-                height: 40em;
-                width: 100%;
-                
-                background-color:ghostwhite;
-            }
-        </style>
-         -->
-
-        <!-- site-map-and-links -->
-        <style>
-            #site-map-and-links {
-                height: 10em;
-                width: 100%;
-
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            #site-map-and-links:before {
-                height: 10em;
-                width: 100%;
-                
-                background-position: center;
-                background-image: url("/image/four_colour_stripes_banner.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                content: '';
-                position: absolute;
-                opacity: 0.5;
-            }
-            #site-map-and-links--copyright--string {
-                margin: 0;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
@@ -237,29 +64,30 @@
             </div>
         </section>
 
-        <section id="try-classic">
-            <h1 id="try-classic-heading">Try the classic version in your browser!</h1>
-            <p id="try-classic-description">(requires Chrome or Edge)</p>
-            <div id="try-classic-card" onclick='window.open("https:\/\/curve.metasophiea.com")'></div>
-        </section>
-
-        <section id="highlighted-demo-video">
-            <div id="highlighted-demo-video--section">
-                <h2 id="highlighted-demo-video--heading">Demo</h2>
-                <p id="highlighted-demo-video--description">Check out this 5 minute demonstration made with the classic browser version</p>
-            </div>
-
+        <section id="autovideo">
             <iframe
-                id="highlighted-demo-video--youtube-video"
-                class="highlighted-demo-video--section"
-                src="https://www.youtube.com/embed/wWYRuVK3dro"
+                id="autovideo--youtube-video"
+                src="https://www.youtube.com/embed/wWYRuVK3dro?autoplay=1&mute=1&vq=hd720"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
             ></iframe>
         </section>
 
-        <!-- <section id="the-news"></section> -->
+        <section id="what-is-alchemy">
+            <h1 id="what-is-alchemy-heading">What Is Alchemy?</h1>
+            <p id="what-is-alchemy-description">Alchemy is a virtual studio.</p>
+            <p id="what-is-alchemy-description">Its all about connecting things together. You get a keyboard, and you plug it into a synthesizer, then you plug that into an amplifier. Press a few buttons on the keyboard and you can hear your little tune through the speaker. Maybe you'd like to add some echo effects to it? Grab the echo effect box and plug the synthesizer into that, then the effect box into the amp, and presto, you've got echo!</p>
+            <p id="what-is-alchemy-description">Its all about doing things the same way you would in the real-world. There's buttons and dials and sliders and readouts and everything you've seen before on real-world hardware - just now its on your computer. These things are on devices which can be plugged together, so its like plugging your phone into a speaker; once they're connected one can send music to the other.</p>
+            <p id="what-is-alchemy-description">Its all about unlocking the potential of computers. Before, it was like you were told that so much could be done with a computer, but all that they seem to do is show you websites and play music. Now, you have the opportunity to so much more. It starts out with just music and making some tunes, but then you find that you can use Alchemy to connect to the ports on your computer. That there are units that run scripting languages like Python or JavaScript. There are units for connecting to the internet or to other computers. Units for opening and writing to files on your computer, recognising speech patters, for running neural networks, for more and more, and all of these units are connectable. Infinite combinations, endless possibilities, and all of it real and actually happening on your computer.</p>
+            <p id="what-is-alchemy-description">Alchemy is not about the units. Alchemy is about what you do with them.</p>
+        </section>
+
+        <section id="try-classic">
+            <h1 id="try-classic-heading">Try the classic version in your browser!</h1>
+            <p id="try-classic-description">(requires Chrome or Edge)</p>
+            <div id="try-classic-card" onclick='window.open("https:\/\/curve.metasophiea.com")'></div>
+        </section>
 
         <section id="site-map-and-links">
 			<div id="site-map-and-links--copyright">

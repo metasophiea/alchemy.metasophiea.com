@@ -1,5 +1,35 @@
 [
     {
+        "date": {"year":2023, "month":3, "day":11},
+        "title": "Alpha 0.0.4",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds a number of units to the Alpha collection, along with other small fixes"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Fixed Musical Keyboard's boolean ports",
+                    "Added the Data Readout to the Alpha collection",
+                    "Fixed issue with the Musical Keyboard sending multiple messages when a keyboard key is held down",
+                    "Changed base octave of the Musical Keyboard from 0 to 2",
+                    "Added the Basic Synthesizer to the Alpha collection",
+                    "Added the Signal Combiner to the Alpha collection",
+                    "Added the Signal Duplicator to the Alpha collection",
+                    "Added the Signal Readout to the Alpha collection"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-3-11/alchemy_0.0.4_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":2, "day":18},
         "title": "Alpha 0.0.3",
         "body": [
