@@ -93,6 +93,10 @@
     #what-is-alchemy-heading {
         margin: 0;
     }
+    #what-is-alchemy-subheading {
+        font-size: 1.2em;
+        font-style: italic;
+    }
 
 /* try-classic */
     #try-classic {
