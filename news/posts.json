@@ -1,5 +1,34 @@
 [
     {
+        "date": {"year":2023, "month":3, "day":29},
+        "title": "Alpha 0.0.5",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds a number of units to the Alpha collection, along with other small fixes"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "added the Signal Switch to the Alpha collection",
+                    "added the Voltage Combiner to the Alpha collection",
+                    "added the Voltage Duplicator to the Alpha collection",
+                    "added the Voltage Readout to the Alpha collection",
+                    "added the Data Combiner to the Alpha collection",
+                    "added the Data Duplicator to the Alpha collection",
+                    "added the Eight Step Sequencer to the Alpha collection"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-3-29/alchemy_0.0.5_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":3, "day":11},
         "title": "Alpha 0.0.4",
         "body": [
