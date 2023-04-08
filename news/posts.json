@@ -1,11 +1,36 @@
 [
     {
+        "date": {"year":2023, "month":4, "day":6},
+        "title": "Alpha 0.0.6",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds a number of units to the Alpha collection"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "added the Pulse Generator to the Alpha collection",
+                    "added the Eight Track Mixer to the Alpha collection",
+                    "added the Launchpad to the Alpha collection"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-4-6/alchemy_0.0.6_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":3, "day":29},
         "title": "Alpha 0.0.5",
         "body": [
             {
                 "type": "p",
-                "text": "This version adds a number of units to the Alpha collection, along with other small fixes"
+                "text": "This version adds a number of units to the Alpha collection"
             },
             {
                 "type": "ul",
