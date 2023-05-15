@@ -1,5 +1,30 @@
 [
     {
+        "date": {"year":2023, "month":5, "day":11},
+        "title": "Alpha 0.0.7",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds the remaining units of the Alpha collection"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "added the Distortion unit to the Alpha collection",
+                    "added the Reverb unit to the Alpha collection",
+                    "added the Filter unit to the Alpha collection"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-5-11/alchemy_0.0.7_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":4, "day":6},
         "title": "Alpha 0.0.6",
         "body": [
