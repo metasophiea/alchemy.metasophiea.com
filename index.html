@@ -5,8 +5,8 @@
         <title>Alchemy</title>
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
 
-        <!-- gether product information -->
         <script>
             let productInformation = {};
             fetch('/downloads/productInformation.json')
@@ -17,32 +17,12 @@
                 });
         </script>
 
-        <!-- navbar -->
-        <link href="navbar.css" rel="stylesheet"/>
-        <script src="navbar.js"></script>
-
-        <!-- global -->
-        <style>
-            html, body{
-                margin: 0;
-                font-family: Trebuchet MS, Arial, sans-serif;
-            }
-        </style>
-
-        <link rel="stylesheet" href="style.css">
+        <link href="navbar/style.css" rel="stylesheet"/>
+        <script src="navbar/main.js"></script>
     </head>
 
     <body>
-        <section id="navbar">
-            <div id="navbar--left">
-                <a href="/">
-                    <img id="navbar--left--icon" class="navbar--item" src="/image/icon.png"/>
-                </a>
-            </div>
-            <div id="navbar--right">
-                <a id="navbar--right--news-item" class="navbar--item" href="/news">News</a>
-            </div>
-        </section>
+        <section id="navbar"></section>
 
         <section id="welcome">
             <h1 id="welcome--heading">Alchemy</h1>

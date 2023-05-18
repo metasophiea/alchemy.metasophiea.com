@@ -1,0 +1,42 @@
+html, body {
+    margin: 1%;
+    font-family: Roboto;
+}
+
+.collection {
+    display: inline-block;
+    width: 100%;
+}
+
+.collection-title {
+    font-size: 200%;
+    font-style: italic;
+}
+/* .collection-description {} */
+.collection-documents {
+    position: relative;
+    text-align: center;
+    float: left;
+    margin: 0px;
+}
+
+.collection-documents-document-cover-image{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    outline-color: rgba(0, 0, 0, 0.2);
+}
+.collection-documents-document-cover-image:hover{
+    outline-style: solid;
+    outline-width: 6px;
+    transition: outline-width 0.25s;
+}
+.collection-documents-document-caption{
+    font-style: italic;
+    color:darkgray;
+}
+
+#mainHeading {
+    font-family: Trebuchet MS, Arial, sans-serif;
+    font-style: italic;
+    margin-top: 1em;
+}
