@@ -15,6 +15,10 @@ const content = [
     {
         address: '/library',
         printName: 'Library'
+    },
+    {
+        address: '/demos',
+        printName: 'Demos'
     }
 ];
 
