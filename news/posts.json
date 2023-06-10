@@ -1,5 +1,53 @@
 [
     {
+        "date": {"year":2023, "month":6, "day":10},
+        "title": "Alpha 0.0.8",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds the Harbinger collection and the manual library website"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Added the DSDS-8^3 unit to the Harbinger collection",
+                    "Added the Manual Library website",
+                    "Added a link to the Manual Library website",
+                    "Added the MRD-16 unit to the Harbinger collection",
+                    "Added the RDP-32 unit to the Harbinger collection",
+                    "Added a demo section (with a couple of demos)"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-6-10/alchemy_0.0.8_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "text": "All units come with their own manuals, and, well; what better place to put them all than in a library. This library is essentially the same as what can be found on the old website. All manuals are in the pdf format so should be easily read on all devices. In future, I'd really like to have them appear within the application, but for now the site will do."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-6-10/library.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "text": "The demo section is rather empty right now... and could use a little graphic design, but it serves its function as a place to get sample project files."
+            },
+            {
+                "type": "img",
+                "src": "images/2023-6-10/demos.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":5, "day":11},
         "title": "Alpha 0.0.7",
         "body": [
@@ -11,9 +59,9 @@
                 "type": "ul",
                 "style": "list-style-type:\"- \";",
                 "items": [
-                    "added the Distortion unit to the Alpha collection",
-                    "added the Reverb unit to the Alpha collection",
-                    "added the Filter unit to the Alpha collection"
+                    "Added the Distortion unit to the Alpha collection",
+                    "Added the Reverb unit to the Alpha collection",
+                    "Added the Filter unit to the Alpha collection"
                 ]
             },
             {
@@ -36,9 +84,9 @@
                 "type": "ul",
                 "style": "list-style-type:\"- \";",
                 "items": [
-                    "added the Pulse Generator to the Alpha collection",
-                    "added the Eight Track Mixer to the Alpha collection",
-                    "added the Launchpad to the Alpha collection"
+                    "Added the Pulse Generator to the Alpha collection",
+                    "Added the Eight Track Mixer to the Alpha collection",
+                    "Added the Launchpad to the Alpha collection"
                 ]
             },
             {
@@ -61,13 +109,13 @@
                 "type": "ul",
                 "style": "list-style-type:\"- \";",
                 "items": [
-                    "added the Signal Switch to the Alpha collection",
-                    "added the Voltage Combiner to the Alpha collection",
-                    "added the Voltage Duplicator to the Alpha collection",
-                    "added the Voltage Readout to the Alpha collection",
-                    "added the Data Combiner to the Alpha collection",
-                    "added the Data Duplicator to the Alpha collection",
-                    "added the Eight Step Sequencer to the Alpha collection"
+                    "Added the Signal Switch to the Alpha collection",
+                    "Added the Voltage Combiner to the Alpha collection",
+                    "Added the Voltage Duplicator to the Alpha collection",
+                    "Added the Voltage Readout to the Alpha collection",
+                    "Added the Data Combiner to the Alpha collection",
+                    "Added the Data Duplicator to the Alpha collection",
+                    "Added the Eight Step Sequencer to the Alpha collection"
                 ]
             },
             {
