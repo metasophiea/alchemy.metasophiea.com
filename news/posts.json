@@ -1,5 +1,44 @@
 [
     {
+        "date": {"year":2023, "month":7, "day":5},
+        "title": "Alpha 0.0.9",
+        "body": [
+            {
+                "type": "p",
+                "text": "This version adds the Acoustic Research collection along with some small bug fixes"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Added the Amplitude Modifier unit to the Acoustic Research collection",
+                    "Added the Bitcrusher unit to the Acoustic Research collection",
+                    "Added the Data Controlled Frequency Generator unit to the Acoustic Research collection",
+                    "Added the Frequency Amplitude Response Workstation unit to the Acoustic Research collection",
+                    "Added the Frequency Generator unit to the Acoustic Research collection",
+                    "Added the Gain unit to the Acoustic Research collection",
+                    "Added the Lag Processor unit to the Acoustic Research collection",
+                    "Added the Momentary Amplitude Meter unit to the Acoustic Research collection",
+                    "Added the Sigmoid's Affecter unit to the Acoustic Research collection",
+                    "Added the Stable Amplitude Generator unit to the Acoustic Research collection",
+                    "Added the Stream Adder unit to the Acoustic Research collection",
+                    "When a user attempts to open a file - then cancels - this is no longer considered an error",
+                    "Fixed the Sticky-Dial problem"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-7-5/alchemy_0.0.9_new_units.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "p",
+                "text": "Acoustic Research's units are rather scientific, and as such a little complicated... though they do really help me out with the development of future units. Additionally, their addition represents the last of the units to add from the old website version. We're very close to Beta now."
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":6, "day":10},
         "title": "Alpha 0.0.8",
         "body": [
