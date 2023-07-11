@@ -1,5 +1,55 @@
 [
     {
+        "date": {"year":2023, "month":7, "day":11},
+        "head": [
+            {
+                "type": "img",
+                "src": "images/2023-7-11/banner.png",
+                "class": "centred-image"
+            }
+        ],
+        "body": [
+            {
+                "type": "p",
+                "text": "Beta has arrived! I'm happy to say that the program is now functionally equivalent to the original website version. As such, this constitutes a major milestone in the project as this is where I stop playing catch-up with the old program, and start adding new stuff, new features, new units, new graphics and interfaces, new possibilities!"
+            },
+            {
+                "type": "p",
+                "text": "The journey from 0.0.9 to 0.1.0 was rather small. Here are the changes;"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Fixed issue with Harbinger's DSDS-8^3, which wasn't loading its samples",
+                    "Fixed issue with unit stamps and selection spaces not always having a filled body",
+                    "Duplicated units now align with the mouse cursor",
+                    "More demos uploaded to the website"
+                ]
+            },
+            {
+                "type": "p",
+                "text": "There are still a number of bugs in the system, though nothing too major (or at least, not that I've stumbled into) but I'll handle them in future Beta releases"
+            },
+            {
+                "type": "h3",
+                "text": "After Beta"
+            },
+            {
+                "type": "p",
+                "text": "Where do we go from here? Its uncharted territory for me. I've been working on this program for almost 5 years now, and the last two have been just trying to catch up with where the website was. I've set up a trello for myself and have a number of changes and improvements ready to implement, so, there is at least a form of roadmap for the future."
+            },
+            {
+                "type": "p",
+                "text": "Regarding more administrative things, I'm not really sure at all. I guess I've gotten too comfortable developing quietly to myself. Friends have suggested posting on Instagram or y-combinator, but I still feel a little like the program isn't quite ready... the create menu needs to be drastically changed as its become clear to me that finding the units you want is an overcomplicated task when you divide them be company like I have.. Other things like that and stability improvements, logging tools, improved unit creation (including externalised \"plug-in\" units) need to be added. And ofcourse the largest mountain of them all; copy protection."
+            },
+            {
+                "type": "p",
+                "text": "My next task is to spruce up the trello now that we're in the beta stage of development. To organise what things to work on in what order, and what version number they'll produce. I'm sure it'll be fine. I'm sure it'll be an adventure!"
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":7, "day":5},
         "title": "Alpha 0.0.9",
         "body": [
