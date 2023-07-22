@@ -1,5 +1,26 @@
 [
     {
+        "date": {"year":2023, "month":7, "day":22},
+        "title": "Beta 0.1.1",
+        "body": [
+            {
+                "type": "p",
+                "text": "I really haven't figured out the whole version numbering thing yet, but this one just contains a few fixes and improvements, so, it seemed appropriate to just do a little jump."
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Dragging a project file onto the window now opens that project (or produces a yes/no dialogue if necessary)",
+                    "Replace id system of underlying engines to improve stability",
+                    "Fix to logging typos",
+                    "Added missing destroy code for the audio nodes in units",
+                    "Fixed \"open, new, create, new, open\" bug"
+                ]
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":7, "day":11},
         "head": [
             {
