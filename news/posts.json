@@ -1,5 +1,24 @@
 [
     {
+        "date": {"year":2023, "month":8, "day":7},
+        "title": "Beta 0.1.2",
+        "body": [
+            {
+                "type": "p",
+                "text": "A couple of small fixes and tweaks ahead of a much larger update"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Fixed audio file player readout bug",
+                    "Internal restructuring means that saves made before this version will not be compatible anymore",
+                    "Audio file player now saves its audio data to the project file, instead of just the address for that file"
+                ]
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":7, "day":22},
         "title": "Beta 0.1.1",
         "body": [
