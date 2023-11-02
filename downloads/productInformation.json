@@ -1,9 +1,9 @@
 {
-    "versionString": "0.1.2 (beta)",
+    "versionString": "0.2.0 (beta)",
     "mac": {
-        "link": "/downloads/mac/0.1.2/Alchemy.dmg"
+        "link": "/downloads/mac/0.2.0/Alchemy.dmg"
     },
     "windows": {
-        "link": "/downloads/windows/0.1.2/AlchemySetup.exe"
+        "link": "/downloads/windows/0.2.0/AlchemySetup.exe"
     }
 }

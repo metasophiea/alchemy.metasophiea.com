@@ -1,5 +1,64 @@
 [
     {
+        "date": {"year":2023, "month":11, "day":2},
+        "title": "Beta 0.2.0",
+        "body": [
+            {
+                "type": "p",
+                "text": "Big changes, setting the groundwork for big things"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Externalized units",
+                    "Configuration file"
+                ]
+            },
+            {
+                "type": "img",
+                "src": "images/2023-11-2/alchemy_0.2.0_test_unit.png",
+                "style": "width:70%;",
+                "class": "centred-image"
+            },
+            {
+                "type": "h3",
+                "text": "Externalized Units"
+            },
+            {
+                "type": "p",
+                "text": "The major change; this allows anyone to create their own units, without having to have access to the original source code. The way this is done it with \"unit description files\", which as the name suggests, are used to describe units. Here you describe the design of the unit, along with its name and selection space as well as some other details. You also define an executable location. This executable is run by the system and acts as the unit's internal logic. All executables are run on their own threads, and thus operate asynchronously from the main program. The program communicates with these executables through the stdio, using (currently) a JSON format). The executable is therefore able to receive information as a a series of events and can send at any time commands for the program to execute."
+            },
+            {
+                "type": "p",
+                "text": "This is all a little vague right now, and I have no documentation for it at all - nor any real examples beyond one testing unit - but future updates will come with a more solid API and better integration. The example unit has it's executable written in JavaScript and is run by a bundled Deno runtime. It also comes with a rudimentary API console written in JavaScript to make development easier. Future updates will see this code converted into TypeScript, allowing for must easier use of this whole idea."
+            },
+            {
+                "type": "p",
+                "text": "I'm looking forward to seeing where this goes, as it finally delivers the ability for people other than me, who know nothing about how this program works - to contribute to the core of what makes Alchemy interesting. It will also allow me to develop units faster."
+            },
+            {
+                "type": "h3",
+                "text": "Configuration File"
+            },
+            {
+                "type": "p",
+                "text": "The configuration file is basically just a settings file read at start-up of the program. Currently its rather limited, with its central feature being the ability to define what directories are scanned for Externalized Units on start-up"
+            },
+            {
+                "type": "h3",
+                "text": "Future Stuff"
+            },
+            {
+                "type": "p",
+                "text": "My plan is to expand on that TypeScript stuff. The sooner I can make it easy to create new units, the sooner I get to all the other interesting ideas I have for the program (like MIDI or Arduino support, or networking)"
+            }
+        ]
+    },
+
+
+
+    {
         "date": {"year":2023, "month":8, "day":7},
         "title": "Beta 0.1.2",
         "body": [
