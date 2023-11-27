@@ -1,5 +1,41 @@
 [
     {
+        "date": {"year":2023, "month":11, "day":27},
+        "title": "Beta 0.2.1",
+        "body": [
+            {
+                "type": "p",
+                "text": "Major improvements to the External Unit API"
+            },
+            {
+                "type": "ul",
+                "style": "list-style-type:\"- \";",
+                "items": [
+                    "Added \"print clipboard\" function to the dev menubar",
+                    "Converted JS console to TS",
+                    "Drastically improved the JSON API, adding new features and organisation (including the ability to create/destroy Alpa nodes and routes)",
+                    "Added two new test external units"
+                ]
+            },
+            {
+                "type": "p",
+                "text": "The real changes here are the conversion to Typescript of the Javascript API console, and the improvements made to the API JSON overall. The JSON improvements will be good for all external programs, it makes the typing of events and structures more clear and consistent, and adds the important yet overlooked create/destroy Node/Route Alpa commands. Thus one can now actually work with the audio system."
+            },
+            {
+                "type": "p",
+                "text": "The Typescript conversion comes in two parts; A, the API is no longer a black-box; the entire structure of the messages that can come from / go to Alchemy has been layed out, allowing developers to see what they're working with. B, the console itself has been rewritten, rearranging some of the methods into more logical positions and of course adding typing to functions."
+            },
+            {
+                "type": "h3",
+                "text": "Plans"
+            },
+            {
+                "type": "p",
+                "text": "My intention in future is to release type sets and consoles for other languages (Rust, Python, C, etc) but for now I'm just sticking with TS as I happen to be familiar with it."
+            }
+        ]
+    },
+    {
         "date": {"year":2023, "month":11, "day":2},
         "title": "Beta 0.2.0",
         "body": [
@@ -27,15 +63,15 @@
             },
             {
                 "type": "p",
-                "text": "The major change; this allows anyone to create their own units, without having to have access to the original source code. The way this is done it with \"unit description files\", which as the name suggests, are used to describe units. Here you describe the design of the unit, along with its name and selection space as well as some other details. You also define an executable location. This executable is run by the system and acts as the unit's internal logic. All executables are run on their own threads, and thus operate asynchronously from the main program. The program communicates with these executables through the stdio, using (currently) a JSON format). The executable is therefore able to receive information as a a series of events and can send at any time commands for the program to execute."
+                "text": "The major change; this allows anyone to create their own units, without having to have access to the original source code. The way this is done it with \"unit description files\", which as the name suggests, are used to describe units. Here you describe the design of the unit, along with its name and selection space as well as some other details. You also define an executable location. This executable is run by the system and acts as the unit's internal logic. All executables are run on their own threads, and thus operate asynchronously from the main program. The program communicates with these executables through the stdio, using (currently) a JSON format. The executable is therefore able to receive information as a a series of events and can send at any time commands for the program to execute."
             },
             {
                 "type": "p",
-                "text": "This is all a little vague right now, and I have no documentation for it at all - nor any real examples beyond one testing unit - but future updates will come with a more solid API and better integration. The example unit has it's executable written in JavaScript and is run by a bundled Deno runtime. It also comes with a rudimentary API console written in JavaScript to make development easier. Future updates will see this code converted into TypeScript, allowing for must easier use of this whole idea."
+                "text": "This is all a little vague right now, and I have no documentation for it at all - nor any real examples beyond one testing unit - but future updates will come with a more solid API and better integration. The example unit has it's executable written in JavaScript and is run by a bundled Deno runtime. It also comes with a rudimentary API console written in JavaScript to make development easier. Future updates will see this code converted into TypeScript, allowing for much easier use of this whole idea."
             },
             {
                 "type": "p",
-                "text": "I'm looking forward to seeing where this goes, as it finally delivers the ability for people other than me, who know nothing about how this program works - to contribute to the core of what makes Alchemy interesting. It will also allow me to develop units faster."
+                "text": "I'm looking forward to seeing where this goes, as it finally delivers the ability for people other than me - who know nothing about how this program works - to contribute to the core of what makes Alchemy interesting. It will also allow me to develop units faster."
             },
             {
                 "type": "h3",
@@ -43,7 +79,7 @@
             },
             {
                 "type": "p",
-                "text": "The configuration file is basically just a settings file read at start-up of the program. Currently its rather limited, with its central feature being the ability to define what directories are scanned for Externalized Units on start-up"
+                "text": "The configuration file is basically just a settings file read at start-up of the program. Currently its rather limited, with its central feature being the ability to define what directories are scanned for Externalized Units on start-up, and whether the program should start in development mode (which itself, doesn't mean much right now"
             },
             {
                 "type": "h3",
@@ -55,9 +91,6 @@
             }
         ]
     },
-
-
-
     {
         "date": {"year":2023, "month":8, "day":7},
         "title": "Beta 0.1.2",
