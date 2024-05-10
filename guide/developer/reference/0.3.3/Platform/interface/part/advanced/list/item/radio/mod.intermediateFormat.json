@@ -1,0 +1,35 @@
+{
+  "type": "Struct",
+  "name": "Radio",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "options",
+        "type": "Vec<String>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "selection",
+        "type": "usize",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

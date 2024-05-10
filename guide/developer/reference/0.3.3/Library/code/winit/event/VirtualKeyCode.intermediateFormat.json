@@ -1,0 +1,998 @@
+{
+  "type": "Enum",
+  "name": "VirtualKeyCode",
+  "description": " Symbolic name for a keyboard key.",
+  "macros": [
+    "#[derive(Debug, Hash, Ord, PartialOrd, PartialEq, Eq, Clone, Copy)]",
+    "#[repr(u32)]",
+    "#[cfg_attr(feature = \"serde\", derive(Serialize, Deserialize))]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Key1",
+        "data": null,
+        "description": "The '1' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key2",
+        "data": null,
+        "description": "The '2' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key3",
+        "data": null,
+        "description": "The '3' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key4",
+        "data": null,
+        "description": "The '4' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key5",
+        "data": null,
+        "description": "The '5' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key6",
+        "data": null,
+        "description": "The '6' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key7",
+        "data": null,
+        "description": "The '7' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key8",
+        "data": null,
+        "description": "The '8' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key9",
+        "data": null,
+        "description": "The '9' key over the letters."
+      },
+      {
+        "macros": [],
+        "name": "Key0",
+        "data": null,
+        "description": "The '0' key over the 'O' and 'P' keys."
+      },
+      {
+        "macros": [],
+        "name": "A",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "B",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "C",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "D",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "E",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "G",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "H",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "I",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "J",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "K",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "L",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "M",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "N",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "O",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "P",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Q",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "R",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "S",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "T",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "U",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "V",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "W",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "X",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Y",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Z",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Escape",
+        "data": null,
+        "description": "The Escape key, next to F1."
+      },
+      {
+        "macros": [],
+        "name": "F1",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F2",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F3",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F4",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F5",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F6",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F7",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F8",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F9",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F10",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F11",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F12",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F13",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F14",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F15",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F16",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F17",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F18",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F19",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F20",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F21",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F22",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F23",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F24",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Snapshot",
+        "data": null,
+        "description": "Print Screen/SysRq."
+      },
+      {
+        "macros": [],
+        "name": "Scroll",
+        "data": null,
+        "description": "Scroll Lock."
+      },
+      {
+        "macros": [],
+        "name": "Pause",
+        "data": null,
+        "description": "Pause/Break key, next to Scroll lock."
+      },
+      {
+        "macros": [],
+        "name": "Insert",
+        "data": null,
+        "description": "`Insert`, next to Backspace."
+      },
+      {
+        "macros": [],
+        "name": "Home",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Delete",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "End",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "PageDown",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "PageUp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Left",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Up",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Right",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Down",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Back",
+        "data": null,
+        "description": "The Backspace key, right over Enter."
+      },
+      {
+        "macros": [],
+        "name": "Return",
+        "data": null,
+        "description": "The Enter key."
+      },
+      {
+        "macros": [],
+        "name": "Space",
+        "data": null,
+        "description": "The space bar."
+      },
+      {
+        "macros": [],
+        "name": "Compose",
+        "data": null,
+        "description": "The \"Compose\" key on Linux."
+      },
+      {
+        "macros": [],
+        "name": "Caret",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numlock",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad0",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad1",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad2",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad3",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad4",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad5",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad6",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad7",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad8",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Numpad9",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadAdd",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadDivide",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadDecimal",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadComma",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadEnter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadEquals",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadMultiply",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NumpadSubtract",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "AbntC1",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "AbntC2",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Apostrophe",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Apps",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Asterisk",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "At",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Ax",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Backslash",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Calculator",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Capital",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Colon",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Comma",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Convert",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Equals",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Grave",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Kana",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Kanji",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LAlt",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LBracket",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LControl",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LShift",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LWin",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Mail",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MediaSelect",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MediaStop",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Minus",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Mute",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MyComputer",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NavigateForward",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NavigateBackward",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NextTrack",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NoConvert",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OEM102",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Period",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "PlayPause",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Plus",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Power",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "PrevTrack",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RAlt",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RBracket",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RControl",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RShift",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RWin",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Semicolon",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Slash",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Sleep",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Stop",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Sysrq",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Tab",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Underline",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Unlabeled",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "VolumeDown",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "VolumeUp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Wake",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebBack",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebFavorites",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebForward",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebHome",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebRefresh",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebSearch",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WebStop",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Yen",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Copy",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Paste",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Cut",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

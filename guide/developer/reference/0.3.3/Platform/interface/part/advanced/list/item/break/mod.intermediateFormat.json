@@ -1,0 +1,30 @@
+{
+  "type": "Struct",
+  "name": "Break",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "height_percentage",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "line_height_percentage",
+        "type": "f32",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

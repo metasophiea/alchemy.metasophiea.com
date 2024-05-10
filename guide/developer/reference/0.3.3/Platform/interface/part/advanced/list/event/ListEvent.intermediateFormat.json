@@ -1,0 +1,42 @@
+{
+  "type": "Struct",
+  "name": "ListEvent",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ItemEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item_event/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "item_numerical_address",
+        "type": "Vec<usize>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "item_id_address",
+        "type": "Vec<String>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "item_event",
+        "type": "ItemEvent",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

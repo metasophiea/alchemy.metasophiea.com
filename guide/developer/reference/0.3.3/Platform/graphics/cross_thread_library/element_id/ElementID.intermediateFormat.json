@@ -1,0 +1,24 @@
+{
+  "type": "TupleStruct",
+  "name": "ElementID",
+  "description": null,
+  "macros": [
+    "#[derive(Hash, PartialEq, Eq, Clone, Copy, PartialOrd, Ord, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ManifestID",
+      "originalName": "ID",
+      "fileAddress": "Library/code/manifest/types/id/ID"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "ManifestID"
+    ]
+  },
+  "exampleTexts": []
+}

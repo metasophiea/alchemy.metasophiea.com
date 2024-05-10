@@ -1,0 +1,103 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "needle_width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "needle_invisible_handle_width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "point_needle_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "area_needle_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "area_body_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "allow_wrapping",
+        "type": "bool",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "points_interactable",
+        "type": "bool",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "areas_interactable",
+        "type": "bool",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

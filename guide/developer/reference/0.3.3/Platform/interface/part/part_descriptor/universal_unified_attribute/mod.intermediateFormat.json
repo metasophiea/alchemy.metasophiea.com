@@ -1,0 +1,1092 @@
+{
+  "type": "Enum",
+  "name": "UniversalUnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(tag = \"type\", content = \"content\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "advanced::unified_attribute::AudioMeterGauge",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/gauge/audio_meter_gauge/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::AudioMeterLevel",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/level/audio_meter_level/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::AudioPort",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/port/audio/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::BooleanPort",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/port/generic_unified_attribute/UnifiedAttribute"
+    },
+    {
+      "name": "advanced::unified_attribute::ButtonCircle",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/button/circle/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::ButtonImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/button/image/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::ButtonPolygon",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/button/polygon/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::ButtonRectangle",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/button/rectangle/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::CheckboxCircle",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/checkbox/circle/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::CheckboxImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/checkbox/image/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::CheckboxPolygon",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/checkbox/polygon/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::CheckboxRectangle",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/checkbox/rectangle/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::Checkboxgrid",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/checkboxgrid/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::DatagramPort",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/port/generic_unified_attribute/UnifiedAttribute"
+    },
+    {
+      "name": "advanced::unified_attribute::DialContinuousDesign1",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/dial/design_1/continuous/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::DialContinuousDesign2",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/dial/design_2/continuous/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::DialContinuousImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/dial/image/continuous/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::DialDiscreteDesign1",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/dial/design_1/discrete/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::DialDiscreteDesign2",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/dial/design_2/discrete/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::DialDiscreteImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/dial/image/discrete/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::F32Port",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/port/generic_unified_attribute/UnifiedAttribute"
+    },
+    {
+      "name": "advanced::unified_attribute::Gauge",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/gauge/gauge/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GaugeImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/gauge/gauge_image/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GlowboxCircle",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/glowbox/circle/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GlowboxImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/glowbox/image/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GlowboxPath",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/glowbox/path/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GlowboxPolygon",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/glowbox/polygon/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GlowboxRectangle",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/glowbox/rectangle/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::Grapher",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/grapher/grapher/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GrapherAudioScope",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/grapher/grapher_audio_scope/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::GrapherPeriodicWave",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/grapher/grapher_periodic_wave/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::Grid",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/grid/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::Level",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/level/level/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::List",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/list/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::MeterGauge",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/gauge/meter_gauge/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::MeterGaugeImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/gauge/meter_gauge_image/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::MeterLevel",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/level/meter_level/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::NeedleOverlay",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/needle_overlay/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::RangeslideDesign1",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/rangeslide/design_1/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::RangeslideDesign2",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/rangeslide/design_2/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::RangeslideImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/rangeslide/image/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::RasterDisplay",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/raster_display/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::ReadoutSevenSegmentDisplay",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/segment_display/readout_seven_segment_display/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::ReadoutSixteenSegmentDisplay",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/segment_display/readout_sixteen_segment_display/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SevenSegmentDisplay",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/segment_display/seven_segment_display/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SixteenSegmentDisplay",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/segment_display/sixteen_segment_display/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SlideContinuousDesign1",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/slide/design_1/continuous/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SlideContinuousDesign2",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/slide/design_2/continuous/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SlideContinuousImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/slide/image/continuous/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SlideDiscreteDesign1",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/slide/design_1/discrete/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SlideDiscreteDesign2",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/slide/design_2/discrete/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::SlideDiscreteImage",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/slide/image/discrete/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::TextLog",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/text_log/unified_attribute/mod"
+    },
+    {
+      "name": "advanced::unified_attribute::WaveformViewer",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/waveform_viewer/unified_attribute/mod"
+    },
+    {
+      "name": "basic::unified_attribute::Character",
+      "originalName": "Character",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Character"
+    },
+    {
+      "name": "basic::unified_attribute::CharacterString",
+      "originalName": "CharacterString",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/CharacterString"
+    },
+    {
+      "name": "basic::unified_attribute::Circle",
+      "originalName": "Circle",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Circle"
+    },
+    {
+      "name": "basic::unified_attribute::CircleWithOutline",
+      "originalName": "CircleWithOutline",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/CircleWithOutline"
+    },
+    {
+      "name": "basic::unified_attribute::Group",
+      "originalName": "Group",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Group"
+    },
+    {
+      "name": "basic::unified_attribute::Image",
+      "originalName": "Image",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Image"
+    },
+    {
+      "name": "basic::unified_attribute::LinearGraph128",
+      "originalName": "LinearGraph128",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/LinearGraph128"
+    },
+    {
+      "name": "basic::unified_attribute::LinearGraph256",
+      "originalName": "LinearGraph256",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/LinearGraph256"
+    },
+    {
+      "name": "basic::unified_attribute::Path",
+      "originalName": "Path",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Path"
+    },
+    {
+      "name": "basic::unified_attribute::Polygon",
+      "originalName": "Polygon",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Polygon"
+    },
+    {
+      "name": "basic::unified_attribute::PolygonWithOutline",
+      "originalName": "PolygonWithOutline",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/PolygonWithOutline"
+    },
+    {
+      "name": "basic::unified_attribute::Rectangle",
+      "originalName": "Rectangle",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/Rectangle"
+    },
+    {
+      "name": "basic::unified_attribute::RectangleWithOutline",
+      "originalName": "RectangleWithOutline",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/RectangleWithOutline"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Group",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Group"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Rectangle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Rectangle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RectangleWithOutline",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::RectangleWithOutline"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Circle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Circle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CircleWithOutline",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::CircleWithOutline"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Polygon",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Polygon"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "PolygonWithOutline",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::PolygonWithOutline"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Path",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Path"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Image",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Image"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Character",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::Character"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CharacterString",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::CharacterString"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LinearGraph128",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::LinearGraph128"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LinearGraph256",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "basic::unified_attribute::LinearGraph256"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GlowboxRectangle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GlowboxRectangle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GlowboxCircle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GlowboxCircle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GlowboxImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GlowboxImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GlowboxPolygon",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GlowboxPolygon"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GlowboxPath",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GlowboxPath"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SevenSegmentDisplay",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SevenSegmentDisplay"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SixteenSegmentDisplay",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SixteenSegmentDisplay"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ReadoutSevenSegmentDisplay",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::ReadoutSevenSegmentDisplay"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ReadoutSixteenSegmentDisplay",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::ReadoutSixteenSegmentDisplay"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Level",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::Level"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MeterLevel",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::MeterLevel"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "AudioMeterLevel",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::AudioMeterLevel"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Gauge",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::Gauge"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GaugeImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GaugeImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MeterGauge",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::MeterGauge"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MeterGaugeImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::MeterGaugeImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "AudioMeterGauge",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::AudioMeterGauge"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RasterDisplay",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::RasterDisplay"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Grid",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::Grid"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Grapher",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::Grapher"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GrapherPeriodicWave",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GrapherPeriodicWave"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GrapherAudioScope",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::GrapherAudioScope"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WaveformViewer",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::WaveformViewer"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "TextLog",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::TextLog"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ButtonRectangle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::ButtonRectangle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ButtonCircle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::ButtonCircle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ButtonPolygon",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::ButtonPolygon"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ButtonImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::ButtonImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CheckboxRectangle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::CheckboxRectangle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CheckboxCircle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::CheckboxCircle"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CheckboxPolygon",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::CheckboxPolygon"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CheckboxImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::CheckboxImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Checkboxgrid",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::Checkboxgrid"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DialContinuousDesign1",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DialContinuousDesign1"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DialDiscreteDesign1",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DialDiscreteDesign1"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DialContinuousDesign2",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DialContinuousDesign2"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DialDiscreteDesign2",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DialDiscreteDesign2"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DialContinuousImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DialContinuousImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DialDiscreteImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DialDiscreteImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SlideContinuousDesign1",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SlideContinuousDesign1"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SlideDiscreteDesign1",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SlideDiscreteDesign1"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SlideContinuousDesign2",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SlideContinuousDesign2"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SlideDiscreteDesign2",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SlideDiscreteDesign2"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SlideContinuousImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SlideContinuousImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SlideDiscreteImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::SlideDiscreteImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RangeslideDesign1",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::RangeslideDesign1"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RangeslideDesign2",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::RangeslideDesign2"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "RangeslideImage",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::RangeslideImage"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "List",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::List"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NeedleOverlay",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::NeedleOverlay"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "BooleanPort",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::BooleanPort"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F32Port",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::F32Port"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "AudioPort",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::AudioPort"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DatagramPort",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "advanced::unified_attribute::DatagramPort"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

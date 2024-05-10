@@ -1,0 +1,97 @@
+{
+  "type": "Struct",
+  "name": "Description",
+  "description": "Used to describe a unit",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(deny_unknown_fields)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Executable",
+      "originalName": null,
+      "fileAddress": "Platform/unit/external_unit/description/Executable"
+    },
+    {
+      "name": "PartDescriptor",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/part_descriptor/part_descriptor/mod"
+    },
+    {
+      "name": "Parts",
+      "originalName": null,
+      "fileAddress": "Platform/unit/external_unit/description/Parts"
+    },
+    {
+      "name": "SimplePolygon",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/simple_polygon/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [
+          "#[serde(default)]"
+        ],
+        "name": "in_development",
+        "type": "bool",
+        "description": "whether the unit should be considered as still under development"
+      },
+      {
+        "macros": [],
+        "name": "model_name",
+        "type": "String",
+        "description": "the model name"
+      },
+      {
+        "macros": [],
+        "name": "print_name",
+        "type": "String",
+        "description": "the display name"
+      },
+      {
+        "macros": [],
+        "name": "space",
+        "type": "SimplePolygon",
+        "description": "the space that the unit will occupy"
+      },
+      {
+        "macros": [
+          "#[serde(default = \"boolean_default_true\")]"
+        ],
+        "name": "collision_active",
+        "type": "bool",
+        "description": "whether this unit should collide with others"
+      },
+      {
+        "macros": [],
+        "name": "base",
+        "type": "Vec<PartDescriptor>",
+        "description": "a collection of parts describing the 'base plate' of the unit"
+      },
+      {
+        "macros": [],
+        "name": "parts",
+        "type": "Parts",
+        "description": "the list of parts"
+      },
+      {
+        "macros": [],
+        "name": "executable",
+        "type": "Option<Executable>",
+        "description": "the external executable associated with this unit"
+      }
+    ]
+  },
+  "exampleTexts": [
+    "{\n    \"modelName\": \"model-name\",\n    \"printName\": \"Fancy Model Name\",\n    \"space\": [\n        {\"x\": 0.0, \"y\": 0.0},\n        {\"x\": 10.0, \"y\": 0.0},\n        {\"x\": 10.0, \"y\": 10.0},\n        {\"x\": 0.0, \"y\": 10.0}\n    ],\n\n    \"base\": [],\n    \"parts\": {\n        \"front\":[]\n    },\n\n    \"executable\": {\"mac\": \"path/to/the/exe\"}\n}",
+    "{\n    \"inDevelopment\": true,\n    \"modelName\": \"test_1\",\n    \"printName\": \"Test One\",\n    \"space\": [\n        {\"x\": 0.0, \"y\": 0.0},\n        {\"x\": 0.0, \"y\": 130.0},\n        {\"x\": 130.0, \"y\": 130.0},\n        {\"x\": 130.0, \"y\": 0.0}\n    ],\n    \"collisionActive\": true,\n    \"executable\": {\n        \"mac\": \"../deno\",\n        \"win\": \"../deno.exe\",\n        \"args\": [\"run\", \"--allow-read\", \"main.ts\"]\n    },\n    \"base\": [\n        {\n            \"name\": \"backing\",\n            \"attribute\": {\n                \"type\": \"rectangle\",\n                \"content\": {\n                    \"width\": 130.0,\n                    \"height\": 130.0,\n                    \"colour\": {\"r\": 0.75, \"g\": 0.75, \"b\": 0.75}\n                }\n            }\n        }\n    ],\n    \"parts\": {\n        \"front\": [\n            {\n                \"name\": \"simple_light_switch_glowbox\",\n                \"attribute\": {\n                    \"type\": \"glowboxRectangle\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 10.0\n                    }\n                }\n            },\n            {\n                \"name\": \"simple_light_switch_button\",\n                \"attribute\": {\n                    \"type\": \"buttonRectangle\",\n                    \"content\": {\n                        \"x\": 40.0,\n                        \"y\": 10.0\n                    }\n                }\n            },\n            {\n                \"name\": \"port_light_glowbox\",\n                \"attribute\": {\n                    \"type\": \"glowboxRectangle\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 50.0\n                    }\n                }\n            },\n            {\n                \"name\": \"port_light_port\",\n                \"attribute\": {\n                    \"type\": \"booleanPort\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 80.0,\n                        \"angle\": 3.1415927\n                    }\n                }\n            },\n            {\n                \"name\": \"port_button_button\",\n                \"attribute\": {\n                    \"type\": \"buttonRectangle\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 90.0\n                    }\n                }\n            },\n            {\n                \"name\": \"port_button_port\",\n                \"attribute\": {\n                    \"type\": \"booleanPort\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 120.0,\n                        \"angle\": 3.1415927\n                    }\n                }\n            }\n        ]\n    }\n}",
+    "{\n    \"modelName\": \"test_2\",\n    \"printName\": \"Test Two\",\n    \"space\": [\n        {\"x\": 0.0, \"y\": 0.0},\n        {\"x\": 0.0, \"y\": 130.0},\n        {\"x\": 130.0, \"y\": 130.0},\n        {\"x\": 130.0, \"y\": 0.0}\n    ],\n    \"collisionActive\": true,\n    \"executable\": {\n        \"mac\": \"../deno\",\n        \"win\": \"../deno.exe\",\n        \"args\": [\"run\", \"--allow-read\", \"main.ts\"]\n    },\n    \"base\": [\n        {\n            \"name\": \"backing\",\n            \"attribute\": {\n                \"type\": \"rectangle\",\n                \"content\": {\n                    \"width\": 130.0,\n                    \"height\": 130.0,\n                    \"colour\": {\"r\": 0.75, \"g\": 0.75, \"b\": 0.75}\n                }\n            }\n        }\n    ],\n    \"parts\": {\n        \"front\": [\n            {\n                \"name\": \"readout_1\",\n                \"attribute\": {\n                    \"type\": \"readoutSevenSegmentDisplay\",\n                    \"content\": {\n                        \"x\": 15.0,\n                        \"y\": 15.0,\n                        \"decimal_places\": true,\n                        \"mode\": \"static\"\n                    }\n                }\n            },\n            {\n                \"name\": \"port_1\",\n                \"attribute\": {\n                    \"type\": \"f32Port\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 45.0,\n                        \"angle\": 3.1415927\n                    }\n                }\n            },\n            {\n                \"name\": \"dial_1\",\n                \"attribute\": {\n                    \"type\": \"dialContinuousDesign1\",\n                    \"content\": {\n                        \"x\": 30.0,\n                        \"y\": 70.0\n                    }\n                }\n            },\n            {\n                \"name\": \"port_2\",\n                \"attribute\": {\n                    \"type\": \"f32Port\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 95.0,\n                        \"angle\": 3.1415927\n                    }\n                }\n            }\n        ]\n    }\n}",
+    "{\n    \"modelName\": \"test_3\",\n    \"printName\": \"Test Three\",\n    \"space\": [\n        {\"x\": 0.0, \"y\": 0.0},\n        {\"x\": 0.0, \"y\": 130.0},\n        {\"x\": 130.0, \"y\": 130.0},\n        {\"x\": 130.0, \"y\": 0.0}\n    ],\n    \"collisionActive\": true,\n    \"executable\": {\n        \"mac\": \"../deno\",\n        \"win\": \"../deno.exe\",\n        \"args\": [\"run\", \"--allow-read\", \"main.ts\"]\n    },\n    \"base\": [\n        {\n            \"name\": \"backing\",\n            \"attribute\": {\n                \"type\": \"rectangle\",\n                \"content\": {\n                    \"width\": 130.0,\n                    \"height\": 130.0,\n                    \"colour\": {\"r\": 0.75, \"g\": 0.75, \"b\": 0.75}\n                }\n            }\n        }\n    ],\n    \"parts\": {\n        \"front\": [\n            {\n                \"name\": \"audio_port_1\",\n                \"attribute\": {\n                    \"type\": \"audioPort\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 80.0,\n                        \"angle\": 3.1415927,\n                        \"mode\": \"producer\"\n                    }\n                }\n            },\n            {\n                \"name\": \"audio_port_2\",\n                \"attribute\": {\n                    \"type\": \"audioPort\",\n                    \"content\": {\n                        \"x\": 10.0,\n                        \"y\": 40.0,\n                        \"angle\": 3.1415927,\n                        \"mode\": \"consumer\"\n                    }\n                }\n            }\n        ]\n    }\n}"
+  ]
+}

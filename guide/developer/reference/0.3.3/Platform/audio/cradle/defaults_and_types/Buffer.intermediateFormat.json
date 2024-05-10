@@ -1,0 +1,26 @@
+{
+  "type": "TypeAlias",
+  "name": "Buffer",
+  "description": null,
+  "macros": [],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Sample",
+      "originalName": null,
+      "fileAddress": "Platform/audio/cradle/defaults_and_types/Sample"
+    }
+  ],
+  "constants": [
+    {
+      "name": "FRAME_LENGTH",
+      "originalName": null,
+      "fileAddress": "Platform/audio/cradle/defaults_and_types/FRAME_LENGTH"
+    }
+  ],
+  "typeSpecificData": {
+    "type": "TypeAlias",
+    "content": "[Sample; FRAME_LENGTH]"
+  },
+  "exampleTexts": []
+}

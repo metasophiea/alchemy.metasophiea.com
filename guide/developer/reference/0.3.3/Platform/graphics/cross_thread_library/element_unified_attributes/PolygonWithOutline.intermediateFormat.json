@@ -1,0 +1,101 @@
+{
+  "type": "Struct",
+  "name": "PolygonWithOutline",
+  "description": null,
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Colour",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    },
+    {
+      "name": "HyperPolygon",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/hyper_polygon/mod"
+    },
+    {
+      "name": "PathJointType",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/types/path_joint_type/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "points",
+        "type": "Option<HyperPolygon>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "path_joint_type",
+        "type": "Option<PathJointType>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "outline_balance_outer",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "outline_balance_inner",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "body_colour",
+        "type": "Option<Colour>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "line_colour",
+        "type": "Option<Colour>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,103 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "RangeValue",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/rangeslide/range_value/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "handle_height_percentage",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "span_width_percentage",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "active",
+        "type": "bool",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "reset_value",
+        "type": "Option<RangeValue>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "style_backing",
+        "type": "Option<std::path::PathBuf>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "style_start_handle",
+        "type": "Option<std::path::PathBuf>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "style_end_handle",
+        "type": "Option<std::path::PathBuf>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "style_span",
+        "type": "Option<std::path::PathBuf>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,31 @@
+{
+  "type": "Struct",
+  "name": "Point",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": [
+    "{\"x\":10.0, \"y\":10.0}"
+  ]
+}

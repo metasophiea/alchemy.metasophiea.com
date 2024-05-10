@@ -1,0 +1,14 @@
+{
+  "type": "TypeAlias",
+  "name": "Sample",
+  "description": null,
+  "macros": [],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TypeAlias",
+    "content": "f32"
+  },
+  "exampleTexts": []
+}

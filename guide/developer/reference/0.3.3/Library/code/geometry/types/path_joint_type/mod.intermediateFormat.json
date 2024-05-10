@@ -1,0 +1,63 @@
+{
+  "type": "Enum",
+  "name": "PathJointType",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "None",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Flat",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Sharp",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "f32"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Round",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "u32"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DynamicRound",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "u32"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

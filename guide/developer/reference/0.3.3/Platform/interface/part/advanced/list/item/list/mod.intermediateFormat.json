@@ -1,0 +1,53 @@
+{
+  "type": "Struct",
+  "name": "List",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Item",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "items",
+        "type": "Vec<Item>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "open",
+        "type": "bool",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

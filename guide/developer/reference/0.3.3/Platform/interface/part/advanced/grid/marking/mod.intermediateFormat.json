@@ -1,0 +1,36 @@
+{
+  "type": "Struct",
+  "name": "Marking",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "position",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text",
+        "type": "Option<String>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_position_offset",
+        "type": "Option<(f32,f32)>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

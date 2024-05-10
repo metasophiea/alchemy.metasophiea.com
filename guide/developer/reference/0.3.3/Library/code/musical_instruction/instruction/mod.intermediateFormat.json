@@ -1,0 +1,52 @@
+{
+  "type": "Enum",
+  "name": "Instruction",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(tag = \"type\", content = \"content\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "CeaseNote",
+      "originalName": null,
+      "fileAddress": "Library/code/musical_instruction/instruction/cease_note/mod"
+    },
+    {
+      "name": "PerformNote",
+      "originalName": null,
+      "fileAddress": "Library/code/musical_instruction/instruction/perform_note/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "PerformNote",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "PerformNote"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CeaseNote",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "CeaseNote"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

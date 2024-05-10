@@ -1,0 +1,147 @@
+{
+  "type": "Enum",
+  "name": "Item",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Break",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/break/mod"
+    },
+    {
+      "name": "Button",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/button/mod"
+    },
+    {
+      "name": "Checkbox",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/checkbox/mod"
+    },
+    {
+      "name": "List",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/list/mod"
+    },
+    {
+      "name": "Radio",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/radio/mod"
+    },
+    {
+      "name": "Space",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/space/mod"
+    },
+    {
+      "name": "Text",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/text/mod"
+    },
+    {
+      "name": "Textbreak",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/textbreak/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Space",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Space"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Break",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Break"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Textbreak",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Textbreak"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Text",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Text"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Button",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Button"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Checkbox",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Checkbox"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Radio",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Radio"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "List",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "List"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

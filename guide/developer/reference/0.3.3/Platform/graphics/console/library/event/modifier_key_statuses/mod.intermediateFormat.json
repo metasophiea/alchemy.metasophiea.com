@@ -1,0 +1,42 @@
+{
+  "type": "Struct",
+  "name": "ModifierKeyStatuses",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "alt_key",
+        "type": "bool",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ctrl_key",
+        "type": "bool",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "meta_key",
+        "type": "bool",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "shift_key",
+        "type": "bool",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

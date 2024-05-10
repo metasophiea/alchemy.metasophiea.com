@@ -1,0 +1,79 @@
+{
+  "type": "Struct",
+  "name": "ButtonStyle",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize, PartialEq)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "body_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "line_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_font",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_size",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_spacing",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_inter_character_spacing",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_detail",
+        "type": "usize",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_colour",
+        "type": "vivid::Colour",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

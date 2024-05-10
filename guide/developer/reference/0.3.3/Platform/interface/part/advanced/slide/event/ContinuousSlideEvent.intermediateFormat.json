@@ -1,0 +1,22 @@
+{
+  "type": "TypeAlias",
+  "name": "ContinuousSlideEvent",
+  "description": null,
+  "macros": [],
+  "generics": [
+    "f32"
+  ],
+  "nonStandardTypes": [
+    {
+      "name": "SlideEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/slide/event/SlideEvent"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TypeAlias",
+    "content": "SlideEvent<f32>"
+  },
+  "exampleTexts": []
+}

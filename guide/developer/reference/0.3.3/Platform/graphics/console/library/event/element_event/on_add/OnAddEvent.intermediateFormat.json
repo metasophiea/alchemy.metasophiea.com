@@ -1,0 +1,36 @@
+{
+  "type": "Struct",
+  "name": "OnAddEvent",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Copy, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ElementID",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/element_id/ElementID"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "group_id",
+        "type": "ElementID",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "child_id",
+        "type": "ElementID",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

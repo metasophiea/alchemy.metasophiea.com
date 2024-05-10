@@ -1,0 +1,30 @@
+{
+  "type": "Enum",
+  "name": "PrintingModeWidthCalculation",
+  "description": null,
+  "macros": [
+    "#[derive(PartialEq, Eq, Hash, Clone, Copy, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Filling",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Absolute",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

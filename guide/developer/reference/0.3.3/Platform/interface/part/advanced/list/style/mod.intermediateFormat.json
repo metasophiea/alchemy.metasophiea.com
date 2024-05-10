@@ -1,0 +1,52 @@
+{
+  "type": "Struct",
+  "name": "Style",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ButtonStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/style/ButtonStyle"
+    },
+    {
+      "name": "ButtonStyleCollection",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/style/ButtonStyleCollection"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "background_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "break_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "button",
+        "type": "ButtonStyleCollection<ButtonStyle>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

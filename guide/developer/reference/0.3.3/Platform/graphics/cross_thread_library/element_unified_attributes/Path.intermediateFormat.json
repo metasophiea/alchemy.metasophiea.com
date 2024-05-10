@@ -1,0 +1,106 @@
+{
+  "type": "Struct",
+  "name": "Path",
+  "description": null,
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Colour",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    },
+    {
+      "name": "PathCapType",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/types/path_cap_type/mod"
+    },
+    {
+      "name": "PathJointType",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/types/path_joint_type/mod"
+    },
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "points",
+        "type": "Option<Vec<Point>>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "loop_path",
+        "type": "Option<bool>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "balance",
+        "type": "Option<f32>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "path_cap_type",
+        "type": "Option<PathCapType>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "path_joint_type",
+        "type": "Option<PathJointType>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "Option<Colour>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

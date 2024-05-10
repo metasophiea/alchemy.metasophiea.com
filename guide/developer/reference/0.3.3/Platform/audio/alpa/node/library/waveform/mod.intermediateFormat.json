@@ -1,0 +1,44 @@
+{
+  "type": "Enum",
+  "name": "Waveform",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Default, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [
+          "#[default]"
+        ],
+        "name": "Sine",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Square",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Triangle",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Noise",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

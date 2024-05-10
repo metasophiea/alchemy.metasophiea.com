@@ -1,0 +1,52 @@
+{
+  "type": "Struct",
+  "name": "Data",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Copy, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    },
+    {
+      "name": "winit::event::TouchPhase",
+      "originalName": "TouchPhase",
+      "fileAddress": "Library/code/winit/event/TouchPhase"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "delta",
+        "type": "Point",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "phase",
+        "type": "winit::event::TouchPhase",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,29 @@
+{
+  "type": "TupleStruct",
+  "name": "AudioConnectionResult",
+  "description": null,
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "AudioPortID",
+      "originalName": null,
+      "fileAddress": "Platform/interface/central_exchange/types/port_id/audio/AudioPortID"
+    },
+    {
+      "name": "ConnectionResult",
+      "originalName": null,
+      "fileAddress": "Platform/interface/exchange/structs/connection_result/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "ConnectionResult<AudioPortID>"
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,69 @@
+{
+  "type": "Struct",
+  "name": "MouseWheelEvent",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Data",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/console/library/event/mouse_wheel/data/mod"
+    },
+    {
+      "name": "ElementID",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/element_id/ElementID"
+    },
+    {
+      "name": "ModifierKeyStatuses",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/console/library/event/modifier_key_statuses/mod"
+    },
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "event_data",
+        "type": "Data",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "modifier_key_statuses",
+        "type": "ModifierKeyStatuses",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "workspace_point",
+        "type": "Point",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "all_element_ids",
+        "type": "Vec<ElementID>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "relevant_element_ids",
+        "type": "Vec<ElementID>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

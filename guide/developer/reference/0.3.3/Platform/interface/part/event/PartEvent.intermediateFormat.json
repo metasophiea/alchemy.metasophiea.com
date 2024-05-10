@@ -1,0 +1,212 @@
+{
+  "type": "Enum",
+  "name": "PartEvent",
+  "description": null,
+  "macros": [
+    "#[derive(PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(tag = \"type\", content = \"content\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "BasicPartEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/basic/event/BasicPartEvent"
+    },
+    {
+      "name": "ButtonEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/event/ButtonEvent"
+    },
+    {
+      "name": "CheckboxEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/checkbox/event/CheckboxEvent"
+    },
+    {
+      "name": "CheckboxgridEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/checkboxgrid/event/CheckboxgridEvent"
+    },
+    {
+      "name": "ContinuousDialEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/dial/event/ContinuousDialEvent"
+    },
+    {
+      "name": "ContinuousSlideEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/slide/event/ContinuousSlideEvent"
+    },
+    {
+      "name": "DiscreteDialEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/dial/event/DiscreteDialEvent"
+    },
+    {
+      "name": "DiscreteSlideEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/slide/event/DiscreteSlideEvent"
+    },
+    {
+      "name": "ListEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/event/ListEvent"
+    },
+    {
+      "name": "NeedleOverlayEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/needle_overlay/event/NeedleOverlayEvent"
+    },
+    {
+      "name": "PortEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/port/event/PortEvent"
+    },
+    {
+      "name": "RangeslideEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/rangeslide/event/RangeslideEvent"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Basic",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "BasicPartEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Button",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "ButtonEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Checkbox",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "CheckboxEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Checkboxgrid",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "CheckboxgridEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ContinuousDial",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "ContinuousDialEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DiscreteDial",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "DiscreteDialEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ContinuousSlide",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "ContinuousSlideEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DiscreteSlide",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "DiscreteSlideEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Rangeslide",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "RangeslideEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "List",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "ListEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "NeedleOverlayEvent",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "NeedleOverlayEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Port",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "PortEvent"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

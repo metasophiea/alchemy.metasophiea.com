@@ -1,0 +1,78 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    },
+    {
+      "name": "SnappingThreshold",
+      "originalName": null,
+      "fileAddress": "Platform/interface/exchange/structs/snapping_threshold/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "anchor",
+        "type": "Point",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "connection_point_anchor",
+        "type": "Point",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "snapping_threshold",
+        "type": "Option<SnappingThreshold>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,40 @@
+{
+  "type": "Struct",
+  "name": "Directory",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "print_name",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [
+          "#[serde(default = \"default_sub_list_width\")]"
+        ],
+        "name": "sub_list_width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [
+          "#[serde(default)]"
+        ],
+        "name": "in_development",
+        "type": "bool",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

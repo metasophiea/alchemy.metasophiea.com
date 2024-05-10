@@ -1,0 +1,92 @@
+{
+  "type": "Enum",
+  "name": "PortEvent",
+  "description": null,
+  "macros": [
+    "#[derive(PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(tag = \"type\", content = \"content\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ConnectionResult",
+      "originalName": null,
+      "fileAddress": "Platform/interface/central_exchange/types/connection_result/mod"
+    },
+    {
+      "name": "Message",
+      "originalName": null,
+      "fileAddress": "Platform/interface/central_exchange/types/message/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "WrangleStarted",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Wrangle",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Option<ConnectionResult>"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WrangleStopped",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Option<ConnectionResult>"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Break",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "ConnectionResult"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GainedConnection",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LostConnection",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Message",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Message"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

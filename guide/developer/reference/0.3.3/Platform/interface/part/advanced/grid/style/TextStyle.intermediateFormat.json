@@ -1,0 +1,54 @@
+{
+  "type": "Struct",
+  "name": "TextStyle",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "size",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "font",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "horizontal_position_offset",
+        "type": "Option<(f32,f32)>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "vertical_position_offset",
+        "type": "Option<(f32,f32)>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

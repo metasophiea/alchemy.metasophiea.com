@@ -1,0 +1,54 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "radius",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "glow",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "dim",
+        "type": "vivid::Colour",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

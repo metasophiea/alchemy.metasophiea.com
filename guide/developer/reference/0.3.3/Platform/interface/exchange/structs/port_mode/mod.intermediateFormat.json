@@ -1,0 +1,30 @@
+{
+  "type": "Enum",
+  "name": "PortMode",
+  "description": null,
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Consumer",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Producer",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

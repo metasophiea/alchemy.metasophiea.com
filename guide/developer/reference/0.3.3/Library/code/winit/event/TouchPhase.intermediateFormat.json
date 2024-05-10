@@ -1,0 +1,43 @@
+{
+  "type": "Enum",
+  "name": "TouchPhase",
+  "description": " Describes touch-screen input state.",
+  "macros": [
+    "#[derive(Debug, Hash, PartialEq, Eq, Clone, Copy)]",
+    "#[cfg_attr(feature = \"serde\", derive(Serialize, Deserialize))]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Started",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Moved",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Ended",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Cancelled",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

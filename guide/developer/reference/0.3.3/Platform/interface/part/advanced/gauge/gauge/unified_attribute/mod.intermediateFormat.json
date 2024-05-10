@@ -1,0 +1,85 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "needle_angle_bounds",
+        "type": "(f32, f32)",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "needle_articulation_point",
+        "type": "(f32, f32)",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "backing_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "needle_colours",
+        "type": "Vec<vivid::Colour>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "needle_length_percentage",
+        "type": "f32",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

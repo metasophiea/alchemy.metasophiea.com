@@ -1,0 +1,43 @@
+{
+  "type": "Struct",
+  "name": "Executable",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(deny_unknown_fields)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [
+          "#[serde(skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "name": "mac",
+        "type": "Option<PathBuf>",
+        "description": null
+      },
+      {
+        "macros": [
+          "#[serde(skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "name": "win",
+        "type": "Option<PathBuf>",
+        "description": null
+      },
+      {
+        "macros": [
+          "#[serde(default)]"
+        ],
+        "name": "args",
+        "type": "Vec<String>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

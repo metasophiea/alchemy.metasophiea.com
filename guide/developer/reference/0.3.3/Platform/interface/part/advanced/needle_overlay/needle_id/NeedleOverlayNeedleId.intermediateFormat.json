@@ -1,0 +1,29 @@
+{
+  "type": "Struct",
+  "name": "NeedleOverlayNeedleId",
+  "description": null,
+  "macros": [
+    "#[derive(Hash, PartialEq, Eq, Clone, Copy, PartialOrd, Ord, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ManifestID",
+      "originalName": "ID",
+      "fileAddress": "Library/code/manifest/types/id/ID"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "ManifestID",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

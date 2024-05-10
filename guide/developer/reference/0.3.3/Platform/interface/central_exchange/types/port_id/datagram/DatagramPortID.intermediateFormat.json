@@ -1,0 +1,24 @@
+{
+  "type": "TupleStruct",
+  "name": "DatagramPortID",
+  "description": null,
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "PortID",
+      "originalName": null,
+      "fileAddress": "Platform/interface/exchange/structs/port_id/PortID"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "PortID"
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,42 @@
+{
+  "type": "Struct",
+  "name": "Button",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "String",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_left",
+        "type": "Option<String>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_centre",
+        "type": "Option<String>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "text_right",
+        "type": "Option<String>",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

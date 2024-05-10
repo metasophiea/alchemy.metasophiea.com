@@ -1,0 +1,124 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": null,
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "LineStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/grid/style/LineStyle"
+    },
+    {
+      "name": "Marking",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/grid/marking/mod"
+    },
+    {
+      "name": "TextStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/grid/style/TextStyle"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "foreground_style",
+        "type": "LineStyle",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "background_style",
+        "type": "LineStyle",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "background_text_style",
+        "type": "TextStyle",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "background_horizontal_markings_x_position",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "background_horizontal_markings",
+        "type": "Vec<Marking>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "background_vertical_markings_y_position",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "background_vertical_markings",
+        "type": "Vec<Marking>",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "backing_colour",
+        "type": "vivid::Colour",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "update_delay",
+        "type": "usize",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

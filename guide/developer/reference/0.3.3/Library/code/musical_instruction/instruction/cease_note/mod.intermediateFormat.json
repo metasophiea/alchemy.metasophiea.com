@@ -1,0 +1,35 @@
+{
+  "type": "Struct",
+  "name": "CeaseNote",
+  "description": null,
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Name",
+      "originalName": null,
+      "fileAddress": "Library/code/musical_instruction/name/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "name",
+        "type": "Name",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "octave",
+        "type": "i8",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}
