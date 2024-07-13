@@ -3,271 +3,271 @@
 		"address": "Platform/interface/exchange/structs/snapping_threshold/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "SnappingThreshold",
-		"description": null
+		"description": "The distances from a port that a wrangled cable may connect or disconnect"
 	},
 	{
 		"address": "Platform/interface/exchange/structs/port_id/PortID.intermediateFormat.json",
 		"type": "Struct",
 		"name": "PortID",
-		"description": null
+		"description": "The unique ID of a port"
 	},
 	{
 		"address": "Platform/interface/exchange/structs/port_mode/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PortMode",
-		"description": null
+		"description": "This value defines the direction-of-flow for this port. This only applies to Audio ports and as such is used to define whether a certain point will be sending audio data, or is set up to receive it"
 	},
 	{
 		"address": "Platform/interface/exchange/structs/connection_result/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ConnectionResult",
-		"description": null
+		"description": "A collection of data reporting the details of a port's connection being made, changed or broken."
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/port_id/f_32/F32PortID.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "F32PortID",
-		"description": null
+		"description": "A port ID specific to the F32 connection type"
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/port_id/audio/AudioPortID.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "AudioPortID",
-		"description": null
+		"description": "A port ID specific to the Audio connection type"
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/port_id/boolean/BooleanPortID.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "BooleanPortID",
-		"description": null
+		"description": "A port ID specific to the Boolean connection type"
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/port_id/datagram/DatagramPortID.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "DatagramPortID",
-		"description": null
+		"description": "A port ID specific to the Datagram connection type"
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/message/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Message",
-		"description": null
+		"description": "The data structure that is sent from one port to another, holding as payload the data type for each connection type"
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/connection_result/f_32/F32ConnectionResult.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "F32ConnectionResult",
-		"description": null
+		"description": "A collection of data reporting the details of a F32 port's connection being made, changed or broken."
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/connection_result/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ConnectionResult",
-		"description": null
+		"description": "A unified connection result type, containing all variations of connection result for each connection type"
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/connection_result/audio/AudioConnectionResult.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "AudioConnectionResult",
-		"description": null
+		"description": "A collection of data reporting the details of an Audio port's connection being made, changed or broken."
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/connection_result/boolean/BooleanConnectionResult.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "BooleanConnectionResult",
-		"description": null
+		"description": "A collection of data reporting the details of a Boolean port's connection being made, changed or broken."
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/connection_result/datagram/DatagramConnectionResult.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "DatagramConnectionResult",
-		"description": null
+		"description": "A collection of data reporting the details of a Datagram port's connection being made, changed or broken."
 	},
 	{
 		"address": "Platform/interface/central_exchange/types/datagram/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Datagram",
-		"description": null
+		"description": "The data structure for Datagram connection types. Datagram connections are sort of the catch-all for types of transmission that don't fit neatly into the other types. As such, the basic variant of this type is a string, allowing units to ultimately send any kind of data they like.\nAtop this, other formats are included for typical uses of the Datagram port. In this way the units don't have to constantly perform serialization and deserialization, nor have concern about the format of such structures."
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/design_1/discrete/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Discrete Slide (Design 1)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/design_1/continuous/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Continuous Slide (Design 1)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/image/discrete/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Discrete Slide (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/image/continuous/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Continuous Slide (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/event/SlideEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "SlideEvent",
-		"description": null
+		"description": "An generic event generated by a slide part"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/event/ContinuousSlideEvent.intermediateFormat.json",
 		"type": "TypeAlias",
 		"name": "ContinuousSlideEvent",
-		"description": null
+		"description": "An event generated by a continuous slide part"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/event/DiscreteSlideEvent.intermediateFormat.json",
 		"type": "TypeAlias",
 		"name": "DiscreteSlideEvent",
-		"description": null
+		"description": "An event generated by a discrete slide part"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/design_2/discrete/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Discrete Slide (Design 2)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/slide/design_2/continuous/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Continuous Slide (Design 2)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkbox/polygon/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Polygon Checkbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkbox/image/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Image Checkbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkbox/rectangle/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Rectangle Checkbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkbox/circle/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Circle Checkbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkbox/event/CheckboxEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "CheckboxEvent",
-		"description": null
+		"description": "Describes the state of a checkbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkboxgrid/event/CheckboxgridEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "CheckboxgridEvent",
-		"description": null
+		"description": "Describes the state of a checkboxgrid"
 	},
 	{
 		"address": "Platform/interface/part/advanced/checkboxgrid/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Checkboxgrid"
 	},
 	{
 		"address": "Platform/interface/part/advanced/segment_display/readout_sixteen_segment_display/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The universal attribute for the Sixteen Segment Display Readout"
 	},
 	{
 		"address": "Platform/interface/part/advanced/segment_display/sixteen_segment_display/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The universal attribute for the Sixteen Segment Display"
 	},
 	{
 		"address": "Platform/interface/part/advanced/segment_display/seven_segment_display/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The universal attribute for the Seven Segment Display"
 	},
 	{
 		"address": "Platform/interface/part/advanced/segment_display/readout_display_mode.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ReadoutDisplayMode",
-		"description": null
+		"description": "The method that the display will take when displaying text"
 	},
 	{
 		"address": "Platform/interface/part/advanced/segment_display/readout_seven_segment_display/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The universal attribute for the Seven Segment Display Readout"
 	},
 	{
 		"address": "Platform/interface/part/advanced/glowbox/path/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Path Glowbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/glowbox/polygon/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Polygon Glowbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/glowbox/image/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Image Glowbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/glowbox/rectangle/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Rectangle Glowbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/glowbox/circle/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Circle Glowbox"
 	},
 	{
 		"address": "Platform/interface/part/advanced/dial/design_1/discrete/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Discrete Dial (Design 1)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/dial/design_1/continuous/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Continuous Dial (Design 1)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/dial/image/discrete/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Discrete Dial (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/dial/image/continuous/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Continuous Dial (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/dial/event/DiscreteDialEvent.intermediateFormat.json",
@@ -291,13 +291,13 @@
 		"address": "Platform/interface/part/advanced/dial/design_2/discrete/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Discrete Dial (Design 2)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/dial/design_2/continuous/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Continuous Dial (Design 2)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/rangeslide/range_value/mod.intermediateFormat.json",
@@ -309,343 +309,343 @@
 		"address": "Platform/interface/part/advanced/rangeslide/design_1/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for a Rangeslide (Design 1)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/rangeslide/image/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for a Rangeslide (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/rangeslide/event/RangeslideEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "RangeslideEvent",
-		"description": null
+		"description": "An event generated by a rangeslide"
 	},
 	{
 		"address": "Platform/interface/part/advanced/rangeslide/design_2/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for a Rangeslide (Design 2)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/polygon/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Polygon Button"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/style/ButtonStyle.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ButtonStyle",
-		"description": null
+		"description": "A structure used to describe the style state of a button"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/style/ButtonStyleCollection.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ButtonStyleCollection",
-		"description": null
+		"description": "a collection of styles for buttons, covering all possible states a button could have"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/image/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Image Button"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/rectangle/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Rectangle Button"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/circle/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Circle Button"
 	},
 	{
 		"address": "Platform/interface/part/advanced/button/event/ButtonEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ButtonEvent",
-		"description": null
+		"description": "Describes the state of a button"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grapher/grapher/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Grapher"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grapher/grapher_audio_scope/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Grapher Audio Scope"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grapher/grapher_periodic_wave/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Grapher Periodic Wave"
 	},
 	{
 		"address": "Platform/interface/part/advanced/needle_overlay/needle_id/NeedleOverlayNeedleId.intermediateFormat.json",
 		"type": "Struct",
 		"name": "NeedleOverlayNeedleId",
-		"description": null
+		"description": "the id of a particular needle"
 	},
 	{
 		"address": "Platform/interface/part/advanced/needle_overlay/area_id/NeedleOverlayAreaId.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "NeedleOverlayAreaId",
-		"description": null
+		"description": "the id of a particular area"
 	},
 	{
 		"address": "Platform/interface/part/advanced/needle_overlay/event/NeedleOverlayEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "NeedleOverlayEvent",
-		"description": null
+		"description": "An event generated by the Needle Overlay part"
 	},
 	{
 		"address": "Platform/interface/part/advanced/needle_overlay/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Needle Overlay"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/style/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Style",
-		"description": null
+		"description": "Used to define the style that a list should take"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/radio/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Radio",
-		"description": null
+		"description": "An item used as a radio selector in lists"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/checkbox/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Checkbox",
-		"description": null
+		"description": "An item used as a checkbox in lists"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Item",
-		"description": null
+		"description": "An enum covering all possible item types"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/button/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Button",
-		"description": null
+		"description": "An item used as a button in lists"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/list/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "List",
-		"description": null
+		"description": "An item used as a sub-list in lists"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/textbreak/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Textbreak",
-		"description": null
+		"description": "An item used as a spacer in lists, with text and a horizontal line across the centre"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/text/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Text",
-		"description": null
+		"description": "An item used as a non-interactable piece of text in lists"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/break/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Break",
-		"description": null
+		"description": "An item used as a spacer in lists, with a horizontal line across the centre"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item/space/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Space",
-		"description": null
+		"description": "An item used as a spacer in lists"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/item_event/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ItemEvent",
-		"description": null
+		"description": "An event produced by a List when an item is interacted with"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/event/ListEvent.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ListEvent",
-		"description": null
+		"description": "An event structure describing an event within a List"
 	},
 	{
 		"address": "Platform/interface/part/advanced/list/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the List"
 	},
 	{
 		"address": "Platform/interface/part/advanced/gauge/meter_gauge/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Meter Gauge"
 	},
 	{
 		"address": "Platform/interface/part/advanced/gauge/meter_gauge_image/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Meter Gauge (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/gauge/gauge_image/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Gauge (Image)"
 	},
 	{
 		"address": "Platform/interface/part/advanced/gauge/gauge/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Gauge"
 	},
 	{
 		"address": "Platform/interface/part/advanced/gauge/audio_meter_gauge/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Audio Meter Gauge"
 	},
 	{
 		"address": "Platform/interface/part/advanced/waveform_viewer/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Waveform Viewer"
 	},
 	{
 		"address": "Platform/interface/part/advanced/level/meter_level/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Meter Level"
 	},
 	{
 		"address": "Platform/interface/part/advanced/level/audio_meter_level/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Audio Meter Level"
 	},
 	{
 		"address": "Platform/interface/part/advanced/level/level/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Level"
 	},
 	{
 		"address": "Platform/interface/part/advanced/text_log/types/AdditionDirection.intermediateFormat.json",
 		"type": "Enum",
 		"name": "AdditionDirection",
-		"description": null
+		"description": "The direction from which lines are added"
 	},
 	{
 		"address": "Platform/interface/part/advanced/text_log/types/Overflow.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Overflow",
-		"description": null
+		"description": "The action to take when lines are longer than what the text log can display"
 	},
 	{
 		"address": "Platform/interface/part/advanced/text_log/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Text Log"
 	},
 	{
 		"address": "Platform/interface/part/advanced/port/audio/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Audio Port"
 	},
 	{
 		"address": "Platform/interface/part/advanced/port/generic_unified_attribute/UnifiedAttribute.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for a Port"
 	},
 	{
 		"address": "Platform/interface/part/advanced/port/event/PortEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PortEvent",
-		"description": null
+		"description": "An event generated by a port"
 	},
 	{
 		"address": "Platform/interface/part/advanced/raster_display/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "The unified attribute for the Raster Display"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grid/style/LineStyle.intermediateFormat.json",
 		"type": "Struct",
 		"name": "LineStyle",
-		"description": null
+		"description": "Used to describes the style of a grid line"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grid/style/TextStyle.intermediateFormat.json",
 		"type": "Struct",
 		"name": "TextStyle",
-		"description": null
+		"description": "Used to describes the style of grid text"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grid/unified_attribute/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "UnifiedAttribute",
-		"description": null
+		"description": "A unified attribute for the Grid"
 	},
 	{
 		"address": "Platform/interface/part/advanced/grid/marking/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Marking",
-		"description": null
+		"description": "Used to describe horizontal or vertical marking on a grid, with optional text component"
 	},
 	{
 		"address": "Platform/interface/part/basic/event/BasicPartEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "BasicPartEvent",
-		"description": null
+		"description": "An event generated by a basic part"
 	},
 	{
 		"address": "Platform/interface/part/part_descriptor/universal_unified_attribute/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "UniversalUnifiedAttribute",
-		"description": null
+		"description": "A enum used to describe any part"
 	},
 	{
 		"address": "Platform/interface/part/part_descriptor/part_descriptor/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "PartDescriptor",
-		"description": null
+		"description": "Used to describe any part"
 	},
 	{
 		"address": "Platform/interface/part/event/PartEvent.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PartEvent",
-		"description": null
+		"description": "An event generated by a part"
 	},
 	{
 		"address": "Platform/unit/unit/modification/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Modification",
-		"description": null
+		"description": "This structure contains information on what aspect of a configuration was changed, and what the before and after of that aspect was."
 	},
 	{
 		"address": "Platform/unit/external_unit/description/Parts.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Parts",
-		"description": null
+		"description": "The parts used in a unit, separated into \"front\" and \"back\""
 	},
 	{
 		"address": "Platform/unit/external_unit/description/mod.intermediateFormat.json",
@@ -657,13 +657,13 @@
 		"address": "Platform/unit/external_unit/description/Executable.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Executable",
-		"description": null
+		"description": "Details of the executable that will be run when an external unit is started"
 	},
 	{
 		"address": "Platform/unit/unit_catalogue/directory/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Directory",
-		"description": null
+		"description": "A directory within a unit catalogue"
 	},
 	{
 		"address": "Platform/unit/external_unit_api/types/EventID.intermediateFormat.json",
@@ -681,67 +681,67 @@
 		"address": "Platform/unit/external_unit_api/from_external_process/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "FromExternalProcess",
-		"description": null
+		"description": "A message that can be sent by an external process to Alchemy"
 	},
 	{
 		"address": "Platform/audio/cradle/container/processor/id/ProcessorId.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "ProcessorId",
-		"description": null
+		"description": "The id of a processor container"
 	},
 	{
 		"address": "Platform/audio/cradle/container/output_device/id/OutputDeviceId.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "OutputDeviceId",
-		"description": null
+		"description": "The id of a output container"
 	},
 	{
 		"address": "Platform/audio/cradle/container/id/ContainerId.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ContainerId",
-		"description": null
+		"description": "The id of any container"
 	},
 	{
 		"address": "Platform/audio/cradle/container/input_device/id/InputDeviceId.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "InputDeviceId",
-		"description": null
+		"description": "The id of a input container"
 	},
 	{
-		"address": "Platform/audio/cradle/defaults_and_types/FRAME_LENGTH.intermediateFormat.json",
+		"address": "Platform/audio/cradle/defaults_and_types/BUFFER_LENGTH.intermediateFormat.json",
 		"type": "Const",
-		"name": "FRAME_LENGTH",
-		"description": null
+		"name": "BUFFER_LENGTH",
+		"description": "The number of samples an individual buffer contains"
 	},
 	{
 		"address": "Platform/audio/cradle/defaults_and_types/Sample.intermediateFormat.json",
 		"type": "TypeAlias",
 		"name": "Sample",
-		"description": null
+		"description": "A sample is a single numerical value representing the amplitude of an audio signal at a specific point in time in a digital audio stream. It captures a snapshot of the sound wave's intensity, allowing the continuous sound wave to be approximated and stored digitally.\nA sample value is typically between 1.0 and -1.0"
 	},
 	{
 		"address": "Platform/audio/cradle/defaults_and_types/Buffer.intermediateFormat.json",
 		"type": "TypeAlias",
 		"name": "Buffer",
-		"description": null
+		"description": "A buffer is a collection of Samples. Containers and audio processes will work with these structures as the basic block of sound"
 	},
 	{
 		"address": "Platform/audio/alpa/library/id/route_id/mod.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "RouteId",
-		"description": null
+		"description": "The id of a route connecting two nodes"
 	},
 	{
 		"address": "Platform/audio/alpa/library/id/node_id/mod.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "NodeId",
-		"description": null
+		"description": "The id of a nodes"
 	},
 	{
 		"address": "Platform/audio/alpa/node/collection/other/frequency_amplitude_response_analyser/types/FrequencyAmplitudeResponseAnalyserResult.intermediateFormat.json",
 		"type": "Struct",
 		"name": "FrequencyAmplitudeResponseAnalyserResult",
-		"description": null
+		"description": "The result gathered from a Frequency Amplitude Response Analyser"
 	},
 	{
 		"address": "Platform/audio/alpa/node/collection/generator/audio_buffer/types/playhead_id/mod.intermediateFormat.json",
@@ -753,31 +753,31 @@
 		"address": "Platform/audio/alpa/node/library/update_mode/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "UpdateMode",
-		"description": null
+		"description": "The method by which updates will be produced"
 	},
 	{
 		"address": "Platform/audio/alpa/node/library/calculation_mode/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "CalculationMode",
-		"description": null
+		"description": "The method by which collections of numbers will be summarize into a single number"
 	},
 	{
 		"address": "Platform/audio/alpa/node/library/waveform/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Waveform",
-		"description": null
+		"description": "A simple waveform"
 	},
 	{
 		"address": "Platform/audio/alpa/node/type/NodeType.intermediateFormat.json",
 		"type": "Enum",
 		"name": "NodeType",
-		"description": null
+		"description": "The type of a node"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_id/ElementID.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "ElementID",
-		"description": null
+		"description": "The id of an element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_defaults/linear_graph_128/ValueList.intermediateFormat.json",
@@ -795,276 +795,276 @@
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/RectangleWithOutline.intermediateFormat.json",
 		"type": "Struct",
 		"name": "RectangleWithOutline",
-		"description": null
+		"description": "The unified attribute for the Rectangle With Outline element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Circle.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Circle",
-		"description": null
+		"description": "The unified attribute for the Circle element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/CharacterString.intermediateFormat.json",
 		"type": "Struct",
 		"name": "CharacterString",
-		"description": null
+		"description": "The unified attribute for the Character String element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Polygon.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Polygon",
-		"description": null
+		"description": "The unified attribute for the Polygon element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/CircleWithOutline.intermediateFormat.json",
 		"type": "Struct",
 		"name": "CircleWithOutline",
-		"description": null
+		"description": "The unified attribute for the Circle With Outline element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Group.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Group",
-		"description": null
+		"description": "The unified attribute for the Group element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/LinearGraph128.intermediateFormat.json",
 		"type": "Struct",
 		"name": "LinearGraph128",
-		"description": null
+		"description": "The unified attribute for the Linear Graph (128) element."
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Character.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Character",
-		"description": null
+		"description": "The unified attribute for the Character element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Rectangle.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Rectangle",
-		"description": null
+		"description": "The unified attribute for the Rectangle element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Image.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Image",
-		"description": null
+		"description": "The unified attribute for the Image element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/Path.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Path",
-		"description": null
+		"description": "The unified attribute for the Path element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/LinearGraph256.intermediateFormat.json",
 		"type": "Struct",
 		"name": "LinearGraph256",
-		"description": null
+		"description": "The unified attribute for the Linear Graph (256) element."
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/element_unified_attributes/PolygonWithOutline.intermediateFormat.json",
 		"type": "Struct",
 		"name": "PolygonWithOutline",
-		"description": null
+		"description": "The unified attribute for the Polygon With Outline element"
 	},
 	{
 		"address": "Platform/graphics/cross_thread_library/colour/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Colour",
-		"description": null
+		"description": "A structure representing a colour using four channels: Red, Green, Blue and Alpha"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/mouse_wheel/mouse_wheel_event.intermediateFormat.json",
 		"type": "Struct",
 		"name": "MouseWheelEvent",
-		"description": null
+		"description": "An event generated by a mouse wheel action"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/mouse_wheel/data/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Data",
-		"description": null
+		"description": "This structure holds the particulars of the mouse data for an event"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/mouse/event_type/Type.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Type",
-		"description": null
+		"description": "The action taken by the mouse."
 	},
 	{
 		"address": "Platform/graphics/console/library/event/mouse/data/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Data",
-		"description": null
+		"description": "This structure holds the particulars of the mouse data for an event"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/mouse/mouse_event.intermediateFormat.json",
 		"type": "Struct",
 		"name": "MouseEvent",
-		"description": null
+		"description": "An event generated by a mouse wheel action"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/element_event/on_add/OnAddEvent.intermediateFormat.json",
 		"type": "Struct",
 		"name": "OnAddEvent",
-		"description": null
+		"description": "An event generated by a group when an element is added"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/element_event/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ElementEvent",
-		"description": null
+		"description": "An event generated by an element"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/element_event/on_remove/OnRemoveEvent.intermediateFormat.json",
 		"type": "Struct",
 		"name": "OnRemoveEvent",
-		"description": null
+		"description": "An event generated by a group when an element is removed"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/modifier_key_statuses/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ModifierKeyStatuses",
-		"description": null
+		"description": "The state of keyboard modified keys"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/keyboard/keyboard_event.intermediateFormat.json",
 		"type": "Struct",
 		"name": "KeyboardEvent",
-		"description": null
+		"description": "An event generated by a keyboard action"
 	},
 	{
 		"address": "Platform/graphics/console/library/event/keyboard/data/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Data",
-		"description": null
+		"description": "This structure holds the particulars of the keyboard data for an event"
 	},
 	{
 		"address": "Library/code/record/types/sample.intermediateFormat.json",
 		"type": "TypeAlias",
 		"name": "Sample",
-		"description": null
+		"description": "A sample is a single numerical value representing the amplitude of an audio signal at a specific point in time in a digital audio stream. It captures a snapshot of the sound wave's intensity, allowing the continuous sound wave to be approximated and stored digitally.\nA sample value is typically between 1.0 and -1.0"
 	},
 	{
 		"address": "Library/code/record/record/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Record",
-		"description": null
+		"description": "Record is a data structure designed for holding and manipulating audio data"
 	},
 	{
 		"address": "Library/code/manifest/types/id/ID.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ID",
-		"description": null
+		"description": "A unique identifier"
 	},
 	{
 		"address": "Library/code/winit/event/ElementState.intermediateFormat.json",
 		"type": "Enum",
 		"name": "ElementState",
-		"description": " Describes the input state of a key."
+		"description": "Describes the input state of a key."
 	},
 	{
 		"address": "Library/code/winit/event/MouseButton.intermediateFormat.json",
 		"type": "Enum",
 		"name": "MouseButton",
-		"description": " Describes a button of a mouse controller."
+		"description": "Describes a button of a mouse controller."
 	},
 	{
 		"address": "Library/code/winit/event/ScanCode.intermediateFormat.json",
 		"type": "TypeAlias",
 		"name": "ScanCode",
-		"description": " Hardware-dependent keyboard scan code."
+		"description": "Hardware-dependent keyboard scan code."
 	},
 	{
 		"address": "Library/code/winit/event/VirtualKeyCode.intermediateFormat.json",
 		"type": "Enum",
 		"name": "VirtualKeyCode",
-		"description": " Symbolic name for a keyboard key."
+		"description": "Symbolic name for a keyboard key."
 	},
 	{
 		"address": "Library/code/winit/event/TouchPhase.intermediateFormat.json",
 		"type": "Enum",
 		"name": "TouchPhase",
-		"description": " Describes touch-screen input state."
+		"description": "Describes touch-screen input state."
 	},
 	{
 		"address": "Library/code/geometry/types/path_joint_type/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PathJointType",
-		"description": null
+		"description": "A path is drawn as a series of rectangles, stretching fro point to point. At a joint in this path two rectangle will overlap one another. This enum is used to describe how this joint should be handled."
 	},
 	{
 		"address": "Library/code/geometry/types/path_cap_type/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PathCapType",
-		"description": null
+		"description": "The shape to be drawn at the ends of a path"
 	},
 	{
 		"address": "Library/code/geometry/objects/hyper_polygon/mod.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "HyperPolygon",
-		"description": null
+		"description": "A shape comprising a series of ComplexPolygons"
 	},
 	{
 		"address": "Library/code/geometry/objects/point/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "Point",
-		"description": null
+		"description": "A standard coordinate in 2-dimensional space"
 	},
 	{
 		"address": "Library/code/geometry/objects/complex_polygon/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "ComplexPolygon",
-		"description": null
+		"description": "A shape comprising a single \"body\" polygon, and a series of \"holes\" polygons used to describe holes in the \"body\" polygon"
 	},
 	{
 		"address": "Library/code/geometry/objects/simple_polygon/mod.intermediateFormat.json",
 		"type": "TupleStruct",
 		"name": "SimplePolygon",
-		"description": null
+		"description": "A series of Points used to describe a non-self-overlapping, solid polygon"
 	},
 	{
 		"address": "Library/code/font/printing_mode/printing_mode_width_calculation/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PrintingModeWidthCalculation",
-		"description": null
+		"description": "Defines if the provided width should define the total width of the string, or the widths of each character within that string"
 	},
 	{
 		"address": "Library/code/font/printing_mode/printing_mode_position_horizontal/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PrintingModePositionHorizontal",
-		"description": null
+		"description": "Where the text should be printed relative to the object's X position"
 	},
 	{
 		"address": "Library/code/font/printing_mode/printing_mode_position_vertical/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "PrintingModePositionVertical",
-		"description": null
+		"description": "Where the text should be printed relative to the object's Y position"
 	},
 	{
 		"address": "Library/code/musical_instruction/instruction/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Instruction",
-		"description": null
+		"description": "A command used to define a particular action that a musical performance device should take"
 	},
 	{
 		"address": "Library/code/musical_instruction/instruction/cease_note/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "CeaseNote",
-		"description": null
+		"description": "A command to stop performing a particular note"
 	},
 	{
 		"address": "Library/code/musical_instruction/instruction/perform_note/mod.intermediateFormat.json",
 		"type": "Struct",
 		"name": "PerformNote",
-		"description": null
+		"description": "A command to begin performing a particular note"
 	},
 	{
 		"address": "Library/code/musical_instruction/name/mod.intermediateFormat.json",
 		"type": "Enum",
 		"name": "Name",
-		"description": null
+		"description": "Chromatic scale note names"
 	}
 ]
