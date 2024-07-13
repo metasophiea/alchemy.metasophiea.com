@@ -1,0 +1,30 @@
+{
+  "type": "Struct",
+  "name": "Textbreak",
+  "description": "An item used as a spacer in lists, with text and a horizontal line across the centre",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "line_height",
+        "type": "f32",
+        "description": "the height of the textbreak, as a percentage of the item height\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "text",
+        "type": "String",
+        "description": "the text\ndefault: \"hello\""
+      }
+    ]
+  },
+  "exampleTexts": []
+}

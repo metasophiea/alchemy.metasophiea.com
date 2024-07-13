@@ -1,0 +1,85 @@
+{
+  "type": "Struct",
+  "name": "Image",
+  "description": "The unified attribute for the Image element",
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": "the X position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": "the Y position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": "the scale of the element\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": "the angle of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "Option<f32>",
+        "description": "the width of the element\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "Option<f32>",
+        "description": "the height of the element\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "anchor",
+        "type": "Option<Point>",
+        "description": "the anchor point of the element\ndefault: {x:0.0, y:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "file_location",
+        "type": "Option<Option<std::path::PathBuf>>",
+        "description": "the image file which should be used\ndefault: -none- (the \"no image\" image)"
+      },
+      {
+        "macros": [],
+        "name": "force_file_load",
+        "type": "Option<bool>",
+        "description": "a signal to the rendering system that this element should have its image data reloaded\ndefault: false"
+      },
+      {
+        "macros": [],
+        "name": "file_auto_reload",
+        "type": "Option<bool>",
+        "description": "Whether the system should constant check the image file for changes, updating the rendered image if necessary.\nThe check is performed every second.\ndefault: false"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

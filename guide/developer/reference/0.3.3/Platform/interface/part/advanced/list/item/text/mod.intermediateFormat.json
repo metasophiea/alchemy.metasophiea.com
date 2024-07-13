@@ -1,0 +1,36 @@
+{
+  "type": "Struct",
+  "name": "Text",
+  "description": "An item used as a non-interactable piece of text in lists",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "text_left",
+        "type": "Option<String>",
+        "description": "optional text which can appear on the left side of the item\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "text_centre",
+        "type": "Option<String>",
+        "description": "optional text which can appear in the centre of the item\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "text_right",
+        "type": "Option<String>",
+        "description": "optional text which can appear on the right side of the item\ndefault: -none-"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

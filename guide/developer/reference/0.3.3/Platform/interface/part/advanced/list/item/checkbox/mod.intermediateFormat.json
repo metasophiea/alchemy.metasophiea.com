@@ -1,0 +1,35 @@
+{
+  "type": "Struct",
+  "name": "Checkbox",
+  "description": "An item used as a checkbox in lists",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "String",
+        "description": "a unique id for this item (provided by the system)"
+      },
+      {
+        "macros": [],
+        "name": "text",
+        "type": "String",
+        "description": "text to appear alongside the checkbox\ndefault: \"\""
+      },
+      {
+        "macros": [],
+        "name": "checked",
+        "type": "bool",
+        "description": "whether the checkbox is checked or not\ndefault: false"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

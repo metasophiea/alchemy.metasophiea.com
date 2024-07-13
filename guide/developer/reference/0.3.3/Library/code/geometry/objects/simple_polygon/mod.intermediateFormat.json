@@ -1,0 +1,26 @@
+{
+  "type": "TupleStruct",
+  "name": "SimplePolygon",
+  "description": "A series of Points used to describe a non-self-overlapping, solid polygon",
+  "macros": [
+    "#[derive(Clone, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "Vec<Point>"
+    ]
+  },
+  "exampleTexts": [
+    "[{\"x\":5.0,\"y\":0.0},{\"x\":10.0,\"y\":10.0},{\"x\":0.0,\"y\":10.0}]"
+  ]
+}

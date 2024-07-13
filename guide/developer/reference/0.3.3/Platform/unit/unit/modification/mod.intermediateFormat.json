@@ -1,0 +1,44 @@
+{
+  "type": "Struct",
+  "name": "Modification",
+  "description": "This structure contains information on what aspect of a configuration was changed, and what the before and after of that aspect was.",
+  "macros": [
+    "#[derive(Serialize, Deserialize, PartialEq, Eq, Clone)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "meta",
+        "type": "String",
+        "description": "the aspect of the configuration"
+      },
+      {
+        "macros": [],
+        "name": "before",
+        "type": "String",
+        "description": "the before state"
+      },
+      {
+        "macros": [],
+        "name": "after",
+        "type": "String",
+        "description": "the after state"
+      },
+      {
+        "macros": [
+          "#[serde(skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "name": "additional_data",
+        "type": "Option<String>",
+        "description": "optional additional data"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

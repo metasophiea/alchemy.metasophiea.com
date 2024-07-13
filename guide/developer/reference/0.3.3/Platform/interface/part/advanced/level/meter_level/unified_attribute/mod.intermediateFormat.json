@@ -1,0 +1,142 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Meter Level",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "font::PrintingModePositionHorizontal",
+      "originalName": "PrintingModePositionHorizontal",
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_position_horizontal/mod"
+    },
+    {
+      "name": "font::PrintingModePositionVertical",
+      "originalName": "PrintingModePositionVertical",
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_position_vertical/mod"
+    },
+    {
+      "name": "font::PrintingModeWidthCalculation",
+      "originalName": "PrintingModeWidthCalculation",
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_width_calculation/mod"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the button\ndefault: 20.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the button\ndefault: 60.0"
+      },
+      {
+        "macros": [],
+        "name": "backing_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of the background\ndefault: {r:0.04, g:0.04, b:0.04, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "level_colours",
+        "type": "Vec<vivid::Colour>",
+        "description": "the colours of the level bars. The number of colours provided here will define the number of level bars present in the meter\ndefault: [\n     {r:0.98, g:0.98, b:0.98, a:1.0},\n     {r:0.7, g:0.7, b:0.7, a:1.0},\n     {r:0.5, g:0.5, b:0.5, a:1.0},\n     {r:0.3, g:0.3, b:0.3, a:1.0}\n ]"
+      },
+      {
+        "macros": [],
+        "name": "marking_positions",
+        "type": "Vec<f32>",
+        "description": "a vector of the positions at which markings should be present, as a percentage of the meter height\ndefault: [0.125, 0.25, 0.375, 0.5, 0.625, 0.75, 0.875]"
+      },
+      {
+        "macros": [],
+        "name": "marking_text",
+        "type": "Vec<String>",
+        "description": "a vector of the text which the markings will display. Their positions are defined by the \"marking_positions\" attribute.\nThe meter will only render as many markings as there are positions defined in the \"marking_positions\" attribute. Extra entries in the \"marking_text\" attribute, they will be ignored. Extra entries in the \"marking_positions\" attribute will be rendered using an empty string.\ndefault: [\"seven\", \"six\", \"five\", \"four\", \"three\", \"two\", \"one\"]"
+      },
+      {
+        "macros": [],
+        "name": "marking_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of markings\ndefault: {r:0.86, g:0.86, b:0.86, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "marking_font_name",
+        "type": "String",
+        "description": "the font used for text\ndefault: \"roboto_regular\""
+      },
+      {
+        "macros": [],
+        "name": "marking_printing_mode_horizontal",
+        "type": "font::PrintingModePositionHorizontal",
+        "description": "the horizontal printing mode of the marking text\ndefault: Middle"
+      },
+      {
+        "macros": [],
+        "name": "marking_printing_mode_vertical",
+        "type": "font::PrintingModePositionVertical",
+        "description": "the vertical printing mode of the marking text\ndefault: CentreLine"
+      },
+      {
+        "macros": [],
+        "name": "marking_printing_mode_width_calculation",
+        "type": "font::PrintingModeWidthCalculation",
+        "description": "the width calculation mode to be used with the marking text\ndefault: Absolute"
+      },
+      {
+        "macros": [],
+        "name": "marking_size",
+        "type": "f32",
+        "description": "the font size of the marking text\ndefault: 2.0"
+      },
+      {
+        "macros": [],
+        "name": "display_interval_time",
+        "type": "std::time::Duration",
+        "description": "the delay between animation updates (in milliseconds)\ndefault: 1000 / 25"
+      },
+      {
+        "macros": [],
+        "name": "cool_down_speed",
+        "type": "f32",
+        "description": "the rate at which meter bars reduce in size\ndefault: 0.25"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

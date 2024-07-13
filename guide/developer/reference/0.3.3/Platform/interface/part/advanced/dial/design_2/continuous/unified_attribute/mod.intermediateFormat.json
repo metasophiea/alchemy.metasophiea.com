@@ -1,0 +1,97 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Continuous Dial (Design 2) ",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the part\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the part\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the part\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "radius",
+        "type": "f32",
+        "description": "the radius of the button\ndefault: 15.0"
+      },
+      {
+        "macros": [],
+        "name": "active",
+        "type": "bool",
+        "description": "whether the part should be interactable or not\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "reset_value",
+        "type": "Option<f32>",
+        "description": "the position which the dial will return to when the part is double-clicked. If no value is provided, the resetting functionality will not be active\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "start_angle",
+        "type": "f32",
+        "description": "the angle which will represent the 'minimum' position"
+      },
+      {
+        "macros": [],
+        "name": "max_angle",
+        "type": "f32",
+        "description": "default: -PI * 0.75 (south-west)\nthe angle which will represent the 'maximum' position\ndefault: PI * 0.75 (south-east)"
+      },
+      {
+        "macros": [],
+        "name": "style_slot",
+        "type": "vivid::Colour",
+        "description": "the colour of the space around the handle\ndefault: {r:0.2, g:0.2, b:0.2, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style_handle",
+        "type": "vivid::Colour",
+        "description": "the colour of the handle\ndefault: {r:0.85, g:0.85, b:0.85, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style_needle",
+        "type": "vivid::Colour",
+        "description": "the colour of the needle\ndefault: {r:1.0, g:0.4, b:0.4, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style_interaction_disk",
+        "type": "vivid::Colour",
+        "description": "the colour of the interaction disk\ndefault: {r:1.0, g:0.0, b:1.0, a:0.1}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

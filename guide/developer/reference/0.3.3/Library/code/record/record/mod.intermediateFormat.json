@@ -1,0 +1,42 @@
+{
+  "type": "Struct",
+  "name": "Record",
+  "description": "Record is a data structure designed for holding and manipulating audio data",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Sample",
+      "originalName": null,
+      "fileAddress": "Library/code/record/types/sample"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "name",
+        "type": "String",
+        "description": "The name of the Record data"
+      },
+      {
+        "macros": [],
+        "name": "samples",
+        "type": "Vec<Vec<Sample>>",
+        "description": "A vector of \"channels\", each containing a vector of Samples"
+      },
+      {
+        "macros": [],
+        "name": "sample_rate",
+        "type": "usize",
+        "description": "The sampling rate used for this Record"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

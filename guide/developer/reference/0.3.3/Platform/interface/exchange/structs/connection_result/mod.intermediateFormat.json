@@ -1,0 +1,44 @@
+{
+  "type": "Struct",
+  "name": "ConnectionResult",
+  "description": "A collection of data reporting the details of a port's connection being made, changed or broken.",
+  "macros": [
+    "#[derive(Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [
+    "PortIDType"
+  ],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "source",
+        "type": "PortIDType",
+        "description": "The Id of the port where the action began"
+      },
+      {
+        "macros": [],
+        "name": "destination",
+        "type": "Option<PortIDType>",
+        "description": "The Id of the port where the action had a direct effect (optional. This action may not effect any port aside from the source port)"
+      },
+      {
+        "macros": [],
+        "name": "previous_destination_of_source",
+        "type": "Option<PortIDType>",
+        "description": "Port Id of the port that the source port was previously connected to (optional. This port may not have been connected to any other port)"
+      },
+      {
+        "macros": [],
+        "name": "previous_destination_of_destination",
+        "type": "Option<PortIDType>",
+        "description": "Port Id of the port that the destination port was previously connected to (optional. This port may not have been connected to any other port)"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,35 @@
+{
+  "type": "Struct",
+  "name": "Radio",
+  "description": "An item used as a radio selector in lists",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "String",
+        "description": "a unique id for this item (provided by the system)"
+      },
+      {
+        "macros": [],
+        "name": "options",
+        "type": "Vec<String>",
+        "description": "a vector of strings which represent the options of the radio selector\ndefault: []"
+      },
+      {
+        "macros": [],
+        "name": "selection",
+        "type": "usize",
+        "description": "the currently selected option\ndefault: 0"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,55 @@
+{
+  "type": "Struct",
+  "name": "Group",
+  "description": "The unified attribute for the Group element",
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": "the X position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": "the Y position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": "the scale of the element\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": "the angle of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "heed_camera",
+        "type": "Option<bool>",
+        "description": "whether this group and its contents should move relative to camera movements\ndefault: false"
+      },
+      {
+        "macros": [],
+        "name": "clipping_active",
+        "type": "Option<bool>",
+        "description": "whether this group should use the provided clipping stencil to perform a masking operation\ndefault: false"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

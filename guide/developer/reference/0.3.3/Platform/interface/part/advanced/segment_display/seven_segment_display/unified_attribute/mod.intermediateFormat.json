@@ -1,0 +1,72 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "The universal attribute for the Seven Segment Display",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the display\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the display\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the display\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the display\ndefault: 20.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the display\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "background",
+        "type": "vivid::Colour",
+        "description": "the background colour of the display\ndefault: {r:0.0, g:0.0, b:0.0, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "glow",
+        "type": "vivid::Colour",
+        "description": "the colour of the segments of the display when they are glowing\ndefault: {r:0.78 g:0.78, b:0.78, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "dim",
+        "type": "vivid::Colour",
+        "description": "the colour of the segments of the display when they are not glowing\ndefault: {r:0.1, g:0.1, b:0.1, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

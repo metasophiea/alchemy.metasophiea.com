@@ -1,0 +1,30 @@
+{
+  "type": "Enum",
+  "name": "AdditionDirection",
+  "description": "The direction from which lines are added",
+  "macros": [
+    "#[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "FromTop",
+        "data": null,
+        "description": "lines at the end of the array will be placed at the top"
+      },
+      {
+        "macros": [],
+        "name": "FromBottom",
+        "data": null,
+        "description": "lines at the end of the array will be placed at the bottom"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

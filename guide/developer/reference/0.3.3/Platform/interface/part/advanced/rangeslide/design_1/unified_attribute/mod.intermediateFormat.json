@@ -1,0 +1,102 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "The unified attribute for a Rangeslide (Design 1) ",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "RangeValue",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/rangeslide/range_value/mod"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the port\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the port\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the port\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the port\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the port\ndefault: 100.0"
+      },
+      {
+        "macros": [],
+        "name": "handle_height_percentage",
+        "type": "f32",
+        "description": "the hight of the slide's handle as a percentage of the total height of the slide\ndefault: 0.1"
+      },
+      {
+        "macros": [],
+        "name": "span_width_percentage",
+        "type": "f32",
+        "description": "the width of the spanning area as a percentage of the total width of the rangeslide\ndefault: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "active",
+        "type": "bool",
+        "description": "whether the part should be interactable or not\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "reset_value",
+        "type": "Option<RangeValue>",
+        "description": "the positions at which the handles will return to when the part is double-clicked. If no value is provided, the resetting functionality will not be active\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "style_backing",
+        "type": "vivid::Colour",
+        "description": "the colour of the backing rectangle\ndefault: {r:0.9, g:0.9, b:0.9, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style_handle",
+        "type": "vivid::Colour",
+        "description": "the colour of the handle rectangles\ndefault: {r:0.8, g:0.8, b:0.8, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style_span",
+        "type": "vivid::Colour",
+        "description": "the colour of the span rectangle\ndefault: {r:0.78, g:0.0, b:0.78, a:0.25}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

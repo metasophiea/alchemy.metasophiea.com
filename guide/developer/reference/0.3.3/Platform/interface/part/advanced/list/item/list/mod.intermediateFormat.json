@@ -1,0 +1,53 @@
+{
+  "type": "Struct",
+  "name": "List",
+  "description": "An item used as a sub-list in lists",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Item",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "id",
+        "type": "String",
+        "description": "a unique id for this item (provided by the system)"
+      },
+      {
+        "macros": [],
+        "name": "text",
+        "type": "String",
+        "description": "text to appear alongside the checkbox\ndefault: \"\""
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the sub-list\ndefault: 100.0"
+      },
+      {
+        "macros": [],
+        "name": "items",
+        "type": "Vec<Item>",
+        "description": "a vector of items that this sub-list will contain\ndefault: [Space]"
+      },
+      {
+        "macros": [],
+        "name": "open",
+        "type": "bool",
+        "description": "whether the sub-list is open or not\ndefault: false"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

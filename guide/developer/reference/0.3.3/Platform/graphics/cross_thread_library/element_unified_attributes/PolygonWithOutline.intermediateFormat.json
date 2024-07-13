@@ -1,0 +1,101 @@
+{
+  "type": "Struct",
+  "name": "PolygonWithOutline",
+  "description": "The unified attribute for the Polygon With Outline element",
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Colour",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    },
+    {
+      "name": "HyperPolygon",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/hyper_polygon/mod"
+    },
+    {
+      "name": "PathJointType",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/types/path_joint_type/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": "the X position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": "the Y position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": "the scale of the element\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": "the angle of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "points",
+        "type": "Option<HyperPolygon>",
+        "description": "the points of a HyperPolygon defining the polygon\ndefault:\n - 0\n - - body: [{x:0.0, y:0.0}, {x:10.0, y:0.0}, {x:10.0, y:10.0}, {x:0.0, y:10.0}}]\n - - holes: [[{x:2.0, y:2.0}, {x:8.0, y:2.0}, {x:8.0, y:8.0}, {x:2.0, y:8.0}]]\n - 1\n - - body: [{x:3.0, y:3.0}, {x:7.0, y:3.0}, {x:7.0, y:7.0}, {x:3.0, y:7.0}]\n - - holes: [[{x:4.0, y:4.0}, {x:6.0, y:4.0}, {x:6.0, y:6.0}, {x:4.0, y:6.0}]]"
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "Option<f32>",
+        "description": "the thickness of the outline\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "path_joint_type",
+        "type": "Option<PathJointType>",
+        "description": "the joint type to be used\ndefault: None"
+      },
+      {
+        "macros": [],
+        "name": "outline_balance_outer",
+        "type": "Option<f32>",
+        "description": "the balance of outline of polygon bodies, defining to which side of the outline the rendered line should be drawn\n - 0.0 - follow the outline as normal\n - 1.0 - shift the outline to the right\n - -1.0 - shift the outline to the left\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "outline_balance_inner",
+        "type": "Option<f32>",
+        "description": "the balance of outline of polygon holes, defining to which side of the outline the rendered line should be drawn\n - 0.0 - follow the outline as normal\n - 1.0 - shift the outline to the right\n - -1.0 - shift the outline to the left\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "body_colour",
+        "type": "Option<Colour>",
+        "description": "the colour of the element's body\ndefault: {r:1.0, g:0.0, b:0.0, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "line_colour",
+        "type": "Option<Colour>",
+        "description": "the colour of the element's outline\ndefault: {r:0.0, g:0.0, b:0.0, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

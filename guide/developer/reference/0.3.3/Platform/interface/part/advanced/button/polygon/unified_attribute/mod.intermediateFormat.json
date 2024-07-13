@@ -1,0 +1,180 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Polygon Button",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ButtonStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/style/ButtonStyle"
+    },
+    {
+      "name": "geometry::HyperPolygon",
+      "originalName": "HyperPolygon",
+      "fileAddress": "Library/code/geometry/objects/hyper_polygon/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "points",
+        "type": "geometry::HyperPolygon",
+        "description": "the points of a HyperPolygon\ndefault: a default HyperPolygon"
+      },
+      {
+        "macros": [],
+        "name": "hoverable",
+        "type": "bool",
+        "description": "whether the button will respond to mouse hover events\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "selectable",
+        "type": "bool",
+        "description": "whether the button will be selectable\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "pressable",
+        "type": "bool",
+        "description": "whether the button will be pressable\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "text_centre",
+        "type": "Option<String>",
+        "description": "text which will be presented in the centre of the button. If no value is provided, no text will be shown\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "style__off",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is deactivated\n\tbody colour: {r:180.0/255.0, g:180.0/255.0, b:180.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__up",
+        "type": "ButtonStyle",
+        "description": "the style of the button when no actions are applied to the button\n\tbody colour: {r:200.0/255.0, g:200.0/255.0, b:200.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is pressed\n\tbody colour: {r:230.0/255.0, g:230.0/255.0, b:230.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__select",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is selected\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:200.0/255.0, g:200.0/255.0, b:200.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__select_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is selected and pressed\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:230.0/255.0, g:230.0/255.0, b:230.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__glow",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is glowing\n\tbody colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__glow_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is glowing and pressed\n\tbody colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__glow_select",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is glowing and selected\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__glow_select_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is glowing, selected and pressed\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__hover",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over\n\tbody colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over and is pressed\n\tbody colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_select",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over and is selected\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_select_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over, is selected and is pressed\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_glow",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over and is glowing\n\tbody colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_glow_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over, is glowing and is pressed\n\tbody colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n\tline colour: {r:0.0, g:0.0, b:0.0, a:0.0}\n\tthickness: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_glow_select",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over, is glowing and is selected\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      },
+      {
+        "macros": [],
+        "name": "style__hover_glow_select_press",
+        "type": "ButtonStyle",
+        "description": "the style of the button when it is being hovered over, is glowing, is selected and is pressed\ndefault: the default ButtonStyle with the following adjustments:\n\tbody colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n\tline colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n\tthickness: 0.75"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,14 @@
+{
+  "type": "TypeAlias",
+  "name": "Sample",
+  "description": "A sample is a single numerical value representing the amplitude of an audio signal at a specific point in time in a digital audio stream. It captures a snapshot of the sound wave's intensity, allowing the continuous sound wave to be approximated and stored digitally.\nA sample value is typically between 1.0 and -1.0",
+  "macros": [],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TypeAlias",
+    "content": "f32"
+  },
+  "exampleTexts": []
+}

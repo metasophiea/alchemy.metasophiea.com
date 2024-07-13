@@ -1,0 +1,119 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "The unified attribute for the Text Log",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "AdditionDirection",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/text_log/types/AdditionDirection"
+    },
+    {
+      "name": "CharacterStringUnifiedAttribute",
+      "originalName": "CharacterString",
+      "fileAddress": "Platform/graphics/cross_thread_library/element_unified_attributes/CharacterString"
+    },
+    {
+      "name": "Overflow",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/text_log/types/Overflow"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the text log\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the text log\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the text log\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the text log\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the text log\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "line_count",
+        "type": "usize",
+        "description": "the number of lines to display within the view space\ndefault: 16"
+      },
+      {
+        "macros": [],
+        "name": "vertical_line_spacing",
+        "type": "f32",
+        "description": "the amount of vertical space between lines\ndefault: 1.2"
+      },
+      {
+        "macros": [],
+        "name": "top_padding",
+        "type": "f32",
+        "description": "padding from the top of the text log to the line below\ndefault: 5.0"
+      },
+      {
+        "macros": [],
+        "name": "bottom_padding",
+        "type": "f32",
+        "description": "padding from the bottom of the text log to the line above\ndefault: 5.0"
+      },
+      {
+        "macros": [],
+        "name": "left_padding",
+        "type": "f32",
+        "description": "padding from the left of the text log to the lines\ndefault: 5.0"
+      },
+      {
+        "macros": [],
+        "name": "right_padding",
+        "type": "f32",
+        "description": "padding from the right of the text log to the lines\ndefault: 5.0"
+      },
+      {
+        "macros": [],
+        "name": "overflow",
+        "type": "Overflow",
+        "description": "the action to take when lines are longer than what the text log can display\ndefault: WrapOnWord"
+      },
+      {
+        "macros": [],
+        "name": "addition_direction",
+        "type": "AdditionDirection",
+        "description": "the direction from which lines are added\ndefault: FromTop"
+      },
+      {
+        "macros": [],
+        "name": "character_string_style",
+        "type": "CharacterStringUnifiedAttribute",
+        "description": "the style of the characters\ndefault: the default value for the CharacterStringUnifiedAttribute type, with the following adjustments\n - inter character spacing: 2.0"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

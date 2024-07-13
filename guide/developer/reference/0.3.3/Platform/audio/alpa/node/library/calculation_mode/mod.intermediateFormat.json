@@ -1,0 +1,56 @@
+{
+  "type": "Enum",
+  "name": "CalculationMode",
+  "description": "The method by which collections of numbers will be summarize into a single number",
+  "macros": [
+    "#[derive(Copy, Clone, Default, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Max",
+        "data": null,
+        "description": "the highest value"
+      },
+      {
+        "macros": [],
+        "name": "Min",
+        "data": null,
+        "description": "the lowest value"
+      },
+      {
+        "macros": [],
+        "name": "Average",
+        "data": null,
+        "description": "the average value"
+      },
+      {
+        "macros": [
+          "#[default]"
+        ],
+        "name": "AbsMax",
+        "data": null,
+        "description": "the absolute highest value"
+      },
+      {
+        "macros": [],
+        "name": "AbsMin",
+        "data": null,
+        "description": "the absolute lowest value"
+      },
+      {
+        "macros": [],
+        "name": "AbsAverage",
+        "data": null,
+        "description": "the absolute average value"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,78 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "The unified attribute for a Port",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    },
+    {
+      "name": "SnappingThreshold",
+      "originalName": null,
+      "fileAddress": "Platform/interface/exchange/structs/snapping_threshold/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the port\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the port\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the port\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the port\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the port\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "anchor",
+        "type": "Point",
+        "description": "the anchor point of the port\ndefault: {x:0.0, y:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "connection_point_anchor",
+        "type": "Point",
+        "description": "the point at which a cable will be rooted too, as a percentage coordinate of the port's width and height\ndefault: {x:0.5, y:0.5}"
+      },
+      {
+        "macros": [],
+        "name": "snapping_threshold",
+        "type": "Option<SnappingThreshold>",
+        "description": "an optional the snapping threshold of this port\ndefault: -none-"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

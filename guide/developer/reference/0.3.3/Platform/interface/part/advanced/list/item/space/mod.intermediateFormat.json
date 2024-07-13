@@ -1,0 +1,24 @@
+{
+  "type": "Struct",
+  "name": "Space",
+  "description": "An item used as a spacer in lists",
+  "macros": [
+    "#[derive(Copy, Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "height_percentage",
+        "type": "f32",
+        "description": "the height of the space, as a percentage of the item height\ndefault: 1.0"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,47 @@
+{
+  "type": "Enum",
+  "name": "Datagram",
+  "description": "The data structure for Datagram connection types. Datagram connections are sort of the catch-all for types of transmission that don't fit neatly into the other types. As such, the basic variant of this type is a string, allowing units to ultimately send any kind of data they like.\nAtop this, other formats are included for typical uses of the Datagram port. In this way the units don't have to constantly perform serialization and deserialization, nor have concern about the format of such structures.",
+  "macros": [
+    "#[derive(Clone, PartialEq, Serialize, Deserialize)]",
+    "#[serde(tag = \"type\", content = \"content\")]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Instruction",
+      "originalName": null,
+      "fileAddress": "Library/code/musical_instruction/instruction/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "String",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "String"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MusicalInstruction",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Instruction"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

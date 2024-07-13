@@ -1,0 +1,148 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Meter Gauge (Image)",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "font::PrintingModePositionHorizontal",
+      "originalName": "PrintingModePositionHorizontal",
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_position_horizontal/mod"
+    },
+    {
+      "name": "font::PrintingModePositionVertical",
+      "originalName": "PrintingModePositionVertical",
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_position_vertical/mod"
+    },
+    {
+      "name": "font::PrintingModeWidthCalculation",
+      "originalName": "PrintingModeWidthCalculation",
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_width_calculation/mod"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the gauge\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the gauge\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the gauge\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the gauge\ndefault: 50.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the gauge\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "needle_angle_bounds",
+        "type": "(f32, f32)",
+        "description": "the angles between which the needle will be active\ndefault: (-PI/4.0, PI/4.0)"
+      },
+      {
+        "macros": [],
+        "name": "needle_articulation_point",
+        "type": "(f32, f32)",
+        "description": "the XY coordinate at which the needle appears to be fixed\ndefault: (0.5, 1.2)"
+      },
+      {
+        "macros": [],
+        "name": "backing_file_location",
+        "type": "std::path::PathBuf",
+        "description": "the image to be used for the background\ndefault: no \"colour squares\" image"
+      },
+      {
+        "macros": [],
+        "name": "needle_colours",
+        "type": "Vec<vivid::Colour>",
+        "description": "the colour the needles. The number of colours provided here will define the number of needles present in te gauge\ndefault: {r:0.98, g:0.98, b:0.98, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "upper_markings",
+        "type": "Vec<String>",
+        "description": "the text markings applied to the upper arc (markings are spaced evenly between the angles defined by the \"needle_angle_bounds\" attribute)\ndefault: \"0\", \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\", \"10\""
+      },
+      {
+        "macros": [],
+        "name": "middle_markings",
+        "type": "Vec<String>",
+        "description": "the text markings applied to the middle arc (markings are spaced evenly between the angles defined by the \"needle_angle_bounds\" attribute)\ndefault: \"A\", \"B\", \"C\", \"D\", \"E\", \"F\""
+      },
+      {
+        "macros": [],
+        "name": "lower_markings",
+        "type": "Vec<String>",
+        "description": "the text markings applied to the lower arc (markings are spaced evenly between the angles defined by the \"needle_angle_bounds\" attribute)\ndefault: \"0\", \"0.25\", \"0.5\", \"0.75\", \"1\""
+      },
+      {
+        "macros": [],
+        "name": "marking_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of markings\ndefault: {r:0.86, g:0.86, b:0.86, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "marking_font_name",
+        "type": "String",
+        "description": "the font used for text\ndefault: \"roboto_regular\""
+      },
+      {
+        "macros": [],
+        "name": "marking_printing_mode_horizontal",
+        "type": "font::PrintingModePositionHorizontal",
+        "description": "the horizontal printing mode of the marking text\ndefault: Middle"
+      },
+      {
+        "macros": [],
+        "name": "marking_printing_mode_vertical",
+        "type": "font::PrintingModePositionVertical",
+        "description": "the vertical printing mode of the marking text\ndefault: CentreLine"
+      },
+      {
+        "macros": [],
+        "name": "marking_printing_mode_width_calculation",
+        "type": "font::PrintingModeWidthCalculation",
+        "description": "the width calculation mode to be used with the marking text\ndefault: Absolute"
+      },
+      {
+        "macros": [],
+        "name": "marking_size",
+        "type": "f32",
+        "description": "the font size of the marking text\ndefault: 2.0"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

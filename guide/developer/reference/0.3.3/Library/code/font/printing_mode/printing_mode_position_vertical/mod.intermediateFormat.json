@@ -1,0 +1,72 @@
+{
+  "type": "Enum",
+  "name": "PrintingModePositionVertical",
+  "description": "Where the text should be printed relative to the object's Y position",
+  "macros": [
+    "#[derive(PartialEq, Eq, Hash, Clone, Copy, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "DesignedTop",
+        "data": null,
+        "description": "Text should be anchored on the top. The top of the text being defined by the font's author as the \"absolute top\""
+      },
+      {
+        "macros": [],
+        "name": "CalculatedTop",
+        "data": null,
+        "description": "Text should be anchored on the top. The top of the text being measured at run time"
+      },
+      {
+        "macros": [],
+        "name": "TopLine",
+        "data": null,
+        "description": "Text should be anchored on the top. The top of the text being defined by the font's author as the \"top line\""
+      },
+      {
+        "macros": [],
+        "name": "CalculatedCentre",
+        "data": null,
+        "description": "Text should be anchored on the centre. The centre of the text being measured at run time"
+      },
+      {
+        "macros": [],
+        "name": "CapitalCenter",
+        "data": null,
+        "description": "Text should be anchored on the centre. The centre of the text being defined exactly 50% the height of a capital letter"
+      },
+      {
+        "macros": [],
+        "name": "CentreLine",
+        "data": null,
+        "description": "Text should be anchored on the centre. The centre of the text being defined by the font's author as the \"centre line\""
+      },
+      {
+        "macros": [],
+        "name": "DesignedBottom",
+        "data": null,
+        "description": "Text should be anchored on the bottom. The top of the text being defined by the font's author as the \"absolute bottom\""
+      },
+      {
+        "macros": [],
+        "name": "CalculatedBottom",
+        "data": null,
+        "description": "Text should be anchored on the bottom. The bottom of the text being measured at run time"
+      },
+      {
+        "macros": [],
+        "name": "BottomLine",
+        "data": null,
+        "description": "Text should be anchored on the bottom. The top of the text being defined by the font's author as the \"bottom line\""
+      }
+    ]
+  },
+  "exampleTexts": []
+}

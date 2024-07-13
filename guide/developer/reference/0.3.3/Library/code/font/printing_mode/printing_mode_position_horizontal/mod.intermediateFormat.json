@@ -1,0 +1,36 @@
+{
+  "type": "Enum",
+  "name": "PrintingModePositionHorizontal",
+  "description": "Where the text should be printed relative to the object's X position",
+  "macros": [
+    "#[derive(PartialEq, Eq, Hash, Clone, Copy, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Left",
+        "data": null,
+        "description": "Text should be anchored on the left"
+      },
+      {
+        "macros": [],
+        "name": "Middle",
+        "data": null,
+        "description": "Text should be anchored in the centre"
+      },
+      {
+        "macros": [],
+        "name": "Right",
+        "data": null,
+        "description": "Text should be anchored on the right"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

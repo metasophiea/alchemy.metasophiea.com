@@ -1,0 +1,29 @@
+{
+  "type": "TupleStruct",
+  "name": "DatagramConnectionResult",
+  "description": "A collection of data reporting the details of a Datagram port's connection being made, changed or broken.",
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ConnectionResult",
+      "originalName": null,
+      "fileAddress": "Platform/interface/exchange/structs/connection_result/mod"
+    },
+    {
+      "name": "DatagramPortID",
+      "originalName": null,
+      "fileAddress": "Platform/interface/central_exchange/types/port_id/datagram/DatagramPortID"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "ConnectionResult<DatagramPortID>"
+    ]
+  },
+  "exampleTexts": []
+}

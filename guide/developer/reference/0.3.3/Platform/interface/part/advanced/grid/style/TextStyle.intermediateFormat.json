@@ -1,0 +1,54 @@
+{
+  "type": "Struct",
+  "name": "TextStyle",
+  "description": "Used to describes the style of grid text",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "vivid::Colour",
+        "description": "the colour of the text\ndefault: {r:0.0, g:1.0, b:0.0, a:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "size",
+        "type": "f32",
+        "description": "the font size\ndefault: 7.5"
+      },
+      {
+        "macros": [],
+        "name": "font",
+        "type": "String",
+        "description": "the font used for the text\ndefault: \"helvetica\""
+      },
+      {
+        "macros": [],
+        "name": "horizontal_position_offset",
+        "type": "Option<(f32,f32)>",
+        "description": "the offset of text rendered against the horizontal markings\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "vertical_position_offset",
+        "type": "Option<(f32,f32)>",
+        "description": "the offset of text rendered against the vertical markings\ndefault: -none-"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

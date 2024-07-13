@@ -1,0 +1,52 @@
+{
+  "type": "Struct",
+  "name": "Style",
+  "description": "Used to define the style that a list should take",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ButtonStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/style/ButtonStyle"
+    },
+    {
+      "name": "ButtonStyleCollection",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/style/ButtonStyleCollection"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "background_colour",
+        "type": "vivid::Colour",
+        "description": "the background colour of the list\ndefault: {r:200.0/255.0, g:200.0/255.0, b:200.0/255.0, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "break_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of a break\ndefault: {r:0.6, g:0.6, b:0.6, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "button",
+        "type": "ButtonStyleCollection<ButtonStyle>",
+        "description": "the style that all items should take\ndefault: the default style is the default ButtonStyle with the following adjustments\n - body colour: {r:200.0/255.0, g:200.0/255.0, b:200.0/255.0, a:1.0}\n - line colour: {r:0.0/255.0, g:0.0/255.0, b:0.0/255.0, a:0.0}\n - text size: 5.0\n - thickness: 0.0\n each button state uses this default and applies further adjustments\n - off\n     - text colour: {r:0.6, g:0.6, b:0.6, a:1.0}\n - up\n     - no changes\n - press\n     - body_colour: {r:230.0/255.0, g:230.0/255.0, b:230.0/255.0, a:1.0}\n - select\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - select_press\n     - body_colour: {r:230.0/255.0, g:230.0/255.0, b:230.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - glow\n     - body_colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n - glow_press\n     - body_colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n - glow_select\n     - body_colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - glow_select_press\n     - body_colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - hover\n     - body_colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n - hover_press\n     - body_colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n - hover_select\n     - body_colour: {r:220.0/255.0, g:220.0/255.0, b:220.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - hover_select_press\n     - body_colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - hover_glow\n     - body_colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n - hover_glow_press\n     - body_colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n - hover_glow_select\n     - body_colour: {r:240.0/255.0, g:240.0/255.0, b:240.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75\n - hover_glow_select_press\n     - body_colour: {r:250.0/255.0, g:250.0/255.0, b:250.0/255.0, a:1.0}\n     - line_colour: {r:120.0/255.0, g:120.0/255.0, b:120.0/255.0, a:1.0}\n     - thickness: 0.75"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,31 @@
+{
+  "type": "Struct",
+  "name": "ID",
+  "description": "A unique identifier",
+  "macros": [
+    "#[derive(Hash, PartialEq, Eq, Clone, Copy, PartialOrd, Ord, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "index",
+        "type": "usize",
+        "description": "Represents the position in the manifest structure's data holding area"
+      },
+      {
+        "macros": [],
+        "name": "generation",
+        "type": "usize",
+        "description": "Represents the number of times this position has been used"
+      }
+    ]
+  },
+  "exampleTexts": [
+    "{\n    \"index\": 0,\n    \"generation\": 0\n}"
+  ]
+}

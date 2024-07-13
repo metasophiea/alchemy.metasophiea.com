@@ -1,0 +1,73 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Image Checkbox",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the button\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the button\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "style__check",
+        "type": "Option<std::path::PathBuf>",
+        "description": "the style of the checkbox when it is checked\ndefault: the \"no image\" image"
+      },
+      {
+        "macros": [],
+        "name": "style__uncheck",
+        "type": "Option<std::path::PathBuf>",
+        "description": "the style of the checkbox when it is not checked\ndefault: the \"no image\" image"
+      },
+      {
+        "macros": [],
+        "name": "style__check_glow",
+        "type": "Option<std::path::PathBuf>",
+        "description": "the style of the checkbox when it is checked and glowing\ndefault: the \"no image\" image"
+      },
+      {
+        "macros": [],
+        "name": "style__uncheck_glow",
+        "type": "Option<std::path::PathBuf>",
+        "description": "the style of the checkbox when it is not checked and glowing\ndefault: the \"no image\" image"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

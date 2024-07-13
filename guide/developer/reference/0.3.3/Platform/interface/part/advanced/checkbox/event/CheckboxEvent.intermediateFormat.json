@@ -1,0 +1,30 @@
+{
+  "type": "Enum",
+  "name": "CheckboxEvent",
+  "description": "Describes the state of a checkbox",
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Checked",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Unchecked",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

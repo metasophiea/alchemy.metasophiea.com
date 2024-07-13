@@ -1,0 +1,41 @@
+{
+  "type": "Struct",
+  "name": "PerformNote",
+  "description": "A command to begin performing a particular note",
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Name",
+      "originalName": null,
+      "fileAddress": "Library/code/musical_instruction/name/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "name",
+        "type": "Name",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "octave",
+        "type": "i8",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "velocity",
+        "type": "f32",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

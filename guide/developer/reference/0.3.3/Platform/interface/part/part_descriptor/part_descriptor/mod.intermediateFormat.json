@@ -1,0 +1,36 @@
+{
+  "type": "Struct",
+  "name": "PartDescriptor",
+  "description": "Used to describe any part",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(deny_unknown_fields)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "UniversalUnifiedAttribute",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/part_descriptor/universal_unified_attribute/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "name",
+        "type": "String",
+        "description": "the name of the part"
+      },
+      {
+        "macros": [],
+        "name": "attribute",
+        "type": "UniversalUnifiedAttribute",
+        "description": "all details about the part"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

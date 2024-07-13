@@ -1,0 +1,60 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Image Glowbox",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the glowbox\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the glowbox\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the glowbox\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the glowbox\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the glowbox\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "glow",
+        "type": "std::path::PathBuf",
+        "description": "the image to use when it is glowing\ndefault: the \"vivid test logo\" image"
+      },
+      {
+        "macros": [],
+        "name": "dim",
+        "type": "std::path::PathBuf",
+        "description": "the image to use when it is not glowing\ndefault: the \"colour squares\" image"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

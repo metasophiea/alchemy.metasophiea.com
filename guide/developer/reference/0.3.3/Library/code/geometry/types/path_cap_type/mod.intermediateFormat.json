@@ -1,0 +1,41 @@
+{
+  "type": "Enum",
+  "name": "PathCapType",
+  "description": "The shape to be drawn at the ends of a path",
+  "macros": [
+    "#[derive(Copy, Clone, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "None",
+        "data": null,
+        "description": "No shape is drawn. The ends of the path will be flat."
+      },
+      {
+        "macros": [],
+        "name": "Square",
+        "data": null,
+        "description": "Half a square is drawn on the end of the path's ends"
+      },
+      {
+        "macros": [],
+        "name": "Round",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "u32"
+          ]
+        },
+        "description": "Half a circle is drawn on the end of the path's ends, with a number of points defined by the provided value"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

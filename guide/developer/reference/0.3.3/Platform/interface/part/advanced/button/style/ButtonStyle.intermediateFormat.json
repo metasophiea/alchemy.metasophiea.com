@@ -1,0 +1,79 @@
+{
+  "type": "Struct",
+  "name": "ButtonStyle",
+  "description": "A structure used to describe the style state of a button ",
+  "macros": [
+    "#[derive(Clone, Serialize, Deserialize, PartialEq)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "body_colour",
+        "type": "vivid::Colour",
+        "description": "the background colour\ndefault: {r:0.9, g:0.9, b:0.9, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "line_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of the outline\ndefault: {r:0.1, g:0.1, b:0.1, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "f32",
+        "description": "the thickness of the outline\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "text_font",
+        "type": "String",
+        "description": "the font used for text\ndefault: \"arial\""
+      },
+      {
+        "macros": [],
+        "name": "text_size",
+        "type": "f32",
+        "description": "the size of text\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "text_spacing",
+        "type": "f32",
+        "description": "the size of spacing within text\ndefault: 2.5"
+      },
+      {
+        "macros": [],
+        "name": "text_inter_character_spacing",
+        "type": "f32",
+        "description": "the distance between individual characters\ndefault: 0.5"
+      },
+      {
+        "macros": [],
+        "name": "text_detail",
+        "type": "usize",
+        "description": "the level of detail to be used when rendering the font\ndefault: 2"
+      },
+      {
+        "macros": [],
+        "name": "text_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of the text\ndefault: {r:0.0, g:0.0, b:0.0, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

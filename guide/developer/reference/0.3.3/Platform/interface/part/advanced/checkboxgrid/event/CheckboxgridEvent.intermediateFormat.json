@@ -1,0 +1,63 @@
+{
+  "type": "Enum",
+  "name": "CheckboxgridEvent",
+  "description": "Describes the state of a checkboxgrid",
+  "macros": [
+    "#[derive(PartialEq, Eq,  Serialize, Deserialize)]",
+    "#[serde(tag = \"type\", content = \"content\")]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Checked",
+        "data": {
+          "type": "CStruct",
+          "content": [
+            {
+              "macros": [],
+              "name": "x",
+              "type": "usize",
+              "description": null
+            },
+            {
+              "macros": [],
+              "name": "y",
+              "type": "usize",
+              "description": null
+            }
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Unchecked",
+        "data": {
+          "type": "CStruct",
+          "content": [
+            {
+              "macros": [],
+              "name": "x",
+              "type": "usize",
+              "description": null
+            },
+            {
+              "macros": [],
+              "name": "y",
+              "type": "usize",
+              "description": null
+            }
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

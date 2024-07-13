@@ -1,0 +1,43 @@
+{
+  "type": "Struct",
+  "name": "Executable",
+  "description": "Details of the executable that will be run when an external unit is started",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(deny_unknown_fields)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [
+          "#[serde(skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "name": "mac",
+        "type": "Option<PathBuf>",
+        "description": "the file path to be used on MacOs systems"
+      },
+      {
+        "macros": [
+          "#[serde(skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "name": "win",
+        "type": "Option<PathBuf>",
+        "description": "the file path to be used on Windows systems"
+      },
+      {
+        "macros": [
+          "#[serde(default)]"
+        ],
+        "name": "args",
+        "type": "Vec<String>",
+        "description": "arguments to be provided to the executable"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

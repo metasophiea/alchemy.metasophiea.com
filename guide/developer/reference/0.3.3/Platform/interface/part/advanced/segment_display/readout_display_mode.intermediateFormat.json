@@ -1,0 +1,42 @@
+{
+  "type": "Enum",
+  "name": "ReadoutDisplayMode",
+  "description": "The method that the display will take when displaying text",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Smart",
+        "data": null,
+        "description": "Display the text in \"Static\" mode unless the text is longer than what the display can show, in which case switch to \"R2LSweep\""
+      },
+      {
+        "macros": [],
+        "name": "R2LSweep",
+        "data": null,
+        "description": "The text will scroll from right to left"
+      },
+      {
+        "macros": [],
+        "name": "L2RSweep",
+        "data": null,
+        "description": "The text will scroll from left to right"
+      },
+      {
+        "macros": [],
+        "name": "Static",
+        "data": null,
+        "description": "The text will be shown without movement. If the text is longer than what the display can show, the remaining characters will not be seen"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

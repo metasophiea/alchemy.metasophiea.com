@@ -1,0 +1,90 @@
+{
+  "type": "Enum",
+  "name": "Name",
+  "description": "Chromatic scale note names",
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "C",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "CSharp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "D",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DSharp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "E",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "FSharp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "G",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "GSharp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "A",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ASharp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "B",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

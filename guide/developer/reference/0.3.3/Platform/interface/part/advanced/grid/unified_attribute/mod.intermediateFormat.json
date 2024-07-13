@@ -1,0 +1,112 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Grid",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "LineStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/grid/style/LineStyle"
+    },
+    {
+      "name": "Marking",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/grid/marking/mod"
+    },
+    {
+      "name": "TextStyle",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/grid/style/TextStyle"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the grid\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the grid\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the grid\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the grid\ndefault: 120.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the grid\ndefault: 60.0"
+      },
+      {
+        "macros": [],
+        "name": "style",
+        "type": "LineStyle",
+        "description": "the line style to use for the lines\ndefault LineStyle default with the following adjustments\n - colour: {r:0.0, g:0.39, b:0.0, a:1.0}\n - thickness: 0.25"
+      },
+      {
+        "macros": [],
+        "name": "text_style",
+        "type": "TextStyle",
+        "description": "the text style to use for markings\ndefault: the default text style with the following adjustments\n - colour: {r:0.0, g:0.58, b:0.0, a:1.0}\n - size: 2.0\n - font: \"helvetica\"\n - horizontal_position_offset: {x:0.25, y:2.25}\n - vertical_position_offset: {x:0.25, y:2.25}"
+      },
+      {
+        "macros": [],
+        "name": "horizontal_markings_x_position",
+        "type": "f32",
+        "description": "the x position for all of the background text markings in the horizontal direction\ndefault: 0.5"
+      },
+      {
+        "macros": [],
+        "name": "horizontal_markings",
+        "type": "Vec<Marking>",
+        "description": "a vector of horizontal markings\ndefault: a vector of 7 markings, using the default Marking with the following adjustments for each\n - 0 : position: (1.0 + 0.75) / 2.0 text: \"0.75\"\n - 1 : position: (1.0 + 0.5) / 2.0 text: \"0.5\"\n - 2 : position: (1.0 + 0.25) / 2.0 text: \"0.25\"\n - 3 : position: (1.0 + 0.0) / 2.0 text: \"0.0\"\n - 4 : position: (1.0 + -0.25) / 2.0 text: \"-0.25\"\n - 5 : position: (1.0 + -0.5) / 2.0 text: \"-0.5\"\n - 6 : position: (1.0 + -0.75) / 2.0 text: \"-0.75\""
+      },
+      {
+        "macros": [],
+        "name": "vertical_markings_y_position",
+        "type": "f32",
+        "description": "the y position for all of the background text markings in the horizontal vertical\ndefault: 0.5"
+      },
+      {
+        "macros": [],
+        "name": "vertical_markings",
+        "type": "Vec<Marking>",
+        "description": "a vector of horizontal markings\ndefault: a vector of 7 markings, using the default Marking with the following adjustments for each\n - 0 : position: (1.0 + 0.75) / 2.0 text: \"0.75\"\n - 1 : position: (1.0 + 0.5) / 2.0 text: \"0.5\"\n - 2 : position: (1.0 + 0.25) / 2.0 text: \"0.25\"\n - 3 : position: (1.0 + 0.0) / 2.0 text: \"0.0\"\n - 4 : position: (1.0 + -0.25) / 2.0 text: \"-0.25\"\n - 5 : position: (1.0 + -0.5) / 2.0 text: \"-0.5\"\n - 6 : position: (1.0 + -0.75) / 2.0 text: \"-0.75\""
+      },
+      {
+        "macros": [],
+        "name": "backing_colour",
+        "type": "vivid::Colour",
+        "description": "the background colour\ndefault: {r:0.2, g:0.2, b:0.2, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

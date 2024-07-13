@@ -1,0 +1,74 @@
+{
+  "type": "Enum",
+  "name": "Message",
+  "description": "The data structure that is sent from one port to another, holding as payload the data type for each connection type",
+  "macros": [
+    "#[derive(Clone, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]",
+    "#[serde(tag = \"type\", content = \"content\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "AlpaNodeId",
+      "originalName": "NodeId",
+      "fileAddress": "Platform/audio/alpa/library/id/node_id/mod"
+    },
+    {
+      "name": "Datagram",
+      "originalName": null,
+      "fileAddress": "Platform/interface/central_exchange/types/datagram/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Boolean",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "bool"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "F32",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "f32"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Audio",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "AlpaNodeId"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Datagram",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Datagram"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

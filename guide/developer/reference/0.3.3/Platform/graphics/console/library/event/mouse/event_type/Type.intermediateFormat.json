@@ -1,0 +1,72 @@
+{
+  "type": "Enum",
+  "name": "Type",
+  "description": "The action taken by the mouse.",
+  "macros": [
+    "#[derive(PartialEq, Eq, Hash, Clone, Copy, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "OnMouseDown",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnMouseUp",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnMouseMove",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnMouseEnter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnMouseLeave",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnMouseEnterElement",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnMouseLeaveElement",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnClick",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "OnDoubleClick",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

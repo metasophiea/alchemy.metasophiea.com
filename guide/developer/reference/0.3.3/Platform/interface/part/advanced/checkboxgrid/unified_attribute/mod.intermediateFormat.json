@@ -1,0 +1,115 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Checkboxgrid",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the button\ndefault: 150.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the button\ndefault: 150.0"
+      },
+      {
+        "macros": [],
+        "name": "x_count",
+        "type": "usize",
+        "description": "the number of checkbox columns\ndefault: 5"
+      },
+      {
+        "macros": [],
+        "name": "y_count",
+        "type": "usize",
+        "description": "the number of checkbox rows\ndefault: 5"
+      },
+      {
+        "macros": [],
+        "name": "check_mark_percentage_size",
+        "type": "f32",
+        "description": "the size of the check rectangles as a percentage of the overall checkbox size\ndefault: 0.9"
+      },
+      {
+        "macros": [],
+        "name": "gappage",
+        "type": "f32",
+        "description": "the space between checkboxes\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "style__check",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is checked\ndefault: {r:0.58, g:0.58, b:0.58, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__uncheck",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is not checked\ndefault: {r:0.0, g:0.0, b:0.0, a:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__backing",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox background rectangle\ndefault: {r:0.78, g:0.78, b:0.78, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__check_glow",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is checked and glowing\ndefault: {r:0.86, g:0.86, b:0.86, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__uncheck_glow",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is not checked and glowing\ndefault: {r:0.0, g:0.0, b:0.0, a:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__backing_glow",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox background rectangle when glowing\ndefault: {r:0.86, g:0.86, b:0.86, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,79 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Continuous Slide (Image) ",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the part\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the part\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the part\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the part\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the part\ndefault: 100.0"
+      },
+      {
+        "macros": [],
+        "name": "handle_height_percentage",
+        "type": "f32",
+        "description": "the hight of the slide's handle as a percentage of the total height of the slide\ndefault: 0.1"
+      },
+      {
+        "macros": [],
+        "name": "active",
+        "type": "bool",
+        "description": "whether the part should be interactable or not\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "reset_value",
+        "type": "Option<f32>",
+        "description": "the position which the handle will return to when the part is double-clicked. If no value is provided, the resetting functionality will not be active\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "style_backing",
+        "type": "Option<std::path::PathBuf>",
+        "description": "the image to be used for the backing rectangle\ndefault: the \"no image\" image"
+      },
+      {
+        "macros": [],
+        "name": "style_handle",
+        "type": "Option<std::path::PathBuf>",
+        "description": "the image to be used for the handle rectangle\ndefault: the \"no image\" image"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

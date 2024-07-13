@@ -1,0 +1,29 @@
+{
+  "type": "TupleStruct",
+  "name": "BooleanConnectionResult",
+  "description": "A collection of data reporting the details of a Boolean port's connection being made, changed or broken.",
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "BooleanPortID",
+      "originalName": null,
+      "fileAddress": "Platform/interface/central_exchange/types/port_id/boolean/BooleanPortID"
+    },
+    {
+      "name": "ConnectionResult",
+      "originalName": null,
+      "fileAddress": "Platform/interface/exchange/structs/connection_result/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "ConnectionResult<BooleanPortID>"
+    ]
+  },
+  "exampleTexts": []
+}

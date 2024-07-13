@@ -1,0 +1,17 @@
+{
+  "type": "Const",
+  "name": "BUFFER_LENGTH",
+  "description": "The number of samples an individual buffer contains",
+  "macros": [],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Const",
+    "content": [
+      "usize",
+      "128"
+    ]
+  },
+  "exampleTexts": []
+}

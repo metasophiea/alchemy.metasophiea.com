@@ -1,0 +1,96 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Polygon Checkbox",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "geometry::HyperPolygon",
+      "originalName": "HyperPolygon",
+      "fileAddress": "Library/code/geometry/objects/hyper_polygon/mod"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "outer_points",
+        "type": "geometry::HyperPolygon",
+        "description": "the points of a HyperPolygon representing the outer points of the checkbox\ndefault: a default HyperPolygon"
+      },
+      {
+        "macros": [],
+        "name": "inner_points",
+        "type": "geometry::HyperPolygon",
+        "description": "the points of a HyperPolygon representing the inner points of the checkbox\ndefault: a default HyperPolygon"
+      },
+      {
+        "macros": [],
+        "name": "style__check",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is checked\ndefault: {r:0.58, g:0.58, b:0.58, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__uncheck",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is not checked\ndefault: {r:0.0, g:0.0, b:0.0, a:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__backing",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox background HyperPolygon\ndefault: {r:0.78, g:0.78, b:0.78, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__check_glow",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is checked and glowing\ndefault: {r:0.86, g:0.86, b:0.86, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__uncheck_glow",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox check mark when it is not checked and glowing\ndefault: {r:0.0, g:0.0, b:0.0, a:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "style__backing_glow",
+        "type": "vivid::Colour",
+        "description": "the style of the checkbox background HyperPolygon when glowing\ndefault: {r:0.86, g:0.86, b:0.86, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

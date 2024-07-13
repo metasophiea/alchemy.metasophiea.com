@@ -1,0 +1,29 @@
+{
+  "type": "Struct",
+  "name": "FrequencyAmplitudeResponseAnalyserResult",
+  "description": "The result gathered from a Frequency Amplitude Response Analyser",
+  "macros": [
+    "#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "frequency",
+        "type": "f32",
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "response",
+        "type": "f32",
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

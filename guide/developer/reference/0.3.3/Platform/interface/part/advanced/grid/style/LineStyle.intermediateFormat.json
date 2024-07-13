@@ -1,0 +1,35 @@
+{
+  "type": "Struct",
+  "name": "LineStyle",
+  "description": "Used to describes the style of a grid line",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize, PartialEq)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "vivid::Colour",
+        "description": "the colour of the line\ndefault: {r:0.0, g:1.0, b:0.0, a:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "f32",
+        "description": "the thickness of the line\ndefault: 0.5"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

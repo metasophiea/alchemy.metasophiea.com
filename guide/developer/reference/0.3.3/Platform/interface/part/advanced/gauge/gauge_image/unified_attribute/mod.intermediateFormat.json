@@ -1,0 +1,79 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Gauge (Image)",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the gauge\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the gauge\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the gauge\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the gauge\ndefault: 50.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the gauge\ndefault: 30.0"
+      },
+      {
+        "macros": [],
+        "name": "needle_angle_bounds",
+        "type": "(f32, f32)",
+        "description": "the angles between which the needle will be active\ndefault: (-PI/4.0, PI/4.0)"
+      },
+      {
+        "macros": [],
+        "name": "needle_articulation_point",
+        "type": "(f32, f32)",
+        "description": "the XY coordinate at which the needle appears to be fixed\ndefault: (0.5, 1.2)"
+      },
+      {
+        "macros": [],
+        "name": "backing_file_location",
+        "type": "std::path::PathBuf",
+        "description": "the image to be used for the background\ndefault: no \"colour_squares\" image"
+      },
+      {
+        "macros": [],
+        "name": "needle_colours",
+        "type": "Vec<vivid::Colour>",
+        "description": "the colour the needles. The number of colours provided here will define the number of needles present in te gauge\ndefault: {r:0.98, g:0.98, b:0.98, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

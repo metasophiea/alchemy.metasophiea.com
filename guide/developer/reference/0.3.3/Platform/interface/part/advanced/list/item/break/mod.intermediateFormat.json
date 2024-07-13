@@ -1,0 +1,30 @@
+{
+  "type": "Struct",
+  "name": "Break",
+  "description": "An item used as a spacer in lists, with a horizontal line across the centre",
+  "macros": [
+    "#[derive(Copy, Clone, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "height_percentage",
+        "type": "f32",
+        "description": "the height of the break, as a percentage of the item height\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "line_height",
+        "type": "f32",
+        "description": "the height of the line within a break\ndefault: 1.0"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

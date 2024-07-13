@@ -1,0 +1,106 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Path Glowbox",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    },
+    {
+      "name": "geometry::PathCapType",
+      "originalName": "PathCapType",
+      "fileAddress": "Library/code/geometry/types/path_cap_type/mod"
+    },
+    {
+      "name": "geometry::PathJointType",
+      "originalName": "PathJointType",
+      "fileAddress": "Library/code/geometry/types/path_joint_type/mod"
+    },
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the glowbox\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the glowbox\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the glowbox\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "points",
+        "type": "Vec<Point>",
+        "description": "a series of points defining the path\ndefault: {x:0.0, y:5.0}, {x:5.0, y:0.0}, {x:25.0, y:0.0}, {x:30.0, y:5.0}, {x:30.0, y:25.0}, {x:25.0, y:30.0}, {x:5.0, y:30.0}, {x:0.0, y:25.0}"
+      },
+      {
+        "macros": [],
+        "name": "loop_path",
+        "type": "bool",
+        "description": "whether the end of the path should connect to the start\ndefault: false"
+      },
+      {
+        "macros": [],
+        "name": "thickness",
+        "type": "f32",
+        "description": "the thickness of the path\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "balance",
+        "type": "f32",
+        "description": "the balance of a path defines to which side of the path the rendered path should be drawn.\n - 0.0 - follow the path as normal\n - 1.0 - shift the path to the right\n - -1.0 - shift the path to the left\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "path_cap_type",
+        "type": "geometry::PathCapType",
+        "description": "the cap type to be used (only used when path is not looping)\ndefault: None"
+      },
+      {
+        "macros": [],
+        "name": "path_joint_type",
+        "type": "geometry::PathJointType",
+        "description": "the joint type to be used\ndefault: None"
+      },
+      {
+        "macros": [],
+        "name": "glow",
+        "type": "vivid::Colour",
+        "description": "the colour of the glowbox when it is glowing\ndefault: {r:0.95, g:0.91, b:0.55, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "dim",
+        "type": "vivid::Colour",
+        "description": "the colour of the glowbox when it is not glowing\ndefault: {r:0.31, g:0.31, b:0.31, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

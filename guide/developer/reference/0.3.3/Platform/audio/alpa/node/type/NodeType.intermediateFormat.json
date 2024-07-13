@@ -1,0 +1,233 @@
+{
+  "type": "Enum",
+  "name": "NodeType",
+  "description": "The type of a node",
+  "macros": [
+    "#[derive(Clone, Copy, Serialize, Deserialize, PartialEq)]",
+    "#[serde(tag = \"type\", content = \"content\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "AudioBuffer",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "usize"
+          ]
+        },
+        "description": "AudioBuffer's can have many channels within them. The value provided here defines how many channels there will be."
+      },
+      {
+        "macros": [],
+        "name": "IntegratedSynthesizer",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Oscillator",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamAdder",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamAdder3",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamDefiner",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamDivider",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamDuplicator",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamInverter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamLimiterCeiling",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamLimiterFloor",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamMultiplier",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamPassThrough",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamRatio",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamSubtracter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamSwitch",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamTripler",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "AmplitudeModifier",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "BiquadFilter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Bitcrusher",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Convolver",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Delay",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "EightToOneStreamMixer",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "EightToTwoStreamMixer",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Gain",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "HighMidLowFilter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "LagProcessor",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Sigmoid",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "StreamMixer",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "WaveShaper",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "FullFrameRetriever",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "MomentaryAmplitudeMeter",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "SingleChannelRecorder",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DoubleChannelRecorder",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "FrequencyAmplitudeResponseAnalyser",
+        "data": null,
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

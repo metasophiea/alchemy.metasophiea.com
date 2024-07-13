@@ -1,0 +1,43 @@
+{
+  "type": "Struct",
+  "name": "Colour",
+  "description": "A structure representing a colour using four channels: Red, Green, Blue and Alpha",
+  "macros": [
+    "#[derive(Copy, Clone, Debug, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "r",
+        "type": "f32",
+        "description": "The Red channel."
+      },
+      {
+        "macros": [],
+        "name": "g",
+        "type": "f32",
+        "description": "The Green channel."
+      },
+      {
+        "macros": [],
+        "name": "b",
+        "type": "f32",
+        "description": "The Blue channel."
+      },
+      {
+        "macros": [],
+        "name": "a",
+        "type": "f32",
+        "description": "The Alpha channel, for transparency."
+      }
+    ]
+  },
+  "exampleTexts": [
+    "{\"r\":1.0, \"g\":1.0, \"b\":1.0, \"a\":1.0}"
+  ]
+}

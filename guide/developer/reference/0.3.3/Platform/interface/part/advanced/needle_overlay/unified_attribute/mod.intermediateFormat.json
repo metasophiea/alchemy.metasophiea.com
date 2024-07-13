@@ -1,0 +1,103 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "The unified attribute for the Needle Overlay",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the button\ndefault: 120.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the button\ndefault: 60.0"
+      },
+      {
+        "macros": [],
+        "name": "needle_width",
+        "type": "f32",
+        "description": "the width of a needle\ndefault: 0.25"
+      },
+      {
+        "macros": [],
+        "name": "needle_invisible_handle_width",
+        "type": "f32",
+        "description": "the width of a needle's \"invisible handle\", or the invisible area in which a mouse action will be registered\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "point_needle_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of a point needle\ndefault: {r:0.94, g:0.94, b:0.94, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "area_needle_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of an area needle\ndefault: {r:1.0, g:0.9, b:0.44, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "area_body_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of an area body\ndefault: {r:1.0, g:0.9, b:0.44, a:0.5}"
+      },
+      {
+        "macros": [],
+        "name": "allow_wrapping",
+        "type": "bool",
+        "description": "allow an area's body to wrap around the ends of the needle overlay space (creating a loop)\ndefault: false"
+      },
+      {
+        "macros": [],
+        "name": "points_interactable",
+        "type": "bool",
+        "description": "allow point needles to be interacted with\ndefault: true"
+      },
+      {
+        "macros": [],
+        "name": "areas_interactable",
+        "type": "bool",
+        "description": "allow areas to be interacted with\ndefault: true"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

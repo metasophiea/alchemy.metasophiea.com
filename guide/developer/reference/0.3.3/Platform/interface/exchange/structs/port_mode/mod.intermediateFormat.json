@@ -1,0 +1,30 @@
+{
+  "type": "Enum",
+  "name": "PortMode",
+  "description": "This value defines the direction-of-flow for this port. This only applies to Audio ports and as such is used to define whether a certain point will be sending audio data, or is set up to receive it",
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Consumer",
+        "data": null,
+        "description": "This port has been configured to receive data"
+      },
+      {
+        "macros": [],
+        "name": "Producer",
+        "data": null,
+        "description": "This port has been configured to send data"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,29 @@
+{
+  "type": "Struct",
+  "name": "SnappingThreshold",
+  "description": "The distances from a port that a wrangled cable may connect or disconnect",
+  "macros": [
+    "#[derive(Debug, Clone, Copy, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "catch",
+        "type": "f32",
+        "description": "The distance from which a wrangled cable may automatically connect itself to a port"
+      },
+      {
+        "macros": [],
+        "name": "escape",
+        "type": "f32",
+        "description": "The distance from which a wrangled cable must be taken away from a port, for it to disconnect"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

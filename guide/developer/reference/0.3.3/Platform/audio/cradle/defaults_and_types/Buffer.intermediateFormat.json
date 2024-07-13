@@ -1,0 +1,26 @@
+{
+  "type": "TypeAlias",
+  "name": "Buffer",
+  "description": "A buffer is a collection of Samples. Containers and audio processes will work with these structures as the basic block of sound",
+  "macros": [],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Sample",
+      "originalName": null,
+      "fileAddress": "Platform/audio/cradle/defaults_and_types/Sample"
+    }
+  ],
+  "constants": [
+    {
+      "name": "BUFFER_LENGTH",
+      "originalName": null,
+      "fileAddress": "Platform/audio/cradle/defaults_and_types/BUFFER_LENGTH"
+    }
+  ],
+  "typeSpecificData": {
+    "type": "TypeAlias",
+    "content": "[Sample; BUFFER_LENGTH]"
+  },
+  "exampleTexts": []
+}

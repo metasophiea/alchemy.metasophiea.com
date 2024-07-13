@@ -1,0 +1,30 @@
+{
+  "type": "Enum",
+  "name": "PrintingModeWidthCalculation",
+  "description": "Defines if the provided width should define the total width of the string, or the widths of each character within that string",
+  "macros": [
+    "#[derive(PartialEq, Eq, Hash, Clone, Copy, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Filling",
+        "data": null,
+        "description": "Provided width should define the width of the entire string"
+      },
+      {
+        "macros": [],
+        "name": "Absolute",
+        "data": null,
+        "description": "Provided width should define the width of each character"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,26 @@
+{
+  "type": "TupleStruct",
+  "name": "HyperPolygon",
+  "description": "A shape comprising a series of ComplexPolygons",
+  "macros": [
+    "#[derive(Clone, PartialEq, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ComplexPolygon",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/complex_polygon/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TupleStruct",
+    "content": [
+      "Vec<ComplexPolygon>"
+    ]
+  },
+  "exampleTexts": [
+    "[{\"body\":[{\"x\":0.0,\"y\":0.0},{\"x\":10.0,\"y\":0.0},{\"x\":10.0,\"y\":10.0},{\"x\":0.0,\"y\":10.0}],\"holes\":[[{\"x\":2.0,\"y\":2.0},{\"x\":8.0,\"y\":2.0},{\"x\":8.0,\"y\":8.0},{\"x\":2.0,\"y\":8.0}]]},{\"body\":[{\"x\":3.0,\"y\":3.0},{\"x\":7.0,\"y\":3.0},{\"x\":7.0,\"y\":7.0},{\"x\":3.0,\"y\":7.0}],\"holes\":[[{\"x\":4.0,\"y\":4.0},{\"x\":6.0,\"y\":4.0},{\"x\":6.0,\"y\":6.0},{\"x\":4.0,\"y\":6.0}]]}]"
+  ]
+}

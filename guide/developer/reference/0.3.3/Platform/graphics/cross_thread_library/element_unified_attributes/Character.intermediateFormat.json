@@ -1,0 +1,118 @@
+{
+  "type": "Struct",
+  "name": "Character",
+  "description": "The unified attribute for the Character element",
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Colour",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    },
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    },
+    {
+      "name": "PrintingModePositionHorizontal",
+      "originalName": null,
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_position_horizontal/mod"
+    },
+    {
+      "name": "PrintingModePositionVertical",
+      "originalName": null,
+      "fileAddress": "Library/code/font/printing_mode/printing_mode_position_vertical/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": "the X position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": "the Y position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": "the scale of the element\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": "the angle of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "font_name",
+        "type": "Option<String>",
+        "description": "the font used for the character\ndefault: \"default_thin\""
+      },
+      {
+        "macros": [],
+        "name": "character",
+        "type": "Option<char>",
+        "description": "the character to be rendered\ndefault: \" \""
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "Option<f32>",
+        "description": "the width of the gauge\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "Option<f32>",
+        "description": "the height of the gauge\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "anchor",
+        "type": "Option<Point>",
+        "description": "the anchor point of the element\ndefault: {x:0.0, y:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "printing_mode_horizontal",
+        "type": "Option<PrintingModePositionHorizontal>",
+        "description": "the horizontal printing mode of the character\ndefault: Left"
+      },
+      {
+        "macros": [],
+        "name": "printing_mode_vertical",
+        "type": "Option<PrintingModePositionVertical>",
+        "description": "the vertical printing mode of the character\ndefault: BottomLine"
+      },
+      {
+        "macros": [],
+        "name": "detail",
+        "type": "Option<usize>",
+        "description": "the level of detail to be used when rendering the character\ndefault: 1"
+      },
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "Option<Colour>",
+        "description": "the colour element\ndefault: {r:1.0, g:0.0, b:0.0, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

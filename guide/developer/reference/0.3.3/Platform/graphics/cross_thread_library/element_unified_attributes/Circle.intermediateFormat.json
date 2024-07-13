@@ -1,0 +1,67 @@
+{
+  "type": "Struct",
+  "name": "Circle",
+  "description": "The unified attribute for the Circle element",
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Colour",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": "the X position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": "the Y position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": "the scale of the element\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": "the angle of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "radius",
+        "type": "Option<f32>",
+        "description": "the radius of the circle\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "detail",
+        "type": "Option<usize>",
+        "description": "the number of points to use when drawing the circle\ndefault: 25"
+      },
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "Option<Colour>",
+        "description": "the colour element\ndefault: {r:1.0, g:0.0, b:0.0, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

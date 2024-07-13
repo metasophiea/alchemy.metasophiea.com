@@ -1,0 +1,53 @@
+{
+  "type": "Struct",
+  "name": "Data",
+  "description": "This structure holds the particulars of the mouse data for an event",
+  "macros": [
+    "#[derive(Clone, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Type",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/console/library/event/mouse/event_type/Type"
+    },
+    {
+      "name": "winit::event::MouseButton",
+      "originalName": "MouseButton",
+      "fileAddress": "Library/code/winit/event/MouseButton"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "event_type",
+        "type": "Type",
+        "description": "the action taken by the mouse"
+      },
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the mouse cursor's Y position"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the mouse cursor's Y position"
+      },
+      {
+        "macros": [],
+        "name": "buttons_pressed",
+        "type": "Option<HashSet<winit::event::MouseButton>>",
+        "description": "which mouse buttons were pressed in the action (if any)"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

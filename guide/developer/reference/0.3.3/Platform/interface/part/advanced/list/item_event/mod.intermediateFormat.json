@@ -1,0 +1,91 @@
+{
+  "type": "Enum",
+  "name": "ItemEvent",
+  "description": "An event produced by a List when an item is interacted with",
+  "macros": [
+    "#[derive(Clone, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(tag = \"type\", content = \"content\")]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "ButtonEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/button/event/ButtonEvent"
+    },
+    {
+      "name": "CheckboxEvent",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/checkbox/event/CheckboxEvent"
+    },
+    {
+      "name": "super::ListEvent",
+      "originalName": "ListEvent",
+      "fileAddress": "Platform/interface/part/advanced/list/event/ListEvent"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Button",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "ButtonEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Checkbox",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "CheckboxEvent"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "Radio",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "usize"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ListOpened",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "ListClosed",
+        "data": null,
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "List",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "Box<super::ListEvent>"
+          ]
+        },
+        "description": "An event coming from a sub-list"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

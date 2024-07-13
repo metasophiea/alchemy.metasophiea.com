@@ -1,0 +1,36 @@
+{
+  "type": "Struct",
+  "name": "Marking",
+  "description": "Used to describe horizontal or vertical marking on a grid, with optional text component",
+  "macros": [
+    "#[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "position",
+        "type": "f32",
+        "description": "depending on whether this is being using to describe a horizontal or a vertical marking, this value is used to represent its position in either the Y or X directions respectively\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "text",
+        "type": "Option<String>",
+        "description": "text which may appear beside the zero point of the marking\ndefault: -none-"
+      },
+      {
+        "macros": [],
+        "name": "text_position_offset",
+        "type": "Option<(f32,f32)>",
+        "description": "an optional offset which can be used to modify the position of the text relative to the marking's zero\ndefault: -none-"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,91 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "The unified attribute for the Raster Display",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "vivid::Colour",
+      "originalName": "Colour",
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the button\ndefault: 60.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "f32",
+        "description": "the height of the button\ndefault: 60.0"
+      },
+      {
+        "macros": [],
+        "name": "x_count",
+        "type": "usize",
+        "description": "the number of checkbox columns\ndefault: 8"
+      },
+      {
+        "macros": [],
+        "name": "y_count",
+        "type": "usize",
+        "description": "the number of checkbox rows\ndefault: 8"
+      },
+      {
+        "macros": [],
+        "name": "x_gappage",
+        "type": "f32",
+        "description": "the horizontal space between glowboxes\ndefault: 0.1"
+      },
+      {
+        "macros": [],
+        "name": "y_gappage",
+        "type": "f32",
+        "description": "the vertical  space between glowboxes\ndefault: 0.1"
+      },
+      {
+        "macros": [],
+        "name": "backing_colour",
+        "type": "vivid::Colour",
+        "description": "the background colour of the list\ndefault: {r:0.2, g:0.2, b:0.2, a:1.0}"
+      },
+      {
+        "macros": [],
+        "name": "pixel_colour",
+        "type": "vivid::Colour",
+        "description": "the colour of the pixels in the display\ndefault: {r:0.9, g:0.9, b:0.9, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

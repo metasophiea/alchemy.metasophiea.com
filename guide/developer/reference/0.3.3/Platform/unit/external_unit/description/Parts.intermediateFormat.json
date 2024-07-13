@@ -1,0 +1,37 @@
+{
+  "type": "Struct",
+  "name": "Parts",
+  "description": "The parts used in a unit, separated into \"front\" and \"back\" ",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "PartDescriptor",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/part_descriptor/part_descriptor/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [
+          "#[serde(skip_serializing_if = \"Option::is_none\")]"
+        ],
+        "name": "back",
+        "type": "Option<Vec<PartDescriptor>>",
+        "description": "a collection of parts that will be placed behind the \"base\""
+      },
+      {
+        "macros": [],
+        "name": "front",
+        "type": "Vec<PartDescriptor>",
+        "description": "a collection of parts that will be placed in front of the \"base\""
+      }
+    ]
+  },
+  "exampleTexts": []
+}

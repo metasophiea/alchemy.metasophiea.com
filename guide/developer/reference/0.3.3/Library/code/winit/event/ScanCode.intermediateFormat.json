@@ -1,0 +1,14 @@
+{
+  "type": "TypeAlias",
+  "name": "ScanCode",
+  "description": " Hardware-dependent keyboard scan code.",
+  "macros": [],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "TypeAlias",
+    "content": "u32"
+  },
+  "exampleTexts": []
+}

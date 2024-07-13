@@ -1,0 +1,78 @@
+{
+  "type": "Enum",
+  "name": "ButtonEvent",
+  "description": "Describes the state of a button",
+  "macros": [
+    "#[derive(Copy, Clone, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "Enter",
+        "data": null,
+        "description": "the mouse cursor has entered the area of the button"
+      },
+      {
+        "macros": [],
+        "name": "Leave",
+        "data": null,
+        "description": "the mouse cursor has left the area of the button"
+      },
+      {
+        "macros": [],
+        "name": "Press",
+        "data": null,
+        "description": "a mouse button has been pressed over the button"
+      },
+      {
+        "macros": [],
+        "name": "Release",
+        "data": null,
+        "description": "a mouse button has been released over the button"
+      },
+      {
+        "macros": [],
+        "name": "PressRelease",
+        "data": null,
+        "description": "a mouse button has been pressed and then released over the button"
+      },
+      {
+        "macros": [],
+        "name": "DoublePressRelease",
+        "data": null,
+        "description": "a mouse button has been pressed and then released twice over the button in quick succession"
+      },
+      {
+        "macros": [],
+        "name": "RollOn",
+        "data": null,
+        "description": "the mouse cursor has entered the area of the button while a mouse button was pressed"
+      },
+      {
+        "macros": [],
+        "name": "RollOff",
+        "data": null,
+        "description": "the mouse cursor has left the area of the button while a mouse button was pressed"
+      },
+      {
+        "macros": [],
+        "name": "Select",
+        "data": null,
+        "description": "the button has been selected"
+      },
+      {
+        "macros": [],
+        "name": "Deselect",
+        "data": null,
+        "description": "the button has been deselected"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

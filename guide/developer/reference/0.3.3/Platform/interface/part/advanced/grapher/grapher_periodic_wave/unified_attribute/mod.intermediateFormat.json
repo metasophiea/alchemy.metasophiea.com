@@ -1,0 +1,49 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the Grapher Periodic Wave",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "super::super::GrapherUnifiedAttribute",
+      "originalName": "UnifiedAttribute",
+      "fileAddress": "Platform/interface/part/advanced/grapher/grapher/unified_attribute/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "grapher",
+        "type": "super::super::GrapherUnifiedAttribute",
+        "description": "the Unified Attribute for the grapher used within this part\ndefault: the default value for the Unified Attribute of the Grapher part, with the following adjustments\n - background horizontal markings x position: 0.0\n - background horizontal markings: [\n     default Marking with adjustments : position: (1.0 + 1.0) / 2.0, text: \"1\"\n     default Marking with adjustments : position: (1.0 + 0.75) / 2.0, text: \"0.75\"\n     default Marking with adjustments : position: (1.0 + 0.5) / 2.0, text: \"0.5\"\n     default Marking with adjustments : position: (1.0 + 0.25) / 2.0, text: \"0.25\"\n     default Marking with adjustments : position: (1.0 + 0.0) / 2.0, text: \"0\"\n     default Marking with adjustments : position: (1.0 + -0.25) / 2.0, text: \"-0.25\"\n     default Marking with adjustments : position: (1.0 + -0.5) / 2.0, text: \"-0.5\"\n     default Marking with adjustments : position: (1.0 + -0.75) / 2.0, text: \"-0.75\"\n     default Marking with adjustments : position: (1.0 + -1.0) / 2.0, text: \"-1\"\n ]\n - background vertical markings: [\n     default Marking with adjustments : position: 0.0, text: \"0\"\n     default Marking with adjustments : position: 0.25, text: \"1/4\"\n     default Marking with adjustments : position: 0.5, text: \"1/2\"\n     default Marking with adjustments : position: 0.75, text: \"3/4\"\n ]"
+      },
+      {
+        "macros": [],
+        "name": "sin_wave",
+        "type": "Vec<f32>",
+        "description": "a vector of sin coefficients\ndefault: an empty array"
+      },
+      {
+        "macros": [],
+        "name": "cos_wave",
+        "type": "Vec<f32>",
+        "description": "a vector of cos coefficients\ndefault: an empty array"
+      },
+      {
+        "macros": [],
+        "name": "wave_resolution",
+        "type": "usize",
+        "description": "the resolution to the display the calculated graph at\ndefault: 128"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

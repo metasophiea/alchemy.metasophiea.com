@@ -1,0 +1,63 @@
+{
+  "type": "Enum",
+  "name": "PathJointType",
+  "description": "A path is drawn as a series of rectangles, stretching fro point to point. At a joint in this path two rectangle will overlap one another. This enum is used to describe how this joint should be handled.",
+  "macros": [
+    "#[derive(Copy, Clone, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [],
+        "name": "None",
+        "data": null,
+        "description": "No style is used"
+      },
+      {
+        "macros": [],
+        "name": "Flat",
+        "data": null,
+        "description": "A flat line is drawn over the overlap"
+      },
+      {
+        "macros": [],
+        "name": "Sharp",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "f32"
+          ]
+        },
+        "description": "The lines of the rectangles parallel to each path are drawn beyond the joint, only stopping when they intersect.\nThis process is cut short by the provided value."
+      },
+      {
+        "macros": [],
+        "name": "Round",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "u32"
+          ]
+        },
+        "description": null
+      },
+      {
+        "macros": [],
+        "name": "DynamicRound",
+        "data": {
+          "type": "TupleStruct",
+          "content": [
+            "u32"
+          ]
+        },
+        "description": null
+      }
+    ]
+  },
+  "exampleTexts": []
+}

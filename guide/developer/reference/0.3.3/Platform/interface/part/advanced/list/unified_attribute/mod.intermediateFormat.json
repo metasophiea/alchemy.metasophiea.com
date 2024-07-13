@@ -1,0 +1,84 @@
+{
+  "type": "Struct",
+  "name": "UnifiedAttribute",
+  "description": "A unified attribute for the List",
+  "macros": [
+    "#[derive(Clone, Debug, Serialize, Deserialize)]",
+    "#[serde(default)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Item",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/item/mod"
+    },
+    {
+      "name": "Style",
+      "originalName": null,
+      "fileAddress": "Platform/interface/part/advanced/list/style/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "f32",
+        "description": "the X position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "f32",
+        "description": "the Y position of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "f32",
+        "description": "the angle of the button\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "f32",
+        "description": "the width of the list\ndefault: 100.0"
+      },
+      {
+        "macros": [],
+        "name": "item_height",
+        "type": "f32",
+        "description": "the height of individual items within the list\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "horizontal_margin",
+        "type": "f32",
+        "description": "the margin applied to the left and right of text and other similar elements within items\ndefault: 5.0"
+      },
+      {
+        "macros": [],
+        "name": "vertical_margin",
+        "type": "f32",
+        "description": "the margin applied to the top and bottom of the list\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "items",
+        "type": "Vec<Item>",
+        "description": "the items that the list contains\ndefault: []"
+      },
+      {
+        "macros": [],
+        "name": "style",
+        "type": "Style",
+        "description": "the style of the list\ndefault: the default value of the \"Style\" structure"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

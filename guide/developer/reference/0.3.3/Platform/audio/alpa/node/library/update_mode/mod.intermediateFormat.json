@@ -1,0 +1,32 @@
+{
+  "type": "Enum",
+  "name": "UpdateMode",
+  "description": "The method by which updates will be produced",
+  "macros": [
+    "#[derive(Copy, Clone, Default, PartialEq, Eq, Serialize, Deserialize)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Enum",
+    "content": [
+      {
+        "macros": [
+          "#[default]"
+        ],
+        "name": "ByRequest",
+        "data": null,
+        "description": "updates will only be produced when requested"
+      },
+      {
+        "macros": [],
+        "name": "ByTimer",
+        "data": null,
+        "description": "updates will be produced automatically based on a timeframe"
+      }
+    ]
+  },
+  "exampleTexts": []
+}

@@ -1,0 +1,78 @@
+{
+  "type": "Struct",
+  "name": "Rectangle",
+  "description": "The unified attribute for the Rectangle element",
+  "macros": [
+    "#[skip_serializing_none]",
+    "#[derive(Copy, Clone, Debug, Serialize, Deserialize, PartialEq)]",
+    "#[serde(rename_all = \"camelCase\")]"
+  ],
+  "generics": [],
+  "nonStandardTypes": [
+    {
+      "name": "Colour",
+      "originalName": null,
+      "fileAddress": "Platform/graphics/cross_thread_library/colour/mod"
+    },
+    {
+      "name": "Point",
+      "originalName": null,
+      "fileAddress": "Library/code/geometry/objects/point/mod"
+    }
+  ],
+  "constants": [],
+  "typeSpecificData": {
+    "type": "Struct",
+    "content": [
+      {
+        "macros": [],
+        "name": "x",
+        "type": "Option<f32>",
+        "description": "the X position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "y",
+        "type": "Option<f32>",
+        "description": "the Y position of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "scale",
+        "type": "Option<f32>",
+        "description": "the scale of the element\ndefault: 1.0"
+      },
+      {
+        "macros": [],
+        "name": "angle",
+        "type": "Option<f32>",
+        "description": "the angle of the element\ndefault: 0.0"
+      },
+      {
+        "macros": [],
+        "name": "width",
+        "type": "Option<f32>",
+        "description": "the width of the element\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "height",
+        "type": "Option<f32>",
+        "description": "the height of the element\ndefault: 10.0"
+      },
+      {
+        "macros": [],
+        "name": "anchor",
+        "type": "Option<Point>",
+        "description": "the anchor point of the element\ndefault: {x:0.0, y:0.0}"
+      },
+      {
+        "macros": [],
+        "name": "colour",
+        "type": "Option<Colour>",
+        "description": "the colour of the element\ndefault: {r:1.0, g:0.0, b:0.0, a:1.0}"
+      }
+    ]
+  },
+  "exampleTexts": []
+}
